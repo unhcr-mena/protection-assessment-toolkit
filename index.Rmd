@@ -28,11 +28,6 @@ The kit is a comprehensive set of tools to guide survey teams through every step
 
 ![Assessment](images/process.png)
 
-This toolkit aims at being the equivalent of [UNHCR Standardised Expanded Nutrition Survey](http://sens.unhcr.org) or [UNICEF Multiple Indicator Cluster Surveys](http://mics.unicef.org/tools), but for Protection Assessment of displaced persons (Refugees & Internally displaced persons). The toolkit complements already existing guidelines, namely the [NEEDS ASSESSMENT FOR REFUGEE EMERGENCIES (NARE) CHECKLIST](https://emergency.unhcr.org/entry/50209) 
-for Refugees operations and the [Rapid Protection Assessment Tools (RPAT)](http://www.globalprotectioncluster.org/en/tools-and-guidance/information-and-data-management.html) for IDPs operations. 
-
-The toolkit is to be used once all emergency assessment and secondary data review have been implemented and developped. The targeted audience of the toolkit are Assessment lead, information management officers and data scientist that will be technically responsible for the implementation of the assessment.
-
 
 ## Why "practical"?
 On the top of the summary narrative guidelines below, the toolkit is organised around 4 keys technical componnents that will facilitate the easy replication and customisation of the assessment from an operation to another. Re-using tested proofed platforms, questions & report format, technical staff in charge will save significant amount of time.
@@ -45,6 +40,13 @@ On the top of the summary narrative guidelines below, the toolkit is organised a
  
  * A series of <kbd>[Github Repository](https://github.com/unhcr-mena/protection-assessment-toolkit)</kbd> to exchange collaboratively analysis between operations and generate a knowledge base. Github is also used for the maintenance of the toolkit itself.
 </div>
+
+## For whom?
+
+This toolkit aims at being the equivalent of [UNHCR Standardised Expanded Nutrition Survey](http://sens.unhcr.org) or [UNICEF Multiple Indicator Cluster Surveys](http://mics.unicef.org/tools), but for Protection Assessment of displaced persons (Refugees & Internally displaced persons). The toolkit complements already existing guidelines, namely the [NEEDS ASSESSMENT FOR REFUGEE EMERGENCIES (NARE) CHECKLIST](https://emergency.unhcr.org/entry/50209) 
+for Refugees operations and the [Rapid Protection Assessment Tools (RPAT)](http://www.globalprotectioncluster.org/en/tools-and-guidance/information-and-data-management.html) for IDPs operations. 
+
+The toolkit is to be used once all emergency assessment and secondary data review have been implemented and developped. The targeted audience of the toolkit are Assessment lead, information management officers and data scientist that will be technically responsible for the implementation of the assessment.
 
  With a bit of configuration at the begining, the toolkit will allow for the quick generation of results and will ensure that minimum data quality standards are enforced. In addition, because of the standard data format that are enforced through the kit, it will be possible to obtain comparable results from different operations.
 

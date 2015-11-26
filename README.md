@@ -4,8 +4,6 @@
 
 All chapters are written in **Rmarkdown** and encoded in UTF-8. 
 
-Files names should be prefixed by `pem_`, `analyses_` ou `avance_` in function of the section where they are. 
-
 When a new chapter is added, content table shoudl be automatically updated in `index.Rmd` and manually in the file `include\before_body.html`.
 
 ## Scripts 
@@ -18,3 +16,5 @@ When a new chapter is added, content table shoudl be automatically updated in `i
 `make_pdf.R` to update the PDF of the site.
 
 To execute `Makefile`, go to  **RStudio** & click on *Build All* in the  *Build* tab of the top right panel.
+
+If on windows, make sure that you have configured the path to Rtools & Prince in the *PATH* environment variable of your computer.
