@@ -26,7 +26,7 @@ require(lubridate)
 
 The kit is a comprehensive set of tools to guide survey teams through every step of a protection assessment – from overall planning, design and data collection in the field to data processing, analysis, interpretation, documentation and dissemination. The kit is also organised to ensure that all findings and recommandation will allow to inform protection activities prioritisation and subsequent ressources allocation in terms of programme.
 
-![CC by-nc-sa](images\process.png)
+![Assessment](images/process.png)
 
 This toolkit aims at being the equivalent of [UNHCR Standardised Expanded Nutrition Survey](http://sens.unhcr.org) or [UNICEF Multiple Indicator Cluster Surveys](http://mics.unicef.org/tools), but for Protection Assessment of displaced persons (Refugees & Internally displaced persons). The toolkit complements already existing guidelines, namely the [NEEDS ASSESSMENT FOR REFUGEE EMERGENCIES (NARE) CHECKLIST](https://emergency.unhcr.org/entry/50209) 
 for Refugees operations and the [Rapid Protection Assessment Tools (RPAT)](http://www.globalprotectioncluster.org/en/tools-and-guidance/information-and-data-management.html) for IDPs operations. 
