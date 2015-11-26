@@ -1,0 +1,17 @@
+---
+title: "KoboToolBox Server Configuration"
+---
+
+```{r options_communes, include=FALSE}
+source("options_communes.R")
+```
+
+<div class="important">
+This chapter is not written yet.
+</div>
+
+
+##  What is KoboToolBox?
+
+
+##  Create & Configure your project

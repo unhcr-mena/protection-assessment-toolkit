@@ -1,0 +1,1399 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr" xml:lang="fr">
+
+<head>
+
+<meta charset="utf-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<title>Protection Assessment Toolkit</title>
+
+<script src="libs/jquery-1.11.0/jquery.min.js"></script>
+<link href="include/flatly.print.css" rel="stylesheet" />
+<link href="include/protection-assessment-toolkit.css" rel="stylesheet" />
+
+</head>
+
+<body>
+
+<style type = "text/css">
+/* CSS g�n�r�es par knitr */
+
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+
+code{white-space: pre;}
+
+table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
+  margin: 0; padding: 0; vertical-align: baseline; border: none; }
+table.sourceCode { width: 100%; line-height: 100%; }
+td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
+td.sourceCode { padding-left: 5px; }
+code > span.kw { color: #007020; font-weight: bold; }
+code > span.dt { color: #902000; }
+code > span.dv { color: #40a070; }
+code > span.bn { color: #40a070; }
+code > span.fl { color: #40a070; }
+code > span.ch { color: #4070a0; }
+code > span.st { color: #4070a0; }
+code > span.co { color: #60a0b0; font-style: italic; }
+code > span.ot { color: #007020; }
+code > span.al { color: #ff0000; font-weight: bold; }
+code > span.fu { color: #06287e; }
+code > span.er { color: #ff0000; font-weight: bold; }
+
+pre:not([class]) {
+  background-color: white;
+}
+
+/* Print CSS */
+@media print {
+  math {margin: 11px auto;}
+
+  .main-container {margin:0; padding:0; max-width: 100%;}
+
+  @page {
+		size: A4;
+		margin: 2.5cm; padding: 0;
+ 		@bottom {content: "\2013\0000a0\0000a0\0000a0\0000a0" counter(page) "\0000a0\0000a0\0000a0\0000a0\2013"; font-size: 9pt; font-family: Lato, 'Helvetica Neue', Helvetica, Arial, sans-serif;}
+		@footnotes {
+			border-top: solid #999 thin;
+			padding-top: 8pt;
+			footnote-style-position: inside;
+    }
+	}
+	@page:first {
+  	@bottom { content: normal;}
+	  @top-left { content:normal;}
+		@top-right { content:normal;}
+  }
+  @page:left{
+    @top-left {content: "analyse-R\0000a0\0000a0\2013\0000a0\0000a0" string(titre_doc);
+    font-style: italic; font-size: 9pt; font-family: Lato, 'Helvetica Neue', Helvetica, Arial, sans-serif;}
+  }
+  @page:right{
+    @top-right {content: string(titre_chap); font-style: italic; font-size: 9pt; font-family: Lato, 'Helvetica Neue', Helvetica, Arial, sans-serif;}
+  }
+  @page:blank{
+		@bottom { content: normal;}
+	  @top-left { content:normal;}
+		@top-right { content:normal;}
+	}
+
+  article {string-set: titre_chap "";} /* �viter en-t�te en d�but de chapitre */
+	h1 {string-set: titre_chap content();}
+	article:first-child .jumbotron h1 {string-set: titre_doc content();}
+
+	body {font-size: 10pt; color: black;}
+	pre {font-size: 10pt;}
+	h1 {font-size:36pt; margin-top: 3cm; margin-bottom: 1cm; padding:0; color: #2c3e50;}
+	article:first-child h1:first-child {margin-top: 0; margin-bottom: .5cm; padding:0; font-size: 48pt;}
+	article:first-child .jumbotron h1 {font-size: 32pt;  color: #2c3e50;}
+	article:first-child .jumbotron {margin-bottom: 5cm;}
+	h2 {font-size: 20pt; margin-top: 1cm; margin-bottom: .5cm; padding:0; color: #2c3e50;}
+	h3 {font-size: 16pt; margin-top: 1cm; margin-bottom: .5cm; padding:0; color: #2c3e50;}
+	h4 {font-size: 11pt; margin-top: 1cm; margin-bottom: .5cm; padding:0; color: #2c3e50;}
+	blockquote p {font-size: 11pt;}
+	pre {font-size: 9pt;}
+
+	/* Page-break */
+	article, #tdm {page-break-before: right;}
+	#presentation {page-break-before: always;}
+	article:first-child {page-break-before: auto;}
+	h1, h2, h3, h4, heading, caption, pre.r {page-break-after: avoid;}
+	figcaption {page-break-before: avoid;}
+	figure, table, pre.r {page-break-inside: avoid;}
+	div.note, div.important, #licence {page-break-inside: avoid;}
+
+  /* Footnotes */
+  .fn {
+    float: footnote;
+    counter-increment: footnote;
+    font-size: 9pt;
+  }
+  article {counter-reset: footnote;}
+  .fn::footnote-call {font-size: 75%; vertical-align: super; line-height: none;}
+
+  /* Liens */
+  a[href^="#"] {color: black;}
+  a[href^="#"]:after { content: ", page\0000a0" target-counter(attr(href), page);}
+
+  /* Table des mati�res */
+  #tdm strong {font-size: 11pt;}
+  .list-group-item {padding: 2pt 0; border:none;}
+  a.list-group-item::after {content: leader(" . ") target-counter(attr(href), page);}
+  .TOC a::after {content: leader(" . ") target-counter(attr(href), page);}
+  .TOC a {color: black;}
+  .TOC ul {list-style: none; padding:0; margin:0;}
+  .TOC ul ul {padding-left: 0.5cm; font-size: 9pt;}
+  .TOC {margin-bottom: 1cm;}
+
+  /* Index des fonctions */
+  #index_fonctions nav, #index_extensions nav, #index_concepts nav
+    {display: none;}
+  #index_fonctions_index_fonctions, #index_extensions_index_extensions, #index_concepts_index_concepts
+    {column-count: 2; column-rule: thin solid #2c3e50; column-gap: 1cm;}
+  #index_fonctions p, #index_extensions p, #index_concepts p
+    {page-break-after: avoid; margin: 10px 0 0 0;}
+  #index_fonctions ul a[href^="#"],
+  #index_extensions ul a[href^="#"],
+  #index_concepts ul a[href^="#"]
+    {color: black;}
+  #index_fonctions ul a[href^="#"]:after,
+  #index_extensions ul a[href^="#"]:after,
+  #index_concepts ul a[href^="#"]:after
+    {content: leader(" . ") target-counter(attr(href), page);}
+  #index_fonctions ul, #index_extensions ul, #index_concepts ul
+  {
+    list-style: none;
+    padding: 0; margin: 0;
+    font-size: 8pt;
+    page-break-inside: avoid;
+  }
+  #index_fonctions li, #index_extensions li, #index_concepts li
+    {padding-left: 0.5cm;}
+
+  dfn {border-bottom: dotted .5pt #AAA;}
+
+  /* Styles des exemples de fusion de tables */
+  table.exemple_df td,
+  table.exemple_df th {
+    text-align: center;
+    padding: 3px 10px;
+  }
+  table.exemple_df th {
+    border-bottom: solid 1px #999;
+  }
+
+  table.exemple_df td + td,
+  table.exemple_df th + th {
+    border-left: solid 1px #999;
+  }
+
+  table.exemple_operateur td {
+    font-size: 3em;
+    padding: 20px;
+  }
+
+}
+
+</style>
+
+<div class="container-fluid main-container">
+<article>
+
+
+
+<div class="jumbotron">
+<h1>
+Guidelines and Templates <br/>
+</h1>
+<h2>
+to facilitate planning and design<br/> and to avoid pitfalls in implementation
+</h2>
+<p>
+UNHCR MENA Protection Services : 26 November 2015
+</p>
+</div>
+<div id="presentation" class="section level2">
+<h2>Why a “Protection Assessment Toolkit”?</h2>
+<p>The kit is a comprehensive set of tools to guide survey teams through every step of a protection assessment  from overall planning, design and data collection in the field to data processing, analysis, interpretation, documentation and dissemination. The kit is also organised to ensure that all findings and recommandation will allow to inform protection activities prioritisation and subsequent ressources allocation in terms of programme.</p>
+<p><img src="images\process.png" alt="CC by-nc-sa"/></p>
+<p>This toolkit aims at being the equivalent of <a href="http://sens.unhcr.org">UNHCR Standardised Expanded Nutrition Survey</a> or <a href="http://mics.unicef.org/tools">UNICEF Multiple Indicator Cluster Surveys</a>, but for Protection Assessment of displaced persons (Refugees &amp; Internally displaced persons). The toolkit complements already existing guidelines, namely the <a href="https://emergency.unhcr.org/entry/50209">NEEDS ASSESSMENT FOR REFUGEE EMERGENCIES (NARE) CHECKLIST</a> for Refugees operations and the <a href="http://www.globalprotectioncluster.org/en/tools-and-guidance/information-and-data-management.html">Rapid Protection Assessment Tools (RPAT)</a> for IDPs operations.</p>
+<p>The toolkit is to be used once all emergency assessment and secondary data review have been implemented and developped. The targeted audience of the toolkit are Assessment lead, information management officers and data scientist that will be technically responsible for the implementation of the assessment.</p>
+</div>
+<div id="why-practical" class="section level2">
+<h2>Why “practical”?</h2>
+On the top of the summary narrative guidelines below, the toolkit is organised around 4 keys technical componnents that will facilitate the easy replication and customisation of the assessment from an operation to another. Re-using tested proofed platforms, questions &amp; report format, technical staff in charge will save significant amount of time.
+<div class="note">
+<ul>
+<li><p>A pre-organised <kbd><a href="https://docs.google.com/spreadsheets/d/1zGnaLXouP9vTfjqVvUVOSfzeSkvpd63f8Z-zvqGJtNU">XLSFORM Questions Library</a></kbd> in order to leverage good practices and enforce core questions during design of the assessment form.</p></li>
+<li><p>A <kbd><a href="hhtps://kobo.unhcr.org">KoboToolBox</a></kbd> secured server to perform the data collection. This server uses the xlsform developed during th efirst phase.</p></li>
+<li><p>Multiple <kbd><a href="https://github.com/unhcr-mena/protection-assessment-toolkit">R statistical analysis scripts</a></kbd> to clean &amp; analyse data, and then to generate automatically standard report and to facilitate the creation of presentation slides and infographics.</p></li>
+<li>A series of <kbd><a href="https://github.com/unhcr-mena/protection-assessment-toolkit">Github Repository</a></kbd> to exchange collaboratively analysis between operations and generate a knowledge base. Github is also used for the maintenance of the toolkit itself.</li>
+</ul>
+</div>
+<p>With a bit of configuration at the begining, the toolkit will allow for the quick generation of results and will ensure that minimum data quality standards are enforced. In addition, because of the standard data format that are enforced through the kit, it will be possible to obtain comparable results from different operations.</p>
+<div class="alert alert-warning" style="font-weight: bold;">
+<p>
+The Protection Assessment Toolkit is a work in progress.
+</p>
+<p>
+If you identify issues or if you have suggestions, please share them <a href="https://github.com/unhcr-mena/protection-assessment-toolkit/issues" style="color: white;">through this link</a>.
+</p>
+</div>
+</div>
+<div id="tdm" class="section level2">
+<h2>Content table</h2>
+<div id="methodology-form-design" class="section level3">
+<h3>Methodology &amp; Form Design</h3>
+<pre><code>## Warning: package 'xml2' was built under R version 3.2.2</code></pre>
+<div class="row">
+<div class="col-md-4">
+<p>
+<strong>Planning</strong>
+</p>
+<div class="list-group">
+<a href="#Assessment-Project-Document" class="list-group-item">Assessment Project Document</a> <a href="#Memorandum-of-Understanding" class="list-group-item">Memorandum of Understanding</a> <a href="#Terms-of-Reference-for-Steering-Committee" class="list-group-item">Terms of Reference for Steering Committee</a> <a href="#Terms-of-Reference-for-Assessment-Lead" class="list-group-item">Terms of Reference for Assessment Lead</a>
+</div>
+</div>
+<div class="col-md-4">
+<p>
+<strong>Methodology</strong>
+</p>
+<div class="list-group">
+<a href="#Key-Informant-or-Household-or-FGD" class="list-group-item">Key Informant, Household or Focus Group Discussion?</a> <a href="#Sample-Size-Weight-Calculation" class="list-group-item">Sample Size &amp; Weight Calculation</a> <a href="#Household-Selection" class="list-group-item">Household &amp; key Informant Selection</a> <a href="#Mapping-Household-Listing" class="list-group-item">Mapping and Household Listing</a>
+</div>
+</div>
+<div class="col-md-4">
+<p>
+<strong>Forms</strong>
+</p>
+<div class="list-group">
+<a href="#protection-Topics" class="list-group-item">Protection Topics</a> <a href="#Flow-of-Questionnaires" class="list-group-item">Flow of Questionnaires</a> <a href="#Questions-Library" class="list-group-item">Questions Library</a> <a href="#Guidelines-for-Customisation" class="list-group-item">Guidelines for Customisation</a>
+</div>
+</div>
+</div>
+</div>
+<div id="data-collection" class="section level3">
+<h3>Data Collection</h3>
+<div class="row">
+<div class="col-md-4">
+<p>
+<strong>Preparing for fieldwork</strong>
+</p>
+<div class="list-group">
+<a href="#Fieldwork-Training-Agenda" class="list-group-item">Fieldwork Training and Agenda</a> <a href="#Pre-test-Phase" class="list-group-item">Pre-test Phase</a> <a href="#Managing-Devices" class="list-group-item">Managing Devices</a>
+</div>
+</div>
+<div class="col-md-4">
+<p>
+<strong>Fieldwork manuals</strong>
+</p>
+<div class="list-group">
+<a href="#Instructions-for-Interviewers" class="list-group-item">Instructions for Interviewers</a> <a href="#Instructions-for-Supervisors-Editors" class="list-group-item">Instructions for Supervisors and Editors</a> <a href="#Instructions-for-Managers" class="list-group-item">Instructions for Managers</a>
+</div>
+</div>
+<div class="col-md-4">
+<p>
+<strong>Using KoboToolBox</strong>
+</p>
+<div class="list-group">
+<a href="#Server-Configuration" class="list-group-item">Server Configuration</a> <a href="#Data-Protection-Impact-Assessment" class="list-group-item">Data Protection Impact Assessment</a> <a href="#Data-Entry" class="list-group-item">Data Entry</a>
+</div>
+</div>
+</div>
+</div>
+<div id="analysis-dissemination" class="section level3">
+<h3>Analysis &amp; Dissemination</h3>
+<div class="row">
+<div class="col-md-4">
+<p>
+<strong>Analysis Topics</strong>
+</p>
+<div class="list-group">
+<a href="#Legal-Protection-Civil-Documentation" class="list-group-item">Legal Protection and Civil Documentation</a> <a href="#Specific-Needs-Community-Protection" class="list-group-item">Specific Needs and Community Protection</a> <a href="#Child-Protection-Education" class="list-group-item">Child protection and Education</a> <a href="#SGBV" class="list-group-item">Sexual &amp; Gender Based Violence</a>
+</div>
+</div>
+<div class="col-md-4">
+<p>
+<strong>Report</strong>
+</p>
+<div class="list-group">
+<a href="#Analysis-Script" class="list-group-item">Analysis Scripts</a> <a href="#Model-for-Key-Findings-Report" class="list-group-item">Model for Key Findings Report</a> <a href="#Model-for-Final-Report" class="list-group-item">Model for Final Report</a>
+</div>
+</div>
+<div class="col-md-4">
+<p>
+<strong>Communication</strong>
+</p>
+<div class="list-group">
+<a href="#Slides-Infographics" class="list-group-item">Slides &amp; Infographics</a> <a href="#Microdata" class="list-group-item">Sharing microdata for social scientist</a>
+</div>
+</div>
+</div>
+</div>
+<div id="credits" class="section level3">
+<h3>Credits</h3>
+<p>Large parts of the toolkit are extracted from other existing guidelines referenced above.</p>
+</div>
+</div>
+
+</article>
+<article id="Assessment-Project-Document">
+
+<div id="Assessment-Project-Document_header">
+<h1 class="title">Assessment Project Document</h1>
+</div>
+
+<div class="TOC">
+<ul>
+<li><a href="#Assessment-Project-Document_background-and-objective">Background and Objective</a></li>
+<li><a href="#Assessment-Project-Document_governance-structure">Governance Structure</a></li>
+<li><a href="#Assessment-Project-Document_questionnaires-content">Questionnaires Content</a></li>
+<li><a href="#Assessment-Project-Document_sample-design">Sample Design</a></li>
+<li><a href="#Assessment-Project-Document_recruitment-and-training-of-fieldwork-staff">Recruitment and Training of Fieldwork Staff</a></li>
+<li><a href="#Assessment-Project-Document_fieldwork">Fieldwork</a></li>
+<li><a href="#Assessment-Project-Document_budget">Budget</a></li>
+<li><a href="#Assessment-Project-Document_timeline-for-tasks">Timeline for Tasks</a></li>
+</ul>
+</div>
+
+<div class="note">
+A protection Assessment needs to be carefully planned. The First step of this plan is to document all the elements of the Asesssement
+</div>
+<div id="Assessment-Project-Document_background-and-objective" class="section level2">
+<h2>Background and Objective</h2>
+<p>Protection Asessment are designed to collect statistically sound, internationally comparable estimates of key indicators and analysis that are used to assess the protection situation of displaced persons (Refugees &amp; IDP’s) and to prioritize protection intervention.</p>
+</div>
+<div id="Assessment-Project-Document_governance-structure" class="section level2">
+<h2>Governance Structure</h2>
+<ul>
+<li>Give the name and type (government agency or other agency) of implementing agency.</li>
+<li>Provide overview of Memorandum of Understanding (MoU) (Parties, critical components affecting survey planning, etc)</li>
+<li>Give the names and affiliations of those who will be responsible for the management, technical work, and coordination activities. Include the survey coordinator, the sampling expert, and data processing expert assigned from the implementing agency, as well as others, if applicable. If already identified, the UNICEF MICS Consultant and other key regional experts/consultants together with their respective responsibilities should also be included.</li>
+<li>Describe the roles and contributions of national and international stakeholders and funding agencies.</li>
+<li>Describe the status, composition and roles and responsibilities of the Steering and Technical committees.</li>
+<li>Provide other details on the governance structure and human resources as needed</li>
+</ul>
+</div>
+<div id="Assessment-Project-Document_questionnaires-content" class="section level2">
+<h2>Questionnaires Content</h2>
+<p>List the excluded modules and provide reasons for the exclusion of each module. If the module or questions are not applicable to the country/survey you are not expected to provide a detailed explanation. However, for other exclusions, please include specific details about the reasons the modules and/or the questions that are not planned to be included and provide references to the data needs assessment.</p>
+<p>Provide information on the plans for the translation and back-translation of the questionnaires into local languages and plans for pre-testing the questionnaires. Indicate that the pre-test results will be compiled in a report, and that the results of the pre-test will be used to further modify, customize, and finalize the questionnaires.</p>
+</div>
+<div id="Assessment-Project-Document_sample-design" class="section level2">
+<h2>Sample Design</h2>
+<p>In this section, under separate sub-headings, as appropriate, describe:</p>
+<ul>
+<li>The Type of sampling design shoudl be stated (Rationale for sampling design explained)</li>
+<li>State definition of Household used in the assessment</li>
+<li>Sample size, including the expected numbers of households, women, men and under-5s. Include information on sub-sampling of men, if applicable</li>
+<li>How the sample size was calculated, including the indicators used for the calculation of the sample size</li>
+<li>The level of disaggregation sought for reporting</li>
+<li>What sample frame will be used and if the sample frame needs to be updated, plans for mapping, listing and household selection</li>
+</ul>
+</div>
+<div id="Assessment-Project-Document_recruitment-and-training-of-fieldwork-staff" class="section level2">
+<h2>Recruitment and Training of Fieldwork Staff</h2>
+<p>In this section, under separate sub-headings as appropriate, describe:</p>
+<ul>
+<li>Plans for recruitment of fieldwork staff, including details of the type of personnel (interviewers, data entry, supervisors, measurers, data entry clerks), their education/background, sex, numbers etc.</li>
+<li>Timing of training</li>
+<li>Length of training</li>
+<li>Methodology and content of training</li>
+<li>Profiles of trainers</li>
+<li>How training will be organized – central location, in separate districts, including how standardization will be ensured if not central location</li>
+</ul>
+</div>
+<div id="Assessment-Project-Document_fieldwork" class="section level2">
+<h2>Fieldwork</h2>
+<p>In this section, under separate sub-headings as appropriate, describe:</p>
+<ul>
+<li>Timing of fieldwork, constraints on timing of fieldwork</li>
+<li>Team composition, including numbers</li>
+<li>Expected duration of fieldwork and how the duration was calculated</li>
+<li>Plans for monitoring data collection and fieldwork supervision as well as plans for handling questionnaires for data entry</li>
+<li>Fieldwork logistics</li>
+</ul>
+</div>
+<div id="Assessment-Project-Document_budget" class="section level2">
+<h2>Budget</h2>
+<p>In this section, under separate sub-headings as appropriate, describe:</p>
+<ul>
+<li>Expected total cost of the survey</li>
+<li>Breakdown of total cost by budget line items</li>
+<li>Amount of funding secured and funding source(s)</li>
+<li>Amount of extra funding needed, including plans, if any, on how the funding shortfall will be secured</li>
+</ul>
+</div>
+<div id="Assessment-Project-Document_timeline-for-tasks" class="section level2">
+<h2>Timeline for Tasks</h2>
+<ul>
+<li>Identify survey coordinator, survey personnel, and plan survey; establish steering and technical committees</li>
+<li>Adapt and pre-test questionnaires; translate questionnaires and manuals</li>
+<li>Carry out sampling and household listing; order scales, boards, salt test kits, and GPS equipment</li>
+<li>Complete logistical arrangements</li>
+<li>Select and train fieldwork personnel (interviewers, editors, measurers, and supervisors)</li>
+<li>Conduct pilot study and collect data</li>
+<li>Complete data processing, including secondary editing</li>
+<li>Prepare summary findings report and final report, and disseminate widely; prepare survey archive</li>
+</ul>
+<div class="important">
+This chapter is not wirtten yet.
+</div>
+</div>
+
+</article>
+<article id="Memorandum-of-Understanding">
+
+<div id="Memorandum-of-Understanding_header">
+<h1 class="title">Memorandum of Understanding</h1>
+</div>
+
+
+<div class="important">
+This chapter is not written yet.
+</div>
+
+</article>
+<article id="Terms-of-Reference-for-Steering-Committee">
+
+<div id="Terms-of-Reference-for-Steering-Committee_header">
+<h1 class="title">Terms of reference for Steering Committe</h1>
+</div>
+
+
+<div class="important">
+This chapter is not written yet.
+</div>
+
+</article>
+<article id="Terms-of-Reference-for-Assessment-Lead">
+
+<div id="Terms-of-Reference-for-Assessment-Lead_header">
+<h1 class="title">Terms of reference for Assessment Lead</h1>
+</div>
+
+<div class="TOC">
+<ul>
+<li><a href="#Terms-of-Reference-for-Assessment-Lead_background">Background</a></li>
+<li><a href="#Terms-of-Reference-for-Assessment-Lead_methodology">Methodology</a></li>
+<li><a href="#Terms-of-Reference-for-Assessment-Lead_objectives">Objectives</a></li>
+<li><a href="#Terms-of-Reference-for-Assessment-Lead_deliverables">Deliverables</a></li>
+<li><a href="#Terms-of-Reference-for-Assessment-Lead_reporting">Reporting</a></li>
+<li><a href="#Terms-of-Reference-for-Assessment-Lead_time-frame">Time frame</a></li>
+<li><a href="#Terms-of-Reference-for-Assessment-Lead_qualification-experience-required">Qualification &amp; Experience required</a></li>
+</ul>
+</div>
+
+<div id="Terms-of-Reference-for-Assessment-Lead_background" class="section level2">
+<h2>Background</h2>
+<p>[Insert background on current refugee situation, details on previous nutrition surveys or what is known of the nutrition situation. Explain why the current surveys are planned. Insert any other relevant detail.]</p>
+</div>
+<div id="Terms-of-Reference-for-Assessment-Lead_methodology" class="section level2">
+<h2>Methodology</h2>
+<p>The survey will be developed using the Protection Assessment Toolkit. Survey methodology should be reviewed by UNHCR regional or HQ Protection Infornmatiuon Management Officer prior to data collection.</p>
+</div>
+<div id="Terms-of-Reference-for-Assessment-Lead_objectives" class="section level2">
+<h2>Objectives</h2>
+<p>The staff will oversee the Protection Assessment for; - [Operation] - [Population Group] - [Geographic Coverage] - [Timeframe]</p>
+</div>
+<div id="Terms-of-Reference-for-Assessment-Lead_deliverables" class="section level2">
+<h2>Deliverables</h2>
+<ul>
+<li><p>A final assessment report including recommendations on actions to address the situation is to be submitted at the end of the mission. Results of standardisation tests, details of data cleaning and plausibility checks should be presented in the final report. The report must conform with the CRED survey completeness checklist (<a href="http://www.cedat.be/Field%20Resources">http://www.cedat.be/Field%20Resources</a>).</p></li>
+<li><p>Standardised tables as presented in the Protection Assessment Toolkit.</p></li>
+<li><p>The findings and major recommendations are to be presented to partners at the mission level (oral presentation and slides).</p></li>
+<li><p>The final analysis script.</p></li>
+</ul>
+</div>
+<div id="Terms-of-Reference-for-Assessment-Lead_reporting" class="section level2">
+<h2>Reporting</h2>
+<p>The consultant will report on regular basis to the UNHCR [insert title of UNHCR person responsible], who will have the overall responsibility of the survey.</p>
+</div>
+<div id="Terms-of-Reference-for-Assessment-Lead_time-frame" class="section level2">
+<h2>Time frame</h2>
+<p>The consultancy will last approximately [insert number of months], starting from [Insert start date].</p>
+</div>
+<div id="Terms-of-Reference-for-Assessment-Lead_qualification-experience-required" class="section level2">
+<h2>Qualification &amp; Experience required</h2>
+<p>The successful candidate will: * Have a university degree or the equivalent, with advanced education in nutrition, with a specific competency in humanitarian emergencies. * Have significant experience in undertaking nutrition surveys (design and methodologies, staff recruitment and training, field supervision and data analysis/write up). * Be familiar with the survey methodology and R statistical language. * Be fluent in English with excellent writing and presentation skills [insert any other language requirements].</p>
+</div>
+
+</article>
+<article id="Key-Informant-or-Household-or-FGD">
+
+<div id="Key-Informant-or-Household-or-FGD_header">
+<h1 class="title">Key Informant, Household or Focus Group Discussions</h1>
+</div>
+
+
+<div class="important">
+This chapter is not written yet.
+</div>
+
+</article>
+<article id="Sample-Size-Weight-Calculation">
+
+<div id="Sample-Size-Weight-Calculation_header">
+<h1 class="title">Sample size &amp; Weight Calculation</h1>
+</div>
+
+
+<div class="important">
+This chapter is not written yet.
+</div>
+
+</article>
+<article id="Household-Selection">
+
+<div id="Household-Selection_header">
+<h1 class="title">Household &amp; Key Informant Selection</h1>
+</div>
+
+
+<div class="important">
+This chapter is not written yet.
+</div>
+
+</article>
+<article id="Mapping-Household-Listing">
+
+<div id="Mapping-Household-Listing_header">
+<h1 class="title">Mapping Household Listing</h1>
+</div>
+
+
+<div class="important">
+This chapter is not written yet.
+</div>
+
+</article>
+<article id="protection-Topics">
+
+<div id="protection-Topics_header">
+<h1 class="title">Protection Topics</h1>
+</div>
+
+<div class="TOC">
+<ul>
+<li><a href="#protection-Topics_legal-protection-civil-documentation">Legal Protection &amp; Civil Documentation</a></li>
+<li><a href="#protection-Topics_specific-needs-and-community-protection">Specific Needs and Community Protection</a></li>
+<li><a href="#protection-Topics_child-protection-and-education">Child Protection and Education</a></li>
+<li><a href="#protection-Topics_sexual-gender-based-violence">Sexual &amp; Gender Based Violence</a></li>
+</ul>
+</div>
+
+<div class="note">
+<p>On each topic, the protection assessment should allow to identify the affected population’s:</p>
+<ul>
+<li>Capacities and capabilities</li>
+<li>vulnerabilities and exposure</li>
+<li>Concerns and desires</li>
+</ul>
+</div>
+<div id="protection-Topics_legal-protection-civil-documentation" class="section level2">
+<h2>Legal Protection &amp; Civil Documentation</h2>
+<ul>
+<li>Freedom of movement</li>
+<li>Detention</li>
+<li>Protection-sensitive border mechanism</li>
+<li>Social cohesion</li>
+<li>Potential criteria for Resettlement and durable solutions</li>
+<li>Renewal of documents/ residences</li>
+<li>Marriage registration</li>
+<li>Effective and efficient system</li>
+<li>Counselling needs</li>
+<li>Legal aid needs</li>
+<li>Voluntary nature of returns</li>
+<li>Registration awareness</li>
+</ul>
+</div>
+<div id="protection-Topics_specific-needs-and-community-protection" class="section level2">
+<h2>Specific Needs and Community Protection</h2>
+<ul>
+<li>Negative coping mechanism</li>
+<li>Multiple Displacement before arrival in COA</li>
+<li>Refugees with disabilities</li>
+<li>Elderly refugees</li>
+<li>Family Separation</li>
+</ul>
+</div>
+<div id="protection-Topics_child-protection-and-education" class="section level2">
+<h2>Child Protection and Education</h2>
+<ul>
+<li>Sexual harassment</li>
+<li>Violence among children</li>
+<li>Birth Registration</li>
+<li>Child labour</li>
+<li>Unccompanied Sepearated Children</li>
+<li>Youth</li>
+<li>Education / Out of School Children</li>
+<li>Difficult living conditions</li>
+<li>Armed recruitment</li>
+<li>Alternative Care (UASC)</li>
+<li>Parental stress</li>
+<li>Isolation at home</li>
+<li>Harassment on the way to school</li>
+<li>Detention of Children</li>
+</ul>
+</div>
+<div id="protection-Topics_sexual-gender-based-violence" class="section level2">
+<h2>Sexual &amp; Gender Based Violence</h2>
+<ul>
+<li>Psychoscocial Support</li>
+<li>Gender inequality</li>
+<li>Domestic Violence</li>
+<li>Forced and early marriage</li>
+<li>Underreported SGBV incidents</li>
+<li>Engaging men and boys</li>
+<li>Legal</li>
+<li>Medical</li>
+<li>power dynamics</li>
+<li>Rape</li>
+<li>Child-sensitive police</li>
+<li>Violence at home</li>
+<li>LGBTI</li>
+</ul>
+</div>
+
+</article>
+<article id="Flow-of-Questionnaires">
+
+<div id="Flow-of-Questionnaires_header">
+<h1 class="title">Flow of Questionnaires</h1>
+</div>
+
+<div class="TOC">
+<ul>
+<li><a href="#Flow-of-Questionnaires_key-informant-level">key Informant level</a></li>
+<li><a href="#Flow-of-Questionnaires_household-level">Household Level</a><ul>
+<li><a href="#Flow-of-Questionnaires_questionnaire-componnent-for-household-representative">Questionnaire Componnent for Household Representative</a></li>
+<li><a href="#Flow-of-Questionnaires_questionnaire-componnent-for-individual-women">Questionnaire Componnent for Individual Women</a></li>
+<li><a href="#Flow-of-Questionnaires_questionnaire-componnent-for-individual-men">Questionnaire Componnent for Individual Men</a></li>
+<li><a href="#Flow-of-Questionnaires_questionnaire-componnent-for-children-youth">Questionnaire Componnent for Children &amp; Youth</a></li>
+</ul></li>
+<li><a href="#Flow-of-Questionnaires_focus-group-discussions-level">Focus Group Discussions Level</a></li>
+</ul>
+</div>
+
+<div class="important">
+This chapter is not written yet.
+</div>
+<p>The Assessment includes 3 questionnaires: one for the household level (that includes specific questions depending on the Household profile), one at the Key informant Level and a series of open questions for Focus Group Discusssions.</p>
+<div id="Flow-of-Questionnaires_key-informant-level" class="section level2">
+<h2>key Informant level</h2>
+<p>The following modules will be included in the Protection Assessment at the key Informant level:</p>
+</div>
+<div id="Flow-of-Questionnaires_household-level" class="section level2">
+<h2>Household Level</h2>
+<p>The following modules will be included in the Protection Assessment at the Household level:</p>
+<div id="Flow-of-Questionnaires_questionnaire-componnent-for-household-representative" class="section level3">
+<h3>Questionnaire Componnent for Household Representative</h3>
+<ul>
+<li>Profile of Household Members</li>
+<li>Education</li>
+<li>Child Labour</li>
+<li>Civil Documentation</li>
+<li>Property</li>
+<li>accomodation Conditions</li>
+</ul>
+</div>
+<div id="Flow-of-Questionnaires_questionnaire-componnent-for-individual-women" class="section level3">
+<h3>Questionnaire Componnent for Individual Women</h3>
+<ul>
+<li>Access to Mass Media and Use of Information and Communication Technology</li>
+<li>Attitudes toward Domestic Violence</li>
+<li>Marriage/Union</li>
+<li>Intention</li>
+</ul>
+</div>
+<div id="Flow-of-Questionnaires_questionnaire-componnent-for-individual-men" class="section level3">
+<h3>Questionnaire Componnent for Individual Men</h3>
+<ul>
+<li>Access to Mass Media and Use of Information and Communication Technology</li>
+<li>Attitudes toward Domestic Violence Marriage/Union</li>
+<li>Intention</li>
+</ul>
+</div>
+<div id="Flow-of-Questionnaires_questionnaire-componnent-for-children-youth" class="section level3">
+<h3>Questionnaire Componnent for Children &amp; Youth</h3>
+<ul>
+<li>Birth Registration</li>
+<li>School attendance</li>
+<li>Early Marriage</li>
+</ul>
+</div>
+</div>
+<div id="Flow-of-Questionnaires_focus-group-discussions-level" class="section level2">
+<h2>Focus Group Discussions Level</h2>
+</div>
+
+</article>
+<article id="Questions-Library">
+
+<div id="Questions-Library_header">
+<h1 class="title">Survey Plan Template</h1>
+</div>
+
+<div class="TOC">
+<ul>
+<li><a href="#Questions-Library_the-xlsform-format">The XLSFORM format</a></li>
+<li><a href="#Questions-Library_filtering-the-questions">Filtering the questions</a></li>
+</ul>
+</div>
+
+<div class="important">
+This chapter is not written yet.
+</div>
+<div id="Questions-Library_the-xlsform-format" class="section level2">
+<h2>The XLSFORM format</h2>
+</div>
+<div id="Questions-Library_filtering-the-questions" class="section level2">
+<h2>Filtering the questions</h2>
+</div>
+
+</article>
+<article id="Guidelines-for-Customisation">
+
+<div id="Guidelines-for-Customisation_header">
+<h1 class="title">Guidelines for questionnaire customisation</h1>
+</div>
+
+<div class="TOC">
+<ul>
+<li><a href="#Guidelines-for-Customisation_what-is-customisation">What is “customisation”?</a></li>
+<li><a href="#Guidelines-for-Customisation_what-kind-of-customisation">What kind of “Customisation”?</a></li>
+<li><a href="#Guidelines-for-Customisation_modification">Modification</a></li>
+<li><a href="#Guidelines-for-Customisation_deletion">Deletion</a></li>
+<li><a href="#Guidelines-for-Customisation_addition">Addition</a></li>
+<li><a href="#Guidelines-for-Customisation_rules-and-useful-tips-for-customisation">Rules and Useful Tips for Customisation</a></li>
+</ul>
+</div>
+
+<div class="note">
+
+</div>
+<div id="Guidelines-for-Customisation_what-is-customisation" class="section level2">
+<h2>What is “customisation”?</h2>
+<p>Customisation (or adaptation) refers to the process during which the standard Protection Assessment questionnaires are tailored to the population/context where a the Asessment is being conducted (that is, a national assessment, or a assessment conducted for a population group or for a selected area within a country), using standard principles and approaches, while maintaining global comparability of the indicators that will be derived from the collected data.</p>
+<p>The customisation process is by no means an easy and straightforward one. Without a detailed understanding of all the standard tools and of the general principles and recommendations, customisation of questionnaires should not be attempted at country level without the assistance of an expert. During the customisation process, it is also absolutely critical that lessons learned from previous data collection activities are used effectively, and wherever necessary, tools are tested before final decisions are made. Testing may include organized pre-testing, field testing, piloting, and in some cases, cognitive testing. Analysis of raw data from previous assessment and data collection activities, as well as results from these efforts should also be undertaken for successful customisation of standard questionnaires.</p>
+</div>
+<div id="Guidelines-for-Customisation_what-kind-of-customisation" class="section level2">
+<h2>What kind of “Customisation”?</h2>
+<p>Customisation of the Questionnaires, Modules, Questions, and Response Categories is necessary for at least two basic reasons: * No single country/survey is expected or recommended to use all of the modules in standard questionnaires * No single standard questionnaire can accurately represent all human experience around the globe</p>
+<p>Customisation covers the following types of changes to the standard protection questionnaires: * Country-/assessment-specific modifications to already existing standard questions and response codes, * Deletions from the standard questionnaires, and * Additions to the standard questionnaires.</p>
+</div>
+<div id="Guidelines-for-Customisation_modification" class="section level2">
+<h2>Modification</h2>
+<p>Certain parts of the standard questionnaires must be modified. Indeed, in several instances, the standard questionnaires include clear directives that a change or modification needs to be made. These cases are indicated using text such as “insert local name”. Similarly, response categories that require customisation are also indicated.</p>
+</div>
+<div id="Guidelines-for-Customisation_deletion" class="section level2">
+<h2>Deletion</h2>
+<p>No assessment is recommended to retain all of the modules and questions of the standard protection questionnaires. First, there will always be some topics that will not be relevant in certain countries or regions. Second, decisions on the content of any assessment will ideally be made as a result of a thorough data gap assessment, generally based on the required analysis, and, for example, when information is available from other recent data sources, certain modules or sets of questions will be dropped. The process and analysis involved in a comprehensive data needs assessment will vary, but is a crucial step in determining the content of the assessment.</p>
+<p>Determining what to exclude from the assessment is a balancing act that should take data needs into account, but also learn from countless experiences of data quality issues as a result of overloaded questionnaires. Country priorities will guide decisions, but may also work against achieving an optimum questionnaire size if negotiations turn more political than technical.</p>
+<p>A final consideration will also rest with the ability to implement an adequate sample size, as this is often constrained by budget on one hand and on the other the known data quality issues associated with large sample sizes. For instance, some indicators are difficult to measure in low fertility settings, demanding higher sample sizes or complicated sample designs. Unless such issues can be technically addressed, the exclusion of such indicators may be necessary.</p>
+</div>
+<div id="Guidelines-for-Customisation_addition" class="section level2">
+<h2>Addition</h2>
+<p>Some Protection Asessment may also add topics, modules and questions which are not already in the standard questionnaires. These could include additions that the standard questionnaires already point to (for example, adding household assets to the list already in the questionnaires), or additions of modules or sets of questions that are not covered in the standard questionnaires.</p>
+<p>From the onset of considerations of what could be added in, you should know that this will affect the technical support available as well as require changes and considerations throughout the package of tools available, from sampling, training, instructions, and data entry application to tabulations and reporting.</p>
+<p>As with the above exercise of deleting from the questionnaires, your entry point should be the indicator list or, alternatively, the tabulation plan. Questionnaire design is secondary to the need for precise information on what such proposed additions would be measuring and how such would be presented.</p>
+<p>Only questions that are previously well-tested and validated should be included. Questions are often imported from other household surveys that have been conducted in the country. This does not necessarily mean that they are validated nor does it mean that such questions can work within the frame of a Protection Assessment.</p>
+<p>If additions are made, please ensure that formatting and coding follow the rules in place for the standard questionnaires. For entirely new topics it may be useful to build a new module and in other cases you will need to append to an existing module or insert within the existing flow.</p>
+</div>
+<div id="Guidelines-for-Customisation_rules-and-useful-tips-for-customisation" class="section level2">
+<h2>Rules and Useful Tips for Customisation</h2>
+<p>While customising the survey questionnaires where a translation is involved, it is recommended that you:</p>
+<ul>
+<li>Check percentages of population speaking different local languages and consider translation to all major languages spoken among the survey population</li>
+<li>Check previous surveys to see how the customisation was done</li>
+<li>Consider the use of a language that could be understood by everyone</li>
+<li>Pre-test the translated version to make sure that the questions are understood and the response categories are meaningful</li>
+<li>Customise to country/survey needs, but do not compromise global comparability.</li>
+<li>For implementation or questionnaire flow, Check for all skips</li>
+<li>For data analysis, Check for the indicators you need and ensure that all required questions to calculate the indicators are included</li>
+<li>Always assess the implications of changes, in terms of (a) all other survey tools and (b) the technical aspects/validity; test rigorously, document, and modify all other relevant survey tools accordingly.</li>
+</ul>
+</div>
+
+</article>
+<article id="Fieldwork-Training-Agenda">
+
+<div id="Fieldwork-Training-Agenda_header">
+<h1 class="title">Fieldwork Training Agenda</h1>
+</div>
+
+<div class="TOC">
+<ul>
+<li><a href="#Fieldwork-Training-Agenda_training">Training</a></li>
+<li><a href="#Fieldwork-Training-Agenda_day-1">Day 1</a><ul>
+<li><a href="#Fieldwork-Training-Agenda_morning">Morning</a></li>
+<li><a href="#Fieldwork-Training-Agenda_afternoon">Afternoon</a></li>
+</ul></li>
+<li><a href="#Fieldwork-Training-Agenda_day-2">Day 2</a><ul>
+<li><a href="#Fieldwork-Training-Agenda_morning-1">Morning</a></li>
+<li><a href="#Fieldwork-Training-Agenda_afternoon-1">Afternoon</a></li>
+</ul></li>
+</ul>
+</div>
+
+<div id="Fieldwork-Training-Agenda_training" class="section level2">
+<h2>Training</h2>
+<p>Training of survey teams is fundamental for the quality of the survey information collected and preparation for the training and survey will take time, especially the first year the full assessment is implemented.</p>
+<p>The training for the full assessment is recommended to last at least 2 days, depending on context and team experience. Extra staff should be trained in case someone is unable to perform the field work.</p>
+<p>The main topics to cover in training of data collectors (note that team leader may be provided with a more in-depth training than some of the data collectors) are as follows:</p>
+</div>
+<div id="Fieldwork-Training-Agenda_day-1" class="section level2">
+<h2>Day 1</h2>
+<div id="Fieldwork-Training-Agenda_morning" class="section level3">
+<h3>Morning</h3>
+<ul>
+<li>Reason / objectives for Protection Assessment</li>
+<li>Composition of survey teams : roles and responsibility</li>
+<li>Sampling procedure: why sample?, explained in a way that surveyors can later on explain to community members when asked; and rationale and importance of representativeness</li>
+<li>Questionnaire and sheets: household-level information, child-level information, woman-level information, observations</li>
+</ul>
+</div>
+<div id="Fieldwork-Training-Agenda_afternoon" class="section level3">
+<h3>Afternoon</h3>
+<ul>
+<li>Introduction to the household and informed verbal consent</li>
+<li>Interview questions and interviewing techniques: go through each question for clarity, answer options, cultural appropriateness, gender sensitivities, avoid suggestive questioning but probe where necessary</li>
+<li>Age recording and use of local events calendar</li>
+<li>Practicing with real children and/or adults</li>
+</ul>
+</div>
+</div>
+<div id="Fieldwork-Training-Agenda_day-2" class="section level2">
+<h2>Day 2</h2>
+<div id="Fieldwork-Training-Agenda_morning-1" class="section level3">
+<h3>Morning</h3>
+<ul>
+<li>Survey logistics</li>
+<li>Equipment</li>
+<li>Communication</li>
+<li>Travel</li>
+<li>Incentives / salary/allowances</li>
+<li>Food and drinks</li>
+<li>Accommodation, etc.</li>
+</ul>
+</div>
+<div id="Fieldwork-Training-Agenda_afternoon-1" class="section level3">
+<h3>Afternoon</h3>
+<ul>
+<li>Pilot test</li>
+</ul>
+</div>
+</div>
+
+</article>
+<article id="Pre-test-Phase">
+
+<div id="Pre-test-Phase_header">
+<h1 class="title">Pre Test Phase</h1>
+</div>
+
+<div class="TOC">
+<ul>
+<li><a href="#Pre-test-Phase_why-pre-testing">Why “pre-testing”?</a></li>
+</ul>
+</div>
+
+<div id="Pre-test-Phase_why-pre-testing" class="section level2">
+<h2>Why “pre-testing”?</h2>
+<p>Use pre-test to see:</p>
+<ul>
+<li>if changes have affected the flow of the questionnaires;</li>
+<li>if response categories are comprehensive; any answer falling into the “other (specify)” category of a multiple choice question and that constitutes about 5 percent or more of all answers to that question should be considered as a serious candidate for a separate answer category of its own; and</li>
+<li>if translated questionnaires are working.</li>
+</ul>
+</div>
+
+</article>
+<article id="Managing-Devices">
+
+<div id="Managing-Devices_header">
+<h1 class="title">Managing Devices</h1>
+</div>
+
+<div class="TOC">
+<ul>
+<li><a href="#Managing-Devices_android-devices">Android Devices</a></li>
+<li><a href="#Managing-Devices_computer">Computer</a></li>
+<li><a href="#Managing-Devices_steady-power-supply">STEADY POWER SUPPLY</a></li>
+<li><a href="#Managing-Devices_usb-battery-packs">USB BATTERY PACKS</a></li>
+</ul>
+</div>
+
+<div id="Managing-Devices_android-devices" class="section level2">
+<h2>Android Devices</h2>
+<p>The software platform used for the data consolidation has specific clients developped on the Android Mobile Operating System. It’s also possible, although not first recommended to use any browser (including any browser on a smartphone) to record information.</p>
+<p>A certain number of smartphones or tablets will be needed for each survey team to have one or two phones, as well as a few backups.</p>
+<p>For ease of use, smartphones and tablets with a large touchscreen and slide-out keyboard are preferable. Equipement might be borrowed from UNHCR HQ, or country operations could have their own set of phones.</p>
+<p>Minimal Requirements for the devices:</p>
+<ul>
+<li>Android Version 2.3 (recent phones are generally platform 4 or higher)</li>
+<li>Screen size of 4 inches is recommended</li>
+<li>GPS Chipset</li>
+<li>Wifi connection</li>
+</ul>
+<p>Required Applications:</p>
+<ul>
+<li>Latest recommended version of KoboCollect</li>
+<li>GPS Test, if you need GPS coordinates for the survey</li>
+<li>Andexplorer (or equivalent file explorer)</li>
+</ul>
+</div>
+<div id="Managing-Devices_computer" class="section level2">
+<h2>Computer</h2>
+<p>We strongly recommend to have a dedicated survey computer. This computer will be set up specifically for the survey. Note that using the computer for other purposes (e.g. internet) may cause compromise the security of the data you will collect.</p>
+<p>Minimal Requirements:</p>
+<ul>
+<li>4G RAM</li>
+<li>Installed with Windows 7 (alternatively XP works as well)</li>
+</ul>
+<p>Software Required:</p>
+<ul>
+<li>Microsoft Excel (English Version)</li>
+<li>R</li>
+<li>Rstudio</li>
+<li>Github</li>
+</ul>
+</div>
+<div id="Managing-Devices_steady-power-supply" class="section level2">
+<h2>STEADY POWER SUPPLY</h2>
+<p>Access to a good electrical supply is essential for the router and computer and for over-night charging capacities of the phones. Where electrical supply is unstable with unexpected power-cuts or planned power savings, alternative charging options must be considered before the survey.</p>
+</div>
+<div id="Managing-Devices_usb-battery-packs" class="section level2">
+<h2>USB BATTERY PACKS</h2>
+<p>Even though they cannot replace steady electrical power, battery packs are a useful secondary source of energy for the phones. We recommend having at least 2 for a survey where the phones are daily charged. This way, if a phone lack battery during the survey, the enumerator can charge it while continuing the survey.</p>
+</div>
+
+</article>
+<article id="Instructions-for-Interviewers">
+
+<div id="Instructions-for-Interviewers_header">
+<h1 class="title">Instructions for Interviewer</h1>
+</div>
+
+<div class="TOC">
+<ul>
+<li><a href="#Instructions-for-Interviewers_eligible-respondents-for-the-household-questionnaire">Eligible Respondents for the Household Questionnaire</a></li>
+<li><a href="#Instructions-for-Interviewers_eligible-respondents-for-the-individual-questionnaires">Eligible Respondents for the Individual Questionnaires</a></li>
+<li><a href="#Instructions-for-Interviewers_finding-and-re-visiting-households">Finding and Re-Visiting Households</a></li>
+<li><a href="#Instructions-for-Interviewers_how-to-handle-the-interview">How to handle the interview</a></li>
+<li><a href="#Instructions-for-Interviewers_general-points">General Points</a></li>
+<li><a href="#Instructions-for-Interviewers_role-of-the-interviewer">Role of the interviewer</a></li>
+</ul>
+</div>
+
+<div id="Instructions-for-Interviewers_eligible-respondents-for-the-household-questionnaire" class="section level2">
+<h2>Eligible Respondents for the Household Questionnaire</h2>
+<p>In each sampled household you visit, you should begin by interviewing a knowledgeable adult member of the household to fill in the Household Questionnaire. All modules of the Household Questionnaire will be administered to this person, referred to as the Household Respondent, including the modules in the questionnaire where the information collected is about other household members. The Education module is one such example.</p>
+<p>For the purposes of the Household Questionnaire, an adult is defined as someone age 15 years and over. However, young adults (below age 18) may not be the most ideal members to interview. Therefore, in cases when there is another older household member (for instance, the parent of the 15 year-old) available to interview, you should prefer to interview this person who is likely to be more knowledgeable about the household. Whenever possible, you should use your preferences to interview the household member who is likely to be more knowledgeable.</p>
+<p>On the other hand, interviewing the household head is not a requirement and you are not expected to ask for the household head to do the interview.</p>
+<p>You should also keep in mind that for practical reasons, it may be an advantage to begin the Household Questionnaire with a mother or primary caretaker (of a child under five years of age), since many of the questions/modules are about children, and mothers/caretakers provide more accurate responses to such questions better than anybody else. While you should not make a special effort to ensure this, you will indeed start the interview with such persons in many cases, since, in practice, these persons are more likely to be at home than, say, male household heads.</p>
+<p>There should only be one respondent to the Household Questionnaire and the other members of the household should not respond to any part of the questionnaire. Multiple respondents to the questionnaire will undoubtedly lead to an uncontrolled, low quality interview, and may lead to errors in recording responses. Ideally, the household respondent is not expected to consult other members that may be available in the household. However, you may allow the household respondent to ask other members in order to get more correct information, especially on information such as age, which may affect the eligibility of some members for individual questionnaires, or modules where age checks are important, such as the education, child labour, or the child discipline modules.</p>
+</div>
+<div id="Instructions-for-Interviewers_eligible-respondents-for-the-individual-questionnaires" class="section level2">
+<h2>Eligible Respondents for the Individual Questionnaires</h2>
+<p>When you have completed the Household Questionnaire, you will have identified women (age 15-49), men (age 15-49) and ‘mothers or primary caretakers’ (age 15 or above) of children under five to whom you or other interviewers in your team will administer the individual questionnaires. * You should interview separately all women age 15 through 49 who reside in the household to fill in the Questionnaire for Individual Women. * You should interview separately all men age 15 through 49 who reside in the household to fill in the Questionnaire for Individual Men. * You should administer the Questionnaire for Children Under Five to mothers of children under 5 years of age who are residing in the household. If the mother is not recorded in the List of Household Members (if the mother is not a member of this household), then the person who is acknowledged by the household respondent as the primary caretaker (in HL15 in the List of Household Members of the Household Questionnaire) should be the respondent to the Questionnaire for Children Under Five.</p>
+<p>You will identify these individuals by completing the List of Household Members in the Household Questionnaire.</p>
+<p>If you visit a household where there are no members eligible for the individual questionnaires, you must still ask questions about the household to a knowledgeable adult household member and complete the Household Questionnaire.</p>
+<p>As a general rule, the respondent to any of the questionnaires must be at least15 years old. This also applies to the mother or primary caretaker of a child under age 5; in the rare event that a mother or primary caretaker is less than age 15 you should record ‘Other’ as result of the interview in UF9 and specify that the mother/caretaker is less than age 15 and therefore cannot be interviewed. No other respondent is permitted than the mother/caretaker identified in the List of Household members.</p>
+</div>
+<div id="Instructions-for-Interviewers_finding-and-re-visiting-households" class="section level2">
+<h2>Finding and Re-Visiting Households</h2>
+<p>Your supervisor will give you a list or tell you how to find the households to visit. You must visit all these households and should not replace these households with other households that are not selected for interviews.</p>
+<p>If no one is at home when you go to interview the household, ask the neighbours whether anyone lives at this location. If it is occupied, ask the neighbours when the household members will return. Arrange with your supervisor to go back to the location when the household members are expected to be back; for example, at the end of the day. Note such plans on your cluster control sheet and note the time you are to return on the first page of the questionnaire (Household Information Panel).</p>
+<p>If no adult household member is at home, arrange to come back at another time. Do not interview a household member younger than age 15, a temporary caretaker of the children, such as a daytime babysitter, and do not interview anyone who does not usually live in the household. The rule to interview a knowledgeable adult household member cannot be relaxed or violated under any circumstances.</p>
+<p>Each household in the sample has to be visited at least three times (two re-visits) before you can mark HH9 (Result of household interview) as ‘No household member or no competent respondent at home at time of visit’, unless otherwise instructed by your supervisor. There may be cases when you learn that the household will be away for an extended period, and will definitely not return within the fieldwork period, in which case HH9 would be marked as ‘Entire household absent for extended period of time’. In such cases, three visits to the household may not be necessary. However, even in such cases, the ultimate decision will have to be taken by your supervisor.</p>
+<p>If an eligible woman or man, or a mother or primary caretaker is not available for the individual interview or is not at home, ask a household member or neighbour to find out when she/he will return. Note this on the Woman’s, Man’s or Under-5’s Information Panel, follow your supervisor’s instructions, and return to interview her/him at that time. Do not take responses for these questionnaires from anyone other than the eligible person her/himself.</p>
+<p>The person to be interviewed for the Questionnaire for Children Under Five should be the mother. A person other than the mother of the child under five can be interviewed only if the mother is living elsewhere or is deceased, and therefore does not appear in the List of Household Members in the Household Questionnaire. In these cases, the person who is acknowledged by the household respondent as the primary caretaker of the child in that household should be interviewed. If the mother/primary caretaker is not available for interview or not at home, try to find out when she/he will be available and return to the household later. If the person will not be available or will not return home at a time later that day when it is feasible to interview her/him, follow the instructions of your supervisor about the number of times you should attempt the interview.</p>
+<p>If a child under five is not available, but the mother/primary caretaker is available, you can complete the Questionnaire for Children Under Five, with the exception of the Anthropometry module, since you need the child to perform measurements. In such a case, complete the questionnaire with the mother/primary caretaker, but leave the Anthropometry module blank to be completed during the next visit. Note this and discuss with your supervisor. If the child is still not available after the re-visit(s), record the result in question AN2 as ‘Child not present’. Re-visits should be planned by supervisors, if possible, to measure the heights and weights of children, when children are not present at the time of first visit to the household.</p>
+<p>Ask your supervisor if you are in doubt about what to do when you cannot locate a household, or you cannot complete an interview. Always keep a record on the cluster control sheet of the households you visited where nobody was at home. If it is not possible to interview an eligible woman or man, record this on the Woman’s or Man’s Information Panel of the respective questionnaires. If it is not possible to interview a mother or primary caretaker, record this on the Under Five Child Information Panel of the Questionnaire for Children Under Five.</p>
+</div>
+<div id="Instructions-for-Interviewers_how-to-handle-the-interview" class="section level2">
+<h2>How to handle the interview</h2>
+<p>The interviewer and the respondent are strangers to each other; therefore, one of the main tasks of the interviewer is to establish rapport with the respondent. The respondent’s first impression of you will influence her/his willingness to participate in the survey. Make sure that your appearance is neat and you also appear friendly as you introduce yourself.</p>
+<p>On meeting the respondent, the first thing you should do is to introduce yourself, stating your name, the organization you are working for, the objectives of the survey, and what you want the respondent to do for you. You are advised to avoid long discussions on issues which are not related to the survey and which may consume a lot of your time.</p>
+<p>After building rapport with the respondent, ask questions slowly and clearly to ensure the respondent understands what he/she is being asked. After you have asked a question, pause and give the respondent time to think. If the respondent feels hurried or is not allowed to form his/her opinion, he/she may respond with “I don’t know” or give an inaccurate answer.</p>
+<p>Specifically, the following guidelines will help you handle interviews: * Ensure that you understand the exact purpose of the survey and each question. This will help you to know if the responses you are receiving are adequate or relevant. * Remember the survey schedule, and remember that you are part of a team. Do not stay and talk for too long, but do not rush the interview either. * Ask the questions exactly as they are written. Even small changes in wording can alter the meaning of a question. * Ask the questions in the same order as they are given on the questionnaires. Do not change the sequence of the questions. * Ask all the questions, even if the respondent answers two questions at once. You can explain that you must ask each question individually, or say “Just so that I am sure…” or “Just to refresh my memory…”, and then ask the question. * Help your respondents feel comfortable, but make sure you do not suggest answers to your questions. For example, do not ‘help’ a woman remember various contraceptive methods. Those cases when you are expected to ‘help’ the respondent, such as probing for answers or using information to remind the respondent of dates, ages, and durations are clearly indicated on the questionnaires, and are topics that are covered during your training. * Do not leave a question unanswered unless you have been instructed to skip it. Questions left blank are difficult to deal with later. When questionnaires arrive at the central office for editing and data entry, it may look as though you forgot to ask the question. Always write in ’0‘ when a zero answer is given. For some questions, the code ‘DK’ will already be provided, and after you are sure that the respondent is unable to provide you with an answer, you will be able to circle this response. In questions where a ‘DK’ response is not printed on the questionnaire, you must make sure that the respondent provides an answer. In exceptional cases where this may not be possible, indicate this on the questionnaire with a note. * Record answers immediately when the respondent gives you the responses. Never rely on writing answers in a notebook for transfer to the questionnaire later. * Check the whole questionnaire before you leave the household to be sure it is completed correctly. * Thank the respondent for her/his cooperation and giving you time to interview her/him. Leave the way open to future interviews (for re-visits). Avoid over-staying in the respondent’s household even if he/she is very friendly and welcoming.</p>
+</div>
+<div id="Instructions-for-Interviewers_general-points" class="section level2">
+<h2>General Points</h2>
+<p><strong>Make a good first impression</strong> The first impression a respondent has of you is formed through your appearance. The way you dress may affect whether your interview is successful or not. Dress neatly and simply.</p>
+<p>When first approaching the respondent, do your best to make her/him feel at ease. With a few well-chosen words, you can put the respondent in the right frame of mind for the interview. Open the interview with a smile and greetings and then proceed with your introduction as specified on your questionnaire.</p>
+<p>If and when necessary, tell the respondent that the survey will help the development of plans for children and women and that his/her cooperation will be highly appreciated.</p>
+<p><strong>Gain rapport with the respondent</strong> Try not to arrive at the selected household at an inconvenient time of day, such as mealtimes, or too late or early during the day. Try to arrive when the respondents will not be too busy to answer questions.</p>
+<p>Introduce yourself by name and show your identification. Explain the survey and why you want to do interview in the household, exactly as your introduction tells you to.</p>
+<p>Be prepared to explain what is meant by confidentiality and to convince respondents to participate if they are reluctant.</p>
+<p>Make sure that the respondents do not confuse you with others who might be visiting households for other reasons; for instance, for selling goods.</p>
+<p>If the respondent refuses to be interviewed, note the reasons on the questionnaire, if possible.</p>
+<p><strong>Remain calm and polite at all times.</strong></p>
+<p><strong>Always have a positive approach</strong> Never adopt an apologetic manner, and never approach with such words as “Are you too busy?”. Such questions will invite refusal before you start. Rather, tell the respondent “I would like to ask you a few questions”.</p>
+<p><strong>Stress confidentiality of information collected</strong> Always stress confidentiality of the information you obtain from the respondent. Explain to the respondent that the information you collect will remain strictly confidential and that no individual names will be used for any purposes, and that all information will be grouped together and depersonalized when writing the report. Use a language understandable by the respondent to get this message across. Never mention other interviews or read the questionnaire with other interviewers, the editor or the supervisor in front of a respondent or any other person. This will automatically erode the confidence the respondent has in you.</p>
+<p><strong>Probe for adequate responses</strong> You should phrase the question as it is in the questionnaire. If you realize that an answer is not consistent with other responses, then you should seek clarification through asking indirect questions or some additional questions so as to obtain a complete answer to the original question. This process is called probing. Questions, while probing, should be worded so that they are neutral and do not lead the respondent to answer in a particular direction. Ensure the meaning of the original question is not changed.</p>
+<p>Pause and wait if the respondent is trying to remember difficult items.</p>
+<p>Ask the respondent to clarify her/his answer if necessary. You may have misunderstood the response.</p>
+<p>Check for consistency between the answers a respondent gives. Treat the questionnaires as tools that you are using to converse with the respondent. Try to understand and remember the responses, and if there is an inconsistency, ask the questions again. However, never point out to the respondents inconsistencies that you may have identified in a manner that may be understood as if you are testing the respondent’s honesty or integrity.</p>
+<p><strong>Answering questions from respondent</strong> The respondent may ask you some questions about the survey or how he/she was selected to be interviewed or how the survey is going to help her/him, before agreeing to be interviewed. Be direct and pleasant when you answer. The respondent may also be concerned about the length of the interview. Please be frank to tell him/her how long you are likely to take to administer the questionnaire.</p>
+<p><strong>Interview the respondent alone</strong> The presence of a third person during the interview can prevent you from getting frank and honest answers from the respondent. It is, therefore, very important that the interviews are conducted privately and that all the questions are answered by the respondent only. This is especially important in the case of the Woman’s and Men’s Questionnaires, which include several topics that the respondents will consider to be “personal” or “private”. If other people are present, explain to the respondent that some of the questions are private and request to talk to her/him while alone.</p>
+<p><strong>Handling hesitant respondents</strong> There may be situations where the respondent simply says “I don’t know“, or gives an irrelevant answer or acts in a manner suggesting he/she is bored or contradicts earlier answers. In all these cases, try your best to make him/her get interested in the question. Spending a few moments to talk about things unrelated to the interview (e.g. his/her town or village, the weather, his/her daily activities etc.) may be useful.</p>
+<p><strong>Adopt a non-judgemental attitude</strong> “Social desirability response bias” is a potential problem in surveys and refers to the tendency for respondents to present a favourable image of themselves to the interviewers. Sensitive questions may lead respondents to adjust their answers so as to appear politically correct or socially acceptable. Questionnaire items with strong social norms (such as adherence to religious or cultural expectations), or adopting attitudes/activities/objects that are widely considered desirable or undesirable tend to elicit “socially acceptable answers” rather than correct and honest answers. To minimise social desirability response bias it is very important to adopt a non-judgemental attitude and to not display any of your own attitudes, such as cultural or religious values, political preferences, and the like.</p>
+</div>
+<div id="Instructions-for-Interviewers_role-of-the-interviewer" class="section level2">
+<h2>Role of the interviewer</h2>
+<p>Interviewers play a central role in the collection of data and the ultimate outcome of the exercise depends on how they conduct the interviews. Success, therefore, depends on the quality of the interviewers’ work. It is, therefore, important that you are consistent in the way you put the questions to the respondent.</p>
+<p>In case a response is not clear, you should probe further.</p>
+<p>In general, the responsibilities of interviewers will include: * Locating the structure and households in the sample that are assigned to them, and administering the questionnaires * Identifying all the eligible respondents * Interviewing all the eligible respondents in the households assigned to them * Checking completed interviews to be sure that all questions were asked * Making re-visits to interview respondents who could not be interviewed during the first or second visit due to various reasons * Ensuring that the information given is correct by keeping the respondent focused to the questions * Including their specific observations or notes on the last page of each questionnaire * Preparing additional notes for the field editor and supervisor on other problems or observations</p>
+</div>
+
+</article>
+<article id="Instructions-for-Supervisors-Editors">
+
+<div id="Instructions-for-Supervisors-Editors_header">
+<h1 class="title">instructions for Supervisors &amp; Editors</h1>
+</div>
+
+
+<div class="important">
+This chapter is not written yet.
+</div>
+
+</article>
+<article id="Instructions-for-Managers">
+
+<div id="Instructions-for-Managers_header">
+<h1 class="title">Instructions for Managers</h1>
+</div>
+
+
+<div class="important">
+This chapter is not written yet.
+</div>
+
+</article>
+<article id="Server-Configuration">
+
+<div id="Server-Configuration_header">
+<h1 class="title">KoboToolBox Server Configuration</h1>
+</div>
+
+<div class="TOC">
+<ul>
+<li><a href="#Server-Configuration_what-is-kobotoolbox">What is KoboToolBox?</a></li>
+<li><a href="#Server-Configuration_create-configure-your-project">Create &amp; Configure your project</a></li>
+</ul>
+</div>
+
+<div class="important">
+This chapter is not written yet.
+</div>
+<div id="Server-Configuration_what-is-kobotoolbox" class="section level2">
+<h2>What is KoboToolBox?</h2>
+</div>
+<div id="Server-Configuration_create-configure-your-project" class="section level2">
+<h2>Create &amp; Configure your project</h2>
+</div>
+
+</article>
+<article id="Data-Protection-Impact-Assessment">
+
+<div id="Data-Protection-Impact-Assessment_header">
+<h1 class="title">Data Protection Impact Assessment</h1>
+</div>
+
+<div class="TOC">
+<ul>
+<li><a href="#Data-Protection-Impact-Assessment_unhcr-data-protection-policy">UNHCR Data Protection Policy</a></li>
+</ul>
+</div>
+
+<div class="important">
+This chapter is not written yet.
+</div>
+<div id="Data-Protection-Impact-Assessment_unhcr-data-protection-policy" class="section level2">
+<h2>UNHCR Data Protection Policy</h2>
+</div>
+
+</article>
+<article id="Data-Entry">
+
+<div id="Data-Entry_header">
+<h1 class="title">Data Entry on KoboToolBox</h1>
+</div>
+
+<div class="TOC">
+<ul>
+<li><a href="#Data-Entry_using-the-client-on-mobile-devices-kobocollect">Using the client on Mobile Devices: koboCollect</a></li>
+<li><a href="#Data-Entry_using-the-web-client-enketo">Using the web client: Enketo</a></li>
+</ul>
+</div>
+
+<div class="important">
+This chapter is not written yet.
+</div>
+<div id="Data-Entry_using-the-client-on-mobile-devices-kobocollect" class="section level2">
+<h2>Using the client on Mobile Devices: koboCollect</h2>
+</div>
+<div id="Data-Entry_using-the-web-client-enketo" class="section level2">
+<h2>Using the web client: Enketo</h2>
+</div>
+
+</article>
+<article id="Legal-Protection-Civil-Documentation">
+
+<div id="Legal-Protection-Civil-Documentation_header">
+<h1 class="title">Analysis of Legal protection &amp; Civil Documentation issues</h1>
+</div>
+
+
+<div class="important">
+This chapter is not written yet.
+</div>
+
+</article>
+<article id="Specific-Needs-Community-Protection">
+
+<div id="Specific-Needs-Community-Protection_header">
+<h1 class="title">Analysis of Specific Needs &amp; Community Protection</h1>
+</div>
+
+
+<div class="important">
+This chapter is not written yet.
+</div>
+
+</article>
+<article id="Child-Protection-Education">
+
+<div id="Child-Protection-Education_header">
+<h1 class="title">Analysis on Child Protection &amp; Education</h1>
+</div>
+
+
+<div class="important">
+This chapter is not written yet.
+</div>
+
+</article>
+<article id="SGBV">
+
+<div id="SGBV_header">
+<h1 class="title">Analysis of Sexual &amp; gender based Violence</h1>
+</div>
+
+
+<div class="important">
+This chapter is not written yet.
+</div>
+
+</article>
+<article id="Analysis-Script">
+
+<div id="Analysis-Script_header">
+<h1 class="title">Analysis Script</h1>
+</div>
+
+<div class="TOC">
+<ul>
+<li><a href="#Analysis-Script_categorical-variables-having-several-code-options">Categorical variables having several code options:</a><ul>
+<li><a href="#Analysis-Script_code-8-or-98-for-dont-know">Code ‘8 or ‘98’ for ‘don’t know’:</a></li>
+<li><a href="#Analysis-Script_code-6-or-96-for-other">Code ‘6’ or ‘96’ for ‘other’:</a></li>
+</ul></li>
+<li><a href="#Analysis-Script_recoding-with-the-if-command-in-epi-info-software">Recoding with the ‘if’ command in Epi Info software:</a></li>
+<li><a href="#Analysis-Script_confidence-intervals">Confidence intervals:</a></li>
+<li><a href="#Analysis-Script_rounding-decimal-points">Rounding decimal points:</a></li>
+<li><a href="#Analysis-Script_decimal-points-in-the-results">Decimal points in the results:</a></li>
+<li><a href="#Analysis-Script_missing-data-or-consent-not-provided">Missing data or consent not provided:</a><ul>
+<li><a href="#Analysis-Script_always-clean-the-data-first-before-going-into-analysis">Always clean the data first before going into analysis:</a></li>
+<li><a href="#Analysis-Script_age-variable">Age variable:</a></li>
+<li><a href="#Analysis-Script_reproducible-analysis">Reproducible Analysis</a></li>
+</ul></li>
+</ul>
+</div>
+
+<div class="note">
+<strong>Key Take Away</strong> :
+</div>
+<div id="Analysis-Script_categorical-variables-having-several-code-options" class="section level2">
+<h2>Categorical variables having several code options:</h2>
+<ul>
+<li>In the data cleaning process, make sure that the codes are the same as those on the standard questionnaire. E.g. vitamin A should be coded 1-3 in the questionnaire but code ‘4’ may appear in the database. This code ‘4’ needs to be excluded from analysis and not included in the denominator as it was a mistake in data recording on the field.</li>
+</ul>
+<div id="Analysis-Script_code-8-or-98-for-dont-know" class="section level3">
+<h3>Code ‘8 or ‘98’ for ‘don’t know’:</h3>
+<ul>
+<li>Make sure to exclude codes ‘8’, ‘98’ or ‘998’ for ‘don’t know’ from the analysis. This should not be part of the denominator in the calculation of indicators (e.g. diarrhoea, IYCF, ANC enrolment).</li>
+</ul>
+</div>
+<div id="Analysis-Script_code-6-or-96-for-other" class="section level3">
+<h3>Code ‘6’ or ‘96’ for ‘other’:</h3>
+<ul>
+<li>Make sure to include codes ‘6’ or ‘96’ for ‘other’ in the analysis. This should be part of the denominator in the calculation of indicators as it represents one response option (e.g. safe disposal of U3 stool, reason for not having a ration card, source of water).</li>
+</ul>
+</div>
+</div>
+<div id="Analysis-Script_recoding-with-the-if-command-in-epi-info-software" class="section level2">
+<h2>Recoding with the ‘if’ command in Epi Info software:</h2>
+<ul>
+<li>Do not forget to take into account missing values when using the ‘if’ command. This applies to many different variables. Whenever feasible, it is much better to use the ‘recode’ command instead of the ‘if’ command for this specific reason.</li>
+</ul>
+</div>
+<div id="Analysis-Script_confidence-intervals" class="section level2">
+<h2>Confidence intervals:</h2>
+<ul>
+<li>Different software often calculate confidence intervals as being negative and hence below zero or above 100. Negative confidence intervals or CI above 100 are meaningless. In the report, always round negative confidence intervals to ‘0’ and round those above 100 to ‘100’.</li>
+</ul>
+</div>
+<div id="Analysis-Script_rounding-decimal-points" class="section level2">
+<h2>Rounding decimal points:</h2>
+<ul>
+<li>Make sure to round properly decimal points according to basic rules:</li>
+<li>When decimal is between 1-4, round down.</li>
+<li>When decimal is between 5-9, round up.</li>
+</ul>
+</div>
+<div id="Analysis-Script_decimal-points-in-the-results" class="section level2">
+<h2>Decimal points in the results:</h2>
+<ul>
+<li>When the results is a whole number e.g. 30%, make sure to always write 30.0% with the ‘.0’ in the decimal place in the report. This ensures that the decimal point was not forgotten and is actually equal to zero.</li>
+</ul>
+</div>
+<div id="Analysis-Script_missing-data-or-consent-not-provided" class="section level2">
+<h2>Missing data or consent not provided:</h2>
+<ul>
+<li>Data should be excluded from all analysis and should not be accounted for in the denominator.</li>
+</ul>
+<div id="Analysis-Script_always-clean-the-data-first-before-going-into-analysis" class="section level3">
+<h3>Always clean the data first before going into analysis:</h3>
+<ul>
+<li>Frequencies and means should be run on categorical and continuous variables, respectively.</li>
+<li>Missing data should be looked at and a record of them should be kept.</li>
+</ul>
+</div>
+<div id="Analysis-Script_age-variable" class="section level3">
+<h3>Age variable:</h3>
+<ul>
+<li>When selecting age or creating an age variable category in Epi info software from the ‘months’ variable generated by ENA, don’t forget the ‘.99’ otherwise some children with an exact birth date may be excluded from the analysis. E.g. 6-23.99 (and not 6-23 or 6-23.9).</li>
+</ul>
+</div>
+<div id="Analysis-Script_reproducible-analysis" class="section level3">
+<h3>Reproducible Analysis</h3>
+<p>Always save newly generated variables into a new data file named following a naming convention to be respected by all involved in the survey data analysis.</p>
+</div>
+</div>
+
+</article>
+<article id="Model-for-Key-Findings-Report">
+
+<div id="Model-for-Key-Findings-Report_header">
+<h1 class="title">Model for key Findings Report</h1>
+</div>
+
+
+<div class="important">
+This chapter is not written yet.
+</div>
+
+</article>
+<article id="Model-for-Final-Report">
+
+<div id="Model-for-Final-Report_header">
+<h1 class="title">Model for Final Report</h1>
+</div>
+
+
+<div class="important">
+This chapter is not written yet.
+</div>
+
+</article>
+<article id="Slides-Infographics">
+
+<div id="Slides-Infographics_header">
+<h1 class="title">Slides &amp; Infographics</h1>
+</div>
+
+
+<div class="important">
+This chapter is not written yet.
+</div>
+
+</article>
+<article id="Microdata">
+
+<div id="Microdata_header">
+<h1 class="title">Organise Microdata for Social Scientist</h1>
+</div>
+
+<div class="TOC">
+<ul>
+<li><a href="#Microdata_the-internation-household-survey-network">The Internation Household Survey Network</a></li>
+<li><a href="#Microdata_the-ddi-format">The DDI format</a></li>
+</ul>
+</div>
+
+<div class="important">
+This chapter is not written yet.
+</div>
+<div id="Microdata_the-internation-household-survey-network" class="section level2">
+<h2>The Internation Household Survey Network</h2>
+</div>
+<div id="Microdata_the-ddi-format" class="section level2">
+<h2>The DDI format</h2>
+</div>
+
+</article>
+</div>
+
+<script language="javascript" type="text/javascript">
+$(document).ready(function () {
+  // add bootstrap table styles to pandoc tables
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+
+    // Identifier les <pre> fermant
+    $('pre').next("*:not(pre)").prev().addClass('last'); // Dernier <pre> de chaque groupe contigu de <pre>
+    $('pre').parent().each(function (){
+      $(this).children('pre').last().addClass('last');
+    }); // Si <pre> est le dernier enfant de son parent
+
+    // Ajout liens rdocumentation
+    $("code[data-pkg]").each(function( index ) {
+      pack = $(this).attr('data-pkg');
+      if ($(this).attr('data-rdoc') !== undefined) {
+        rdocumentation = $(this).attr('data-rdoc');
+        page = ' (' + $(this).attr('data-pkg') + ')';
+      } else {
+        rdocumentation = $(this).text();
+        page = '';
+      }
+      fonction = $(this).text();
+      $(this).wrap('<a href="http://www.rdocumentation.org/packages/'+pack+'/functions/'+rdocumentation+'">');
+    });
+
+    $("code.pkg").each(function( index ) {
+      $(this).wrap('<a href="http://www.rdocumentation.org/packages/'+$(this).text()+'">');
+    });
+
+    // Figures (num�rotation intra chapitre + ajout id pour liste des figures)
+    $("article").each(function(){
+      chap = $(this).attr('id');
+      $(this).find("figure").each(function(index){
+        if ($(this).children("figcaption").length > 0)
+          $(this).children("figcaption:first").prepend('<span class="figure-number">Figure '+(index+1)+'.</span> ');
+        else
+          $(this).append($("<figcaption>").append('<span class="figure-number">Figure '+(index+1)+'</span>'));
+        if ($(this).attr('id') == undefined) $(this).attr('id', chap + '_fig_' + (index+1));
+      });
+    });
+
+    // Footnotes (prince xml only)
+    if (typeof Prince !== "undefined") {
+      $(".footnotes li").each(function(){
+        lien = $(this).find("a[href*='fnref']").attr('href');
+        $(this).find("a[href*='fnref']").remove();
+        $(lien).after('<div class="fn">' + $(this).html() + '</div>');
+      });
+      $(".footnoteRef").remove();
+      $(".footnotes").remove();
+    }
+
+});
+
+</script>
+
+</body>
+</html>

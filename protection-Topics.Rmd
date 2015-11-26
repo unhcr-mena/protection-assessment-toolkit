@@ -1,0 +1,76 @@
+---
+  title: "Protection Topics"
+---
+  
+  ```{r options_communes, include=FALSE}
+source("options_communes.R")
+```
+
+<div class="note">
+On each topic, the protection assessment should allow to identify the affected population’s:
+
+* Capacities and capabilities 
+* vulnerabilities and exposure 
+* Concerns and desires 
+
+</div>
+
+
+
+## Legal Protection & Civil Documentation
+
+* Freedom of movement
+* Detention
+* Protection-sensitive border mechanism
+* Social cohesion
+* Potential criteria for Resettlement and durable solutions
+* Renewal of documents/ residences
+* Marriage registration
+* Effective and efficient system 
+* Counselling needs
+* Legal aid needs
+* Voluntary nature of returns
+* Registration awareness
+
+## Specific Needs and Community Protection
+
+* Negative coping mechanism
+* Multiple Displacement before arrival in COA
+* Refugees with disabilities
+* Elderly refugees
+* Family Separation
+
+## Child Protection and Education
+
+* Sexual harassment
+* Violence among children
+* Birth Registration
+* Child labour
+* Unccompanied Sepearated Children
+* Youth
+* Education / Out of School Children
+* Difficult living conditions
+* Armed recruitment
+* Alternative Care (UASC)
+* Parental stress
+* Isolation at home
+* Harassment on the way to school
+* Detention of Children
+
+## Sexual & Gender Based Violence
+
+* Psychoscocial Support
+* Gender inequality
+* Domestic Violence
+* Forced and early marriage
+* Underreported SGBV incidents
+* Engaging men and boys
+* Legal
+* Medical
+* power dynamics
+* Rape 
+* Child-sensitive police
+* Violence at home
+* LGBTI
+
+

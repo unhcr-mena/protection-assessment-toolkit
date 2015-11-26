@@ -1,0 +1,16 @@
+---
+title: "Pre Test Phase"
+---
+
+```{r options_communes, include=FALSE}
+source("options_communes.R")
+```
+
+
+##  Why "pre-testing"?
+
+Use pre-test to see:
+
+ * 	if changes have affected the flow of the questionnaires;
+ * 	if response categories are comprehensive; any answer falling into the “other (specify)” category of a multiple choice question and that constitutes about 5 percent or more of all answers to that question should be considered as a serious candidate for a separate answer category of its own; and
+ * 	if translated questionnaires are working.

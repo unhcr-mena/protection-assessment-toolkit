@@ -1,0 +1,17 @@
+---
+title: "Data Entry on KoboToolBox"
+---
+
+```{r options_communes, include=FALSE}
+source("options_communes.R")
+```
+
+
+<div class="important">
+This chapter is not written yet.
+</div>
+
+##  Using the client on Mobile Devices: koboCollect
+
+
+##  Using the web client: Enketo

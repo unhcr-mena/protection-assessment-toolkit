@@ -1,0 +1,11 @@
+---
+title: "instructions for Supervisors & Editors"
+---
+
+```{r options_communes, include=FALSE}
+source("options_communes.R")
+```
+
+<div class="important">
+This chapter is not written yet.
+</div>

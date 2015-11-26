@@ -1,0 +1,12 @@
+---
+title: "Terms of reference for Steering Committe"
+---
+
+```{r options_communes, include=FALSE}
+source("options_communes.R")
+```
+
+
+<div class="important">
+This chapter is not written yet.
+</div>

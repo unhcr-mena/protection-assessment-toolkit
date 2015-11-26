@@ -1,0 +1,56 @@
+---
+title: "Terms of reference for Assessment Lead"
+---
+
+```{r options_communes, include=FALSE}
+source("options_communes.R")
+```
+
+
+##  Background
+
+[Insert background on current refugee situation, details on previous nutrition surveys or what is known of the nutrition situation. Explain why the current surveys are planned. Insert any other relevant detail.]
+
+
+## Methodology
+
+The survey will be developed using the Protection Assessment Toolkit. Survey methodology should be reviewed by UNHCR regional or HQ Protection Infornmatiuon Management Officer prior to data collection.
+
+
+##  Objectives
+
+The staff will oversee the Protection Assessment for;
+- [Operation]
+- [Population Group]
+- [Geographic Coverage]
+- [Timeframe]
+
+## Deliverables
+
+* 	A final assessment report including recommendations on actions to address the situation is to be submitted at the end of the mission. Results of standardisation tests, details of data cleaning and plausibility checks should be presented in the final report. The report must conform with the CRED survey completeness checklist (http://www.cedat.be/Field%20Resources).
+
+
+* 	Standardised tables as presented in the Protection Assessment Toolkit.
+
+* 	The findings and major recommendations are to be presented to partners at the mission level (oral presentation and slides).
+
+* 	The final analysis script.
+
+
+## Reporting
+
+The consultant will report on regular basis to the UNHCR [insert title of UNHCR person responsible], who will have the overall responsibility of the survey.
+
+
+## Time frame
+
+The consultancy will last approximately [insert number of months], starting from [Insert start date].
+
+
+## Qualification & Experience required 
+
+The successful candidate will:
+*	Have a university degree or the equivalent, with advanced education in nutrition, with a specific competency in humanitarian emergencies.
+*	Have significant experience in undertaking nutrition surveys (design and methodologies, staff recruitment and training, field supervision and data analysis/write up).
+*	Be familiar with the survey methodology and R statistical language.
+*	Be fluent in English with excellent writing and presentation skills [insert any other language requirements].
