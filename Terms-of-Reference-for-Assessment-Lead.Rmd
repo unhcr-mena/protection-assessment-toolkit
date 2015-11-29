@@ -1,5 +1,5 @@
 ---
-title: "Terms of reference for Assessment Lead"
+title: "Terms of Reference for Assessment Lead"
 ---
 
 ```{r options_communes, include=FALSE}
@@ -9,7 +9,14 @@ source("options_communes.R")
 
 ##  Background
 
-[Insert background on current refugee situation, details on previous nutrition surveys or what is known of the nutrition situation. Explain why the current surveys are planned. Insert any other relevant detail.]
+Insert 
+
+* background on current protection situation, 
+* details on previous assessment or what is known of the protection situation. 
+
+Explain why the current assessment is planned and if there is a specific trigger that would indicate a situation change. 
+
+Insert any other relevant detail.
 
 
 ## Methodology
@@ -20,14 +27,14 @@ The survey will be developed using the Protection Assessment Toolkit. Survey met
 ##  Objectives
 
 The staff will oversee the Protection Assessment for;
-- [Operation]
-- [Population Group]
-- [Geographic Coverage]
-- [Timeframe]
+- <kbd>Operation</kbd>
+- <kbd>Population Group</kbd>
+- <kbd>Geographic Coverage</kbd>
+- <kbd>Timeframe</kbd>
 
 ## Deliverables
 
-* 	A final assessment report including recommendations on actions to address the situation is to be submitted at the end of the mission. Results of standardisation tests, details of data cleaning and plausibility checks should be presented in the final report. The report must conform with the CRED survey completeness checklist (http://www.cedat.be/Field%20Resources).
+* 	A final assessment report including recommendations on actions to address the situation is to be submitted at the end of the mission. Results of standardisation tests, details of data cleaning and plausibility checks should be presented in the final report. 
 
 
 * 	Standardised tables as presented in the Protection Assessment Toolkit.
@@ -50,7 +57,8 @@ The consultancy will last approximately [insert number of months], starting from
 ## Qualification & Experience required 
 
 The successful candidate will:
-*	Have a university degree or the equivalent, with advanced education in nutrition, with a specific competency in humanitarian emergencies.
-*	Have significant experience in undertaking nutrition surveys (design and methodologies, staff recruitment and training, field supervision and data analysis/write up).
+
+*	Have a university degree or the equivalent in social science, with a specific competency in humanitarian emergencies.
+*	Have significant experience in undertaking surveys (design and methodologies, staff recruitment and training, field supervision and data analysis/write up).
 *	Be familiar with the survey methodology and R statistical language.
 *	Be fluent in English with excellent writing and presentation skills [insert any other language requirements].

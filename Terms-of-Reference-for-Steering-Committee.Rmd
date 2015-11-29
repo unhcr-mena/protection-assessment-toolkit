@@ -1,5 +1,5 @@
 ---
-title: "Terms of reference for Steering Committe"
+title: "Terms of Reference for Steering Committe"
 ---
 
 ```{r options_communes, include=FALSE}
@@ -7,13 +7,10 @@ source("options_communes.R")
 ```
 
 
-<div class="important">
-This chapter is not written yet.
-</div>
 
 ## Steering Committe Objectives
 
-* provide oversight to the implementation of the [Country] Protection Asessment [year] and for the Management Team of the survey’s day to day operation.
+* provide oversight to the implementation of the <kbd>Country</kbd> Protection Asessment <kbd>year</kbd> and for the Management Team of the survey’s day to day operation.
 * promote ownership of process, results, dissemination and further analysis of the data for the purpose of policy, advocacy, and monitoring, as well as national commitments.
 * encourage and promote financial and in kind contributions towards the funding of the survey.
 

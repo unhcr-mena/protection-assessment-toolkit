@@ -13,7 +13,7 @@ source("options_communes.R")
 
 ##  Background and Objective 
 
-Protection Asessment are designed to collect statistically sound, internationally comparable estimates of key indicators and analysis that are used to assess the protection situation of displaced persons (Refugees & IDP's) and to prioritize protection intervention. 
+Protection Assessment are designed to collect statistically sound, internationally comparable estimates of key indicators and analysis that are used to assess the protection situation of displaced persons (Refugees & IDP's) and to prioritize protection intervention. 
 
 
 
@@ -88,6 +88,3 @@ In this section, under separate sub-headings as appropriate, describe:
  * Prepare summary findings report and final report, and disseminate widely; prepare survey archive
 
 
-<div class="important">
-This chapter is not wirtten yet.
-</div>

@@ -6,11 +6,24 @@ title: "Sample size & Weight Calculation"
 source("options_communes.R")
 ```
 
-<div class="important">
-This chapter is not written yet.
-</div>
+## Sample universe
 
-## purposive sampling using strata
+### In refugee Context
+
+Data is coming from proGres
+
+
+### In IDP context
+
+Data is coming from a *Displacement Tracking Matrix*
+
+## Sampling strategy
+
+### Random sampling
+
+### Sonowball sampling
+
+### Purposive sampling using strata
 
 
 ## Sample Weight

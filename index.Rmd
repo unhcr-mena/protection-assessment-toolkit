@@ -43,8 +43,7 @@ On the top of the summary narrative guidelines below, the toolkit is organised a
 
 ## For whom?
 
-This toolkit aims at being the equivalent of [UNHCR Standardised Expanded Nutrition Survey](http://sens.unhcr.org) or [UNICEF Multiple Indicator Cluster Surveys](http://mics.unicef.org/tools), but for Protection Assessment of displaced persons (Refugees & Internally displaced persons). The toolkit complements already existing guidelines, namely the [NEEDS ASSESSMENT FOR REFUGEE EMERGENCIES (NARE) CHECKLIST](https://emergency.unhcr.org/entry/50209) 
-for Refugees operations and the [Rapid Protection Assessment Tools (RPAT)](http://www.globalprotectioncluster.org/en/tools-and-guidance/information-and-data-management.html) for IDPs operations. 
+This toolkit aims at being the equivalent of [UNHCR Standardised Expanded Nutrition Survey](http://sens.unhcr.org) or [UNICEF Multiple Indicator Cluster Surveys](http://mics.unicef.org/tools), but for Protection Assessment of displaced persons (Refugees & Internally displaced persons). The toolkit complements already existing guidelines, namely the [Needs Assessment for Refugee Emergencies (NARE) CHECKLIST](https://emergency.unhcr.org/entry/50209) for Refugees operations and the [Rapid Protection Assessment Tools (RPAT)](http://www.globalprotectioncluster.org/en/tools-and-guidance/information-and-data-management.html) for IDPs operations or the [Joint IDP Profiling Service Essential Toolkit (JET)](http://jet.jips.org/). 
 
 The toolkit is to be used once all emergency assessment and secondary data review have been implemented and developped. The targeted audience of the toolkit are Assessment lead, information management officers and data scientist that will be technically responsible for the implementation of the assessment.
 
@@ -55,7 +54,7 @@ The toolkit is to be used once all emergency assessment and secondary data revie
   <p>If you identify issues or if you have suggestions, please share them <a href="https://github.com/unhcr-mena/protection-assessment-toolkit/issues" style="color: white;">through this link</a>.</p>
 </div>
 
-## Content table{#tdm}
+## Table of Content{#tdm}
 
 
 ```{r tdm semi-programmatique, results='hide', message=FALSE, echo=FALSE,  warning=FALSE, include=FALSE, cache=FALSE}
@@ -94,20 +93,20 @@ tdm <- function(section) {
 }
 ```
 
-### Methodology & Form Design
+### Assessment methodology & form design
 
 ```{r, results='asis', echo=FALSE, message=FALSE}
 cat(tdm("design"))
 ```
 
 
-### Data Collection
+### Data collection
 
 ```{r, results='asis', echo=FALSE, message=FALSE}
 cat(tdm("collect"))
 ```
 
-### Analysis & Dissemination
+### Analysis & dissemination
 
 ```{r, results='asis', echo=FALSE, message=FALSE}
 cat(tdm("analyse"))

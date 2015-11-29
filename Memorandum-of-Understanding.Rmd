@@ -8,7 +8,7 @@ source("options_communes.R")
 
 
 <div class="important">
-This chapter is not written yet.
+Whether it is for the data collection or the analysis, protection assessment are often done in partnership. To avoid confusion and misunderstnading within the proces, it is recommended to establish a clear Memorandum of Understanding
 </div>
 
 ## Implementation Model
@@ -33,6 +33,8 @@ Regardless of the model chosen, it is important to observe four principles:
 The following is an example:
 
 #### Scope of Works
+
+The following is an example of MoU.
 
 <blockquote>
 
