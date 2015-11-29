@@ -24,7 +24,7 @@ require(lubridate)
 
 ## Why a "Protection Assessment Toolkit"?{#presentation}
 
-The kit is a comprehensive set of tools to guide survey teams through every step of a protection assessment – from overall planning, design and data collection in the field to data processing, analysis, interpretation, documentation and dissemination. The kit is also organised to ensure that all findings and recommandation will allow to inform protection activities prioritisation and subsequent ressources allocation in terms of programme.
+The kit is a comprehensive set of tools to guide survey teams through every step of a protection assessment – from overall planning, design and data collection in the field to data processing, analysis, interpretation, documentation and dissemination. The kit is also organised to ensure that all findings and recommandation will allow to inform prioritisation between all potnetial protection activities  and subsequent ressources allocation in terms of programme.
 
 ![Assessment](images/process.png)
 
