@@ -9,3 +9,24 @@ source("options_communes.R")
 <div class="important">
 This chapter is not written yet.
 </div>
+
+## purposive sampling using strata
+
+
+## Sample Weight
+
+Over-sampling in regions with small populations ensures that they have a large enough sample to be representative. Under-sampling is done in regions with large populations to save costs. Sample weights are mathematical adjustments applied to the data to correct for over-sampling, under-sampling, and different response rates to the survey in different regions.
+
+### How are the oversampled/undersampled areas corrected in data analysis?
+
+The samples are designed to permit data analysis of regional subsets within the sample population. When the expected number of cases for some of these regions is too small for analysis, it is necessary to oversample those areas. When the expected number of cases for some of these regions is unnecessarily large, those areas may be undersampled to accommodate logistical or budgetary constraints.
+
+During analysis, it is then necessary to "weight down" the oversampled areas and "weight up" the undersampled areas. The developing of the sampling weights has taken this factor into account. Always use the weight variable found in the DHS data set. Even in surveys that come from a self-weighting sample, it is still necessary to use the sampling weights in analysis because the response behavior may differ by response groups.
+
+### What does it mean to normalize the weights?
+
+After the weights are initially calculated, they are normalized, or standardized, by dividing each weight by the average of the initial weights (equal to the sum of the initial weight divided by the sum of the number of cases) so that the sum of the normalized/standardized weights equals the sum of the cases over the entire sample. The standardization is done separately for each weight for the entire sample.  
+
+The entire set of household sample weights is multiplied by a constant, thus, the total weighted number of households equals the total unweighted number of households at the national level.
+
+Individual sample weights are normalized separately for women and men. Thus, the total weighted number of women equals the total unweighted number of women, and the total weighted number of men equals the total unweighted number of men. Women and men are normalized separately because all non-HIV calculations are performed on women and men separately. We do not provide survey estimates on the joint population of women and men combined for anything other than HIV prevalence.

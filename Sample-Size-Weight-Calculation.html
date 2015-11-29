@@ -199,9 +199,36 @@ img {
 <h1 class="title">Sample size &amp; Weight Calculation</h1>
 </div>
 
+<div id="TOC">
+<ul>
+<li><a href="#purposive-sampling-using-strata">purposive sampling using strata</a></li>
+<li><a href="#sample-weight">Sample Weight</a><ul>
+<li><a href="#how-are-the-oversampledundersampled-areas-corrected-in-data-analysis">How are the oversampled/undersampled areas corrected in data analysis?</a></li>
+<li><a href="#what-does-it-mean-to-normalize-the-weights">What does it mean to normalize the weights?</a></li>
+</ul></li>
+</ul>
+</div>
 
 <div class="important">
 This chapter is not written yet.
+</div>
+<div id="purposive-sampling-using-strata" class="section level2">
+<h2>purposive sampling using strata</h2>
+</div>
+<div id="sample-weight" class="section level2">
+<h2>Sample Weight</h2>
+<p>Over-sampling in regions with small populations ensures that they have a large enough sample to be representative. Under-sampling is done in regions with large populations to save costs. Sample weights are mathematical adjustments applied to the data to correct for over-sampling, under-sampling, and different response rates to the survey in different regions.</p>
+<div id="how-are-the-oversampledundersampled-areas-corrected-in-data-analysis" class="section level3">
+<h3>How are the oversampled/undersampled areas corrected in data analysis?</h3>
+<p>The samples are designed to permit data analysis of regional subsets within the sample population. When the expected number of cases for some of these regions is too small for analysis, it is necessary to oversample those areas. When the expected number of cases for some of these regions is unnecessarily large, those areas may be undersampled to accommodate logistical or budgetary constraints.</p>
+<p>During analysis, it is then necessary to “weight down” the oversampled areas and “weight up” the undersampled areas. The developing of the sampling weights has taken this factor into account. Always use the weight variable found in the DHS data set. Even in surveys that come from a self-weighting sample, it is still necessary to use the sampling weights in analysis because the response behavior may differ by response groups.</p>
+</div>
+<div id="what-does-it-mean-to-normalize-the-weights" class="section level3">
+<h3>What does it mean to normalize the weights?</h3>
+<p>After the weights are initially calculated, they are normalized, or standardized, by dividing each weight by the average of the initial weights (equal to the sum of the initial weight divided by the sum of the number of cases) so that the sum of the normalized/standardized weights equals the sum of the cases over the entire sample. The standardization is done separately for each weight for the entire sample.</p>
+<p>The entire set of household sample weights is multiplied by a constant, thus, the total weighted number of households equals the total unweighted number of households at the national level.</p>
+<p>Individual sample weights are normalized separately for women and men. Thus, the total weighted number of women equals the total unweighted number of women, and the total weighted number of men equals the total unweighted number of men. Women and men are normalized separately because all non-HIV calculations are performed on women and men separately. We do not provide survey estimates on the joint population of women and men combined for anything other than HIV prevalence.</p>
+</div>
 </div>
 
 </article>

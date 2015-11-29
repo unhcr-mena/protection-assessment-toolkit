@@ -10,7 +10,36 @@ source("options_communes.R")
 This chapter is not written yet.
 </div>
 
+## Intro: from the plan to the form
+
+During the design stage of the assessment, the team must consider how each data element collected will be compiled, aggregated, analysed and disseminated to satisfy the information needs. The data analysis plans allow the assessment team to identify data elements on data collection forms that are not analysable as well as information management requirements that have not been met.  Once missing data elements have been identified, forms can be amended accordingly by modifying, removing or adding data elements.
+
+A common mistake for assessment teams is to collect too much data that is neither analysable nor will be used in decision making.  The temptation to ask too many questions means that teams gather poorer quality data which obstruct useful analysis.  If a data analysis plan shows that too much data will be collected, then data collection forms should be revised and shortened accordingly.
+
+Each data element collected should be linked to:
+
+* An information need linked to a Protection Topic
+* Contextual information in relation with the Population Group (Refugees, IDPs)
+* Data source - i.e. from aggregated Household Information, Key Informant or Focus Group discussions
+* Type of Analysis: I.e. Correlation, Dispersion, Average,  
+* Specific Protection indicator
+
+
 ##  The XLSFORM format
 
+[XLSFROM](http://xlsform.org/) is a standard way to describe a form. It includes information not only on the type of questions but also on:
+
+* Hints in order to add comments on methodology
+* Contraints to avoid entering uncorrect information 
+* Relevant to allow for skip logic
+* Support for multiple language
+* Possibility to perfom calculation for data quality checking
+* Possibility to repeat the same questions in a loop.
 
 ##  Filtering the questions
+
+The question library is an [online google spreasheet](https://docs.google.com/spreadsheets/d/1zGnaLXouP9vTfjqVvUVOSfzeSkvpd63f8Z-zvqGJtNU) where a sries of questions are organised around multiple categories
+
+To use it, simply copy or donwload the library,  filter out the question you are not interested in and delete them.
+
+The next step will be then to [customise the form](Guidelines-for-Customisation.html)

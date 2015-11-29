@@ -10,3 +10,26 @@ source("options_communes.R")
 <div class="important">
 This chapter is not written yet.
 </div>
+
+## Steering Committe Objectives
+
+* provide oversight to the implementation of the [Country] Protection Asessment [year] and for the Management Team of the survey’s day to day operation.
+* promote ownership of process, results, dissemination and further analysis of the data for the purpose of policy, advocacy, and monitoring, as well as national commitments.
+* encourage and promote financial and in kind contributions towards the funding of the survey.
+
+## Major tasks
+* Approval of the [Assessment Project Document](Assessment-Project-Document.html) and Budget, including Questionnaire and Sample Design as well as the timetable
+* Oversight of the survey implementation process
+* Oversight of the survey management and institutional arrangements
+* Approval of Summary Findings Report and Final Report
+
+
+## Suggested Composition
+
+A small group at high management level (Representative, Senior Protection Officer).
+
+* National counterpart for the coordination of the social sectors
+* MOU partners
+* UNICEF
+* Other Donors
+

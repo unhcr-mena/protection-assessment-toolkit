@@ -10,7 +10,7 @@
 
 
 
-<title>Analysis Script</title>
+<title>Analysis Scripts</title>
 
 <script src="libs/jquery-1.11.0/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -196,20 +196,17 @@ img {
 <article>
 
 <div id="header">
-<h1 class="title">Analysis Script</h1>
+<h1 class="title">Analysis Scripts</h1>
 </div>
 
 <div id="TOC">
 <ul>
-<li><a href="#categorical-variables-having-several-code-options">Categorical variables having several code options:</a><ul>
-<li><a href="#code-8-or-98-for-dont-know">Code ‘8 or ‘98’ for ‘don’t know’:</a></li>
-<li><a href="#code-6-or-96-for-other">Code ‘6’ or ‘96’ for ‘other’:</a></li>
-</ul></li>
-<li><a href="#recoding-with-the-if-command-in-epi-info-software">Recoding with the ‘if’ command in Epi Info software:</a></li>
+<li><a href="#defining-script-for-analysis-automation">Defining Script for Analysis automation</a><ul>
+<li><a href="#categorical-variables-having-several-code-options">Categorical variables having several code options:</a></li>
 <li><a href="#confidence-intervals">Confidence intervals:</a></li>
 <li><a href="#rounding-decimal-points">Rounding decimal points:</a></li>
 <li><a href="#decimal-points-in-the-results">Decimal points in the results:</a></li>
-<li><a href="#missing-data-or-consent-not-provided">Missing data or consent not provided:</a><ul>
+<li><a href="#missing-data-or-consent-not-provided">Missing data or consent not provided:</a></li>
 <li><a href="#always-clean-the-data-first-before-going-into-analysis">Always clean the data first before going into analysis:</a></li>
 <li><a href="#age-variable">Age variable:</a></li>
 <li><a href="#reproducible-analysis">Reproducible Analysis</a></li>
@@ -220,55 +217,61 @@ img {
 <div class="note">
 <strong>Key Take Away</strong> :
 </div>
-<div id="categorical-variables-having-several-code-options" class="section level2">
-<h2>Categorical variables having several code options:</h2>
+<div id="defining-script-for-analysis-automation" class="section level2">
+<h2>Defining Script for Analysis automation</h2>
+<p>Using the right combination of packages fromt he R statistical language, it is possible to integrate all necessary data analysis steps into <strong>scripts</strong>:</p>
+<ul>
+<li><p>Data management (clean, recode, merge, reshape)</p></li>
+<li><p>Data analysis (test, regression, multivariate analysis, etc…)</p></li>
+<li><p>Data visualisation (plot, map, graph…)</p></li>
+<li><p>Writing up results (report and presentation generation)</p></li>
+</ul>
+<p><img src="images/analysis.png" /></p>
+<p>This allow for <a href="http://edouard-legoupil.github.io/humanitaRian-data-science/slides/">reproducible data analysis workflow</a></p>
+<div id="categorical-variables-having-several-code-options" class="section level3">
+<h3>Categorical variables having several code options:</h3>
 <ul>
 <li>In the data cleaning process, make sure that the codes are the same as those on the standard questionnaire. E.g. vitamin A should be coded 1-3 in the questionnaire but code ‘4’ may appear in the database. This code ‘4’ needs to be excluded from analysis and not included in the denominator as it was a mistake in data recording on the field.</li>
 </ul>
-<div id="code-8-or-98-for-dont-know" class="section level3">
-<h3>Code ‘8 or ‘98’ for ‘don’t know’:</h3>
+<p>Code ‘8 or ‘98’ for ‘don’t know’:</p>
 <ul>
 <li>Make sure to exclude codes ‘8’, ‘98’ or ‘998’ for ‘don’t know’ from the analysis. This should not be part of the denominator in the calculation of indicators (e.g. diarrhoea, IYCF, ANC enrolment).</li>
 </ul>
-</div>
-<div id="code-6-or-96-for-other" class="section level3">
-<h3>Code ‘6’ or ‘96’ for ‘other’:</h3>
+<p>Code ‘6’ or ‘96’ for ‘other’:</p>
 <ul>
 <li>Make sure to include codes ‘6’ or ‘96’ for ‘other’ in the analysis. This should be part of the denominator in the calculation of indicators as it represents one response option (e.g. safe disposal of U3 stool, reason for not having a ration card, source of water).</li>
 </ul>
-</div>
-</div>
-<div id="recoding-with-the-if-command-in-epi-info-software" class="section level2">
-<h2>Recoding with the ‘if’ command in Epi Info software:</h2>
+<p>Recoding with the ‘if’ command in Epi Info software:</p>
 <ul>
 <li>Do not forget to take into account missing values when using the ‘if’ command. This applies to many different variables. Whenever feasible, it is much better to use the ‘recode’ command instead of the ‘if’ command for this specific reason.</li>
 </ul>
 </div>
-<div id="confidence-intervals" class="section level2">
-<h2>Confidence intervals:</h2>
+<div id="confidence-intervals" class="section level3">
+<h3>Confidence intervals:</h3>
 <ul>
 <li>Different software often calculate confidence intervals as being negative and hence below zero or above 100. Negative confidence intervals or CI above 100 are meaningless. In the report, always round negative confidence intervals to ‘0’ and round those above 100 to ‘100’.</li>
 </ul>
 </div>
-<div id="rounding-decimal-points" class="section level2">
-<h2>Rounding decimal points:</h2>
+<div id="rounding-decimal-points" class="section level3">
+<h3>Rounding decimal points:</h3>
 <ul>
 <li>Make sure to round properly decimal points according to basic rules:</li>
 <li>When decimal is between 1-4, round down.</li>
 <li>When decimal is between 5-9, round up.</li>
 </ul>
 </div>
-<div id="decimal-points-in-the-results" class="section level2">
-<h2>Decimal points in the results:</h2>
+<div id="decimal-points-in-the-results" class="section level3">
+<h3>Decimal points in the results:</h3>
 <ul>
 <li>When the results is a whole number e.g. 30%, make sure to always write 30.0% with the ‘.0’ in the decimal place in the report. This ensures that the decimal point was not forgotten and is actually equal to zero.</li>
 </ul>
 </div>
-<div id="missing-data-or-consent-not-provided" class="section level2">
-<h2>Missing data or consent not provided:</h2>
+<div id="missing-data-or-consent-not-provided" class="section level3">
+<h3>Missing data or consent not provided:</h3>
 <ul>
 <li>Data should be excluded from all analysis and should not be accounted for in the denominator.</li>
 </ul>
+</div>
 <div id="always-clean-the-data-first-before-going-into-analysis" class="section level3">
 <h3>Always clean the data first before going into analysis:</h3>
 <ul>
