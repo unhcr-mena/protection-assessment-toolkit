@@ -99,9 +99,18 @@ To ensure that research done on the dataset can be reproduced afterwards by inte
 ##  The Internation Household Survey Network & the DDI format
 
 
-[Humanitarian Research](http://blog.veritythink.com/post/125420961839/humanitarian-research-how-to-approach-it)
+[Humanitarian Research](https://app.box.com/s/8cgdwbw4j311bvkk5hlqr8fuatwbdx4n) in the context of social science and data analysis is still new but can benefit the organisedtion for instance to:
+
+* Co-development and co-design of tools, protocols, products, processes, and innovations
+* Facilitate organisational learning, keeping track of lessons learned, and providing a neutral stance for moderating innovation and change processes
+* Access to wider body of knowledge, from academia or other organisations, and research in
+other fields.
 
 ![7zip](images/research.png)
+
+To facilitate this process, the first approach woudl be to document the dataset according to the [Data Documentation Initiative (DDI) metadata standard](http://www.ihsn.org/home/projects/DDI-standard) developped by the [International Household Survey Network (IHSN)](http://www.ihsn.org/home/about).
+
+Once the metadata are generated in the right format, it becomes possible to publish them within the [ISHN Microdata catalog](http://catalog.ihsn.org/index.php/catalog) or the [World Bank Microdata Library](http://microdata.worldbank.org/catalog)
 
 
 
