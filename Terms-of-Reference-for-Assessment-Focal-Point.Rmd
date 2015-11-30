@@ -1,5 +1,5 @@
 ---
-title: "Terms of Reference for Assessment Lead"
+title: "Terms of Reference for Assessment Focal Point"
 ---
 
 ```{r options_communes, include=FALSE}
@@ -26,7 +26,7 @@ The survey will be developed using the Protection Assessment Toolkit. Survey met
 
 ##  Objectives
 
-The staff will oversee the Protection Assessment for;
+The Assessment Focal Point will oversee the Protection Assessment for:
 - <kbd>Operation</kbd>
 - <kbd>Population Group</kbd>
 - <kbd>Geographic Coverage</kbd>

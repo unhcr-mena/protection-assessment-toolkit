@@ -17,8 +17,8 @@ require(lubridate)
 <div class="jumbotron">
   <h1>Guidelines and Templates <br /></h1>
   <h2>to facilitate planning and design<br />
-  and to avoid pitfalls in implementation</h2>
-  <p>UNHCR MENA Protection Services : `r I(format(today(), "%e %B %Y"))`</p>
+  and to facilitate implementation of existing guidance</h2>
+  <p>Last update : `r I(format(today(), "%e %B %Y"))`</p>
 </div>
 
 
@@ -28,8 +28,10 @@ The kit is a comprehensive set of tools to guide survey teams through every step
 
 ![Assessment](images/process.png)
 
+This toolkit support the technical implementation of already existing guidelines, namely the [Needs Assessment for Refugee Emergencies (NARE) CHECKLIST](https://emergency.unhcr.org/entry/50209) for Refugees operations and the [Rapid Protection Assessment Tools (RPAT)](http://www.globalprotectioncluster.org/en/tools-and-guidance/information-and-data-management.html) for IDPs operations or the [Joint IDP Profiling Service Essential Toolkit (JET)](http://jet.jips.org/). It was inpsired by [UNHCR Standardised Expanded Nutrition Survey](http://sens.unhcr.org) and [UNICEF Multiple Indicator Cluster Surveys](http://mics.unicef.org/tools).
 
-## Why "practical"?
+
+## Why "technical"?
 On the top of the summary narrative guidelines below, the toolkit is organised around 4 keys technical componnents that will facilitate the easy replication and customisation of the assessment from an operation to another. Re-using tested proofed platforms, questions & report format, technical staff in charge will save significant amount of time.
 <div class="note">
  * A pre-organised <kbd>[XLSFORM Questions Library](https://docs.google.com/spreadsheets/d/1zGnaLXouP9vTfjqVvUVOSfzeSkvpd63f8Z-zvqGJtNU)</kbd> in order to leverage good practices and enforce core questions during design of the assessment form.
@@ -43,15 +45,11 @@ On the top of the summary narrative guidelines below, the toolkit is organised a
 
 ## For whom?
 
-This toolkit aims at being the equivalent of [UNHCR Standardised Expanded Nutrition Survey](http://sens.unhcr.org) or [UNICEF Multiple Indicator Cluster Surveys](http://mics.unicef.org/tools), but for Protection Assessment of displaced persons (Refugees & Internally displaced persons). The toolkit complements already existing guidelines, namely the [Needs Assessment for Refugee Emergencies (NARE) CHECKLIST](https://emergency.unhcr.org/entry/50209) for Refugees operations and the [Rapid Protection Assessment Tools (RPAT)](http://www.globalprotectioncluster.org/en/tools-and-guidance/information-and-data-management.html) for IDPs operations or the [Joint IDP Profiling Service Essential Toolkit (JET)](http://jet.jips.org/). 
-
-The toolkit is to be used once all emergency assessment and secondary data review have been implemented and developped. The targeted audience of the toolkit are Assessment lead, information management officers and data scientist that will be technically responsible for the implementation of the assessment.
-
- With a bit of configuration at the begining, the toolkit will allow for the quick generation of results and will ensure that minimum data quality standards are enforced. In addition, because of the standard data format that are enforced through the kit, it will be possible to obtain comparable results from different operations.
+The targeted audience of the toolkit are *technical staff tasked to work on a protection assessment*: assessment focal points, information management officers and data scientists... The toolkit is to be used once all emergency assessment and secondary data review have been implemented and developped. With a bit of configuration at the begining, the toolkit will allow for the quick generation of results and will ensure that minimum data quality standards are enforced. In addition, because of the standard data format that are enforced through the kit, it will be possible to obtain comparable results from different operations.
 
 <div class="alert alert-warning" style="font-weight: bold;">
-  <p>The Protection Assessment Toolkit is a work in progress.</p>
-  <p>If you identify issues or if you have suggestions, please share them <a href="https://github.com/unhcr-mena/protection-assessment-toolkit/issues" style="color: white;">through this link</a>.</p>
+  <p>The toolkit is a *collaborative effort*: if you have suggestions, please share them <a href="https://github.com/unhcr-mena/protection-assessment-toolkit/issues" style="color: white;">through this link</a>.</p>
+  <p>The Toolkit is a *work in progress*: if you identify issues, please share them <a href="https://github.com/unhcr-mena/protection-assessment-toolkit/issues" style="color: white;">through this link</a>.</p>
 </div>
 
 ## Table of Content{#tdm}
