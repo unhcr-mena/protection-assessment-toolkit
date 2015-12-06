@@ -17,7 +17,7 @@ require(lubridate)
 <div class="jumbotron">
   <h1>Guidelines and Templates <br /></h1>
   <h2>to facilitate assessment planning and design<br />
-  and to support the implementation of existing guidances</h2>
+  and to support the "technical" implementation of existing guidances</h2>
   <p>Last update : `r I(format(today(), "%e %B %Y"))`</p>
 </div>
 
@@ -28,7 +28,7 @@ The kit is a comprehensive set of tools to guide survey teams through every step
 
 ![Assessment](images/process.png)
 
-This toolkit support the technical implementation of already existing guidelines and guidances, namely the [Needs Assessment for Refugee Emergencies (NARE) Checklist](https://emergency.unhcr.org/entry/50209) for Refugees operations and the [Rapid Protection Assessment Tools (RPAT)](http://www.globalprotectioncluster.org/en/tools-and-guidance/information-and-data-management.html) for IDPs operations or the [Joint IDP Profiling Service Essential Toolkit (JET)](http://jet.jips.org/). It was inspired by the [UNHCR Standardised Expanded Nutrition Survey](http://sens.unhcr.org) and the [UNICEF Multiple Indicator Cluster Surveys](http://mics.unicef.org/tools).
+This toolkit support the technical implementation of already existing guidelines and guidances, namely the [Needs Assessment for Refugee Emergencies (NARE) Checklist](https://emergency.unhcr.org/entry/50209) for Refugees operations and the [Rapid Protection Assessment Tools (RPAT)](http://www.globalprotectioncluster.org/en/tools-and-guidance/information-and-data-management.html) for IDPs operations, the [Guidelines for Integrating Gender-Based Violence Interventions in Humanitarian Action](http://gbvguidelines.org/), the [Child Protection Rapid Assessment Toolkit](http://www.globalprotectioncluster.org/_assets/files/tools_and_guidance/info_data_management/CPRA_English-EN.pdf), the [Joint IDP Profiling Service Essential Toolkit (JET)](http://jet.jips.org/), etc. The proposed technical implementation approach was inspired by the [UNHCR Standardised Expanded Nutrition Survey](http://sens.unhcr.org) and the [UNICEF Multiple Indicator Cluster Surveys](http://mics.unicef.org/tools).
 
 
 ## Why "technical"?
