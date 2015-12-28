@@ -24,6 +24,18 @@ Each data element collected should be linked to:
 * Type of Analysis: I.e. Correlation, Dispersion, Average,  
 * Specific Protection indicator
 
+## 
+
+* Closing questions
+* Skip patterns
+* Ranges for selected questions
+* Numbering questions
+* Two questions in one
+* Double negatives
+* Clarity and simplicity
+* Consultation
+* Parcimony
+
 
 ##  The XLSFORM format
 

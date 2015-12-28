@@ -19,6 +19,14 @@ Data is coming from a *Displacement Tracking Matrix*
 
 ## Sampling strategy
 
+
+### Convenience sampling: 
+It is a frequently used method in emergency situations. It relies on sampling those respondents who are easiest to access. For example those who have settled along roadsides, or near the administrative center of the returnee settlement, etc. The danger with this type of monitoring is that it will often lead to biased results as the sample may not be representative of the majority, i.e. those with the most resources or power are often the ones who settle in the most easily accessible areas.
+
+### Purposive sampling
+It is based on previous knowledge about who might be able to provide valuable or specific information.  The sampling of children or women, for example, is a type of purposive sampling 
+
+
 ### Random sampling
 
 ### Sonowball sampling
