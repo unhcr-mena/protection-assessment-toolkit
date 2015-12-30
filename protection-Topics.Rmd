@@ -6,71 +6,119 @@
 source("options_communes.R")
 ```
 
-<div class="note">
-On each topic, the protection assessment should allow to identify the affected population’s:
+<div class="important">
 
-* Capacities and capabilities 
-* vulnerabilities and exposure 
-* Concerns and desires 
+Vulnerability level for a specific risk =
+function(risk **occurrence**) +
+function(**exposure** to risk of basic right violation) +
+function(**coping capacity** before or after violation)
+
+wich helps to distinguish 
+
+Protection activities for UNHCR = 
+Prevent occurrence of basic right violation event (**Environment Building actions**) && 
+Limit the effects of violation events consequences (**Remedial actions**) &&
+Respond to basic right violation event  (**Responsive actions**)
+</div>
+
+Protection analysis is therefore linked to specific events linked to specific Right groups defined by UNHCR Result Based management.
+
+Rights Group                                | Basic right type                       | Violation event
+------------------------------------------- |--------------------------------------- | ------------- 
+Favourable Protection Environment           | Non-refoulement                        | Non-admission, Refoulement
+-                                           | No discrimination                      | Detention
+-                                           | Freedom of movement                    | Eviction, deportation
+Fair Protection Processes and Documentation | Documentation                          | No issuance/renewal of residency
+-                                           | Right to a nationality                 | Birth Registration
+Community Empowerment and Self Reliance     | Livelihood                             | Negative coping mechanism (Prostitution, child labour, early marriage, begging, stealing,.)
+-                                           | Peaceful co-existence                  | Intercommunity violence
+Basic Needs and Essential Services          | Education                              | Children out of school
+-                                           | Food                                   | Malnutrition
+-                                           | Social & economic rights               | Non access to services (healh, schools, MPSS)
+-                                           | Housing, Wash & Shelter                | Sub standard living conditions
+Security from Violence and Exploitation     | Age, gender and diversity mainstreaming| Sex & Gender based violence, child abuses
+
+
+<div class="note">
+On each topic, the protection assessment should allow to identify the affected population’s vulnerability profile:
+
+* Capacities and capabilities in order to define __criticality__ 
+* Threat  in terms of occurence in order to define __magnitude__ 
+* Threat  in terms of exposure in order to define __severity__
 
 </div>
 
+## Favourable Protection Environment    
 
+List of analysis modules
 
-## Legal Protection & Civil Documentation
-
-* Freedom of movement
-* Detention
 * Protection-sensitive border mechanism
-* Social cohesion
-* Potential criteria for Resettlement and durable solutions
+* Counselling & Legal aid needs
+* Freedom of movement & Detention
+* Multiple Displacement & movement
+
+## Fair Protection Processes and Documentation 
+
+List of analysis modules
+
 * Renewal of documents/ residences
-* Marriage registration
-* Effective and efficient system 
-* Counselling needs
-* Legal aid needs
-* Voluntary nature of returns
-* Registration awareness
-
-## Specific Needs and Community Protection
-
-* Negative coping mechanism
-* Multiple Displacement before arrival in COA
-* Refugees with disabilities
-* Elderly refugees
-* Family Separation
-
-## Child Protection and Education
-
-* Sexual harassment
-* Violence among children
 * Birth Registration
+* Civil status documentation
+* Family re-unification
+* Refugee registration
+* Risk of eviction
+
+## Community Empowerment and Self Reliance 
+
+List of analysis modules:
+
+* Social cohesion
+* Type of assistance received
+* Housing, shelter & wash conditions
+* Employment & livelihood
 * Child labour
-* Unccompanied Sepearated Children
-* Youth
-* Education / Out of School Children
+* Assets
+* Budget
+
+## Basic Needs and Essential Services 
+
+List of analysis modules:
+
+* Refugees with specific needs 
+* Assistance received
 * Difficult living conditions
-* Armed recruitment
-* Alternative Care (UASC)
-* Parental stress
-* Isolation at home
-* Harassment on the way to school
-* Detention of Children
+* Negative coping mechanism
+* Food security
+* Access to health services
+* Education / Out of School Children
 
-## Sexual & Gender Based Violence
+## Security from Violence and Exploitation
 
-* Psychoscocial Support
+List of analysis modules:
+
+* Sexual Harassment & Violence (Rape) 
+* Harassment between youth
 * Gender inequality
-* Domestic Violence
+* Domestic Violence (Parental stress, Isolation at home)
 * Forced and early marriage
-* Underreported SGBV incidents
-* Engaging men and boys
-* Legal
-* Medical
-* power dynamics
-* Rape 
-* Child-sensitive police
-* Violence at home
-* LGBTI
+* Violence among children
+* Armed recruitment
+* Harassment & Violence towards LGBTI
+* Security & Civil violence
+
+
+## Context information
+
+
+* Metadata
+* Enumerator
+* Address
+* Consent
+* Household information
+* Self-expressed Needs
+* Referral
+* Notes
+* Subjective Evaluation
+
 
 
