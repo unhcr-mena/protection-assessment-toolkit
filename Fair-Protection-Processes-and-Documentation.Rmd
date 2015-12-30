@@ -14,15 +14,47 @@ On each topic, the protection assessment should allow to identify the affected p
 * Threat  in terms of exposure in order to define __severity__
 </div>
 
-## Renewal of documents/ residences
-
 ## Birth Registration
+
+* Criticality
+
+* Magnitude
+
+* Severity
+
 
 
 ## Civil status documentation
 
+* Criticality
+
+* Magnitude
+
+* Severity
+
+
 ## Family re-unification
+
+* Criticality
+
+* Magnitude
+
+* Severity
+
 
 ## Refugee registration
 
+* Criticality
+
+* Magnitude
+
+* Severity
+
+
 ## Risk of eviction
+
+* Criticality
+
+* Magnitude
+
+* Severity

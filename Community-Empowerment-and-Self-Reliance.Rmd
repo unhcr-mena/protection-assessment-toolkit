@@ -18,16 +18,56 @@ On each topic, the protection assessment should allow to identify the affected p
 
 ## Social cohesion
 
+* Criticality
+
+* Magnitude
+
+* Severity
+
+
 ## Type of assistance received
+
+* Criticality
+
+* Magnitude
+
+* Severity
+
 
 
 ## Housing, shelter & wash conditions
 
+* Criticality
+
+* Magnitude
+
+* Severity
+
+
 
 ## Employment & livelihood
 
-## Child labour
+* Criticality
 
-## Assets
+* Magnitude
 
-## Budget
+* Severity
+
+
+## Child Labour
+
+* Criticality
+
+* Magnitude
+
+* Severity
+
+
+## Assets & Budget
+
+* Criticality
+
+* Magnitude
+
+* Severity
+

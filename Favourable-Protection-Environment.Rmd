@@ -17,8 +17,34 @@ On each topic, the protection assessment should allow to identify the affected p
 
 ## Protection-sensitive border mechanism
 
+* Criticality
+
+* Magnitude
+
+* Severity
+
 ## Counselling & Legal aid needs
+
+* Criticality
+
+* Magnitude
+
+* Severity
+
 
 ## Freedom of movement & Detention
 
-## Multiple Displacement & movement
+* Criticality
+
+* Magnitude
+
+* Severity
+
+
+## Multiple Displacement & Movement
+
+* Criticality
+
+* Magnitude
+
+* Severity

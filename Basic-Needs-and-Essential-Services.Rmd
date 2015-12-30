@@ -18,15 +18,54 @@ On each topic, the protection assessment should allow to identify the affected p
 
 ## Refugees with specific needs 
 
+* Criticality
+
+* Magnitude
+
+* Severity
+
+
 ## Assistance received
 
+* Criticality
 
-## Difficult living conditions
+* Magnitude
+
+* Severity
+
+
 
 ## Negative coping mechanism
 
+* Criticality
+
+* Magnitude
+
+* Severity
+
+
 ## Food security
+
+* Criticality
+
+* Magnitude
+
+* Severity
+
 
 ## Access to health services
 
+* Criticality
+
+* Magnitude
+
+* Severity
+
+
 ## Education / Out of School Children
+
+* Criticality
+
+* Magnitude
+
+* Severity
