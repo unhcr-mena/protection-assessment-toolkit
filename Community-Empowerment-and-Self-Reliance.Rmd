@@ -25,14 +25,6 @@ On each topic, the protection assessment should allow to identify the affected p
 * Severity
 
 
-## Type of assistance received
-
-* Criticality
-
-* Magnitude
-
-* Severity
-
 
 
 ## Housing, shelter & wash conditions
