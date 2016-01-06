@@ -23,6 +23,8 @@ Bceause most of "Protection Assessment" fall under that policy as they are linke
 
 ## The 12 privacy principles
 
+Data Protection Impact Assessments (PIAs) are an integral part of taking the "[privacy by design](https://ico.org.uk/for-organisations/guide-to-data-protection/privacy-by-design/)" approach. This is done by enforcing the following 12 principles:
+
 1. **Consent and choice**: presenting to the data subject the choice whether to allow the processing of their personally identifiable information (PII)
 
 2. **Purpose legitimacy and specification**: ensuring that the purpose of data collection is specified and lawful
@@ -48,6 +50,10 @@ Bceause most of "Protection Assessment" fall under that policy as they are linke
 12. **Data transfers**: do not store or transfer personal data to third parties without adequate assurances that they will safeguard it to a standard comparable to that of the UNHCR.
 
 ## Threat & vulnerability matrix
+
+The [template from the UK ICO](https://ico.org.uk/media/for-organisations/documents/1042836/pia-code-of-practice-editable-annexes.docx) can be used a starting point to developd the document. 
+
+An important point is to build the threat & vulnerability matrix:
 
 Potential Threats to look at | Vulnerability  | Risk         | Mitigation
 ---------------------------- | -------------  | ------------ | ------------- 
