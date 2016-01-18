@@ -6,6 +6,35 @@ title: "Sample size & Weight Calculation"
 source("options_communes.R")
 ```
 
+## Defining sample size
+
+If you need a purely random sample, the size of the sample if a calculation that takes 3 variables:
+
+*	Size of the full population
+*	Confidence level: for what proportion of the population you want to get the right estimation (usually either 90%, 95% or 99%) 
+*	Error Margin (or confidence interval): How much error are you willing to tolerate for each questions? i.e. + or – your estimated ratio for each questions on the top of the confidence interval (usually either 5%, 2% or 1%)
+
+There are [online calculator](https://www.surveymonkey.com/mp/sample-size-calculator/) for this.  
+
+
+For 400,000 Syrians  | 	5% error margin 	| 		2% error margin		| 	1% error margin
+---------------------|--------------------|-----------------------| ----------------- 
+90% Confidence level |	272               |	1694                  |	6692
+95% Confidence level |	384             	| 2387                 	| 9379
+99% Confidence level |	662               |	4105                  |	15929
+
+
+			
+For 150,000 Afghans	| 	5% error margin 	| 		2% error margin		| 	1% error margin
+--------------------|---------------------|-----------------------|------------------ 
+90% Confidence level|	272                 |	1682                  |	6511
+95% Confidence level|	383                 |	2363                  |	9026
+99% Confidence level|	661                 |	4036                  |	14937
+
+
+Usually the decision on the right confidence level and error margin to be selected is also influenced by cost implication and the final usage of the figures that is looked for.
+
+
 ## Sample universe
 
 ### In refugee Context

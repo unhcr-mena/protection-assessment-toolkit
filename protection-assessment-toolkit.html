@@ -201,14 +201,14 @@ Guidelines and Templates <br/>
 to facilitate assessment planning and design<br/> and to support the “technical” implementation of existing guidances
 </h2>
 <p>
-Last update : 6 January 2016
+Last update : 18 January 2016
 </p>
 </div>
 <div id="presentation" class="section level2">
 <h2>Why a “Protection Assessment Toolkit”?</h2>
-<p>The kit is a comprehensive set of tools to guide survey teams through every step of a protection assessment  from overall planning, design and data collection in the field to data processing, analysis, interpretation, documentation and dissemination. The kit is also organised to ensure that all findings and recommandation will allow to inform prioritisation between all potnetial protection activities and subsequent ressources allocation in terms of programme.</p>
+<p>The kit is a comprehensive set of tools to guide survey teams through every step of a protection assessment – from overall planning, design and data collection in the field to data processing, analysis, interpretation, documentation and dissemination. The kit is also organised to ensure that all findings and recommandation will allow to inform prioritisation between all potnetial protection activities and subsequent ressources allocation in terms of programme.</p>
 <p><img src="images/process.png" alt="Assessment"/></p>
-<p>This toolkit support the technical implementation of already existing guidelines and guidances, namely the <a href="https://emergency.unhcr.org/entry/50209">Needs Assessment for Refugee Emergencies (NARE) Checklist</a> for Refugees operations and the <a href="http://www.globalprotectioncluster.org/en/tools-and-guidance/information-and-data-management.html">Rapid Protection Assessment Tools (RPAT)</a> for IDPs operations, the <a href="http://gbvguidelines.org/">Guidelines for Integrating Gender-Based Violence Interventions in Humanitarian Action</a>, the <a href="http://www.globalprotectioncluster.org/_assets/files/tools_and_guidance/info_data_management/CPRA_English-EN.pdf">Child Protection Rapid Assessment Toolkit</a>, the <a href="http://jet.jips.org/">Joint IDP Profiling Service Essential Toolkit (JET)</a>, etc. The proposed technical implementation approach was inspired by the <a href="http://sens.unhcr.org">UNHCR Standardised Expanded Nutrition Survey</a> and the <a href="http://mics.unicef.org/tools">UNICEF Multiple Indicator Cluster Surveys</a>.</p>
+<p>This toolkit support the technical implementation of already existing guidelines and guidances, namely the <a href="https://emergency.unhcr.org/entry/50209">Needs Assessment for Refugee Emergencies (NARE) Checklist</a> for Refugees operations and the <a href="http://www.globalprotectioncluster.org/en/tools-and-guidance/information-and-data-management.html">Rapid Protection Assessment Tools (RPAT)</a> for IDPs operations, the <a href="http://gbvguidelines.org/">Guidelines for Integrating Gender-Based Violence Interventions in Humanitarian Action</a>, the <a href="http://www.globalprotectioncluster.org/_assets/files/tools_and_guidance/info_data_management/CPRA_English-EN.pdf">Child Protection Rapid Assessment Toolkit</a>, the <a href="http://jet.jips.org/">Joint IDP Profiling Service Essential Toolkit (JET)</a>, the <a href="http://unhcr.org/4aa76c279.pdf">Heightened Risk Identification Tool</a>, etc. The proposed technical implementation approach was inspired by the <a href="http://sens.unhcr.org">UNHCR Standardised Expanded Nutrition Survey</a> and the <a href="http://mics.unicef.org/tools">UNICEF Multiple Indicator Cluster Surveys</a>.</p>
 </div>
 <div id="why-technical" class="section level2">
 <h2>Why “technical”?</h2>
@@ -579,6 +579,7 @@ This chapter is not written yet.
 
 <div class="TOC">
 <ul>
+<li><a href="#Sample-Size-Weight-Calculation_defining-sample-size">Defining sample size</a></li>
 <li><a href="#Sample-Size-Weight-Calculation_sample-universe">Sample universe</a><ul>
 <li><a href="#Sample-Size-Weight-Calculation_in-refugee-context">In refugee Context</a></li>
 <li><a href="#Sample-Size-Weight-Calculation_in-idp-context">In IDP context</a></li>
@@ -597,6 +598,77 @@ This chapter is not written yet.
 </ul>
 </div>
 
+<div id="Sample-Size-Weight-Calculation_defining-sample-size" class="section level2">
+<h2>Defining sample size</h2>
+<p>If you need a purely random sample, the size of the sample if a calculation that takes 3 variables:</p>
+<ul>
+<li>Size of the full population</li>
+<li>Confidence level: for what proportion of the population you want to get the right estimation (usually either 90%, 95% or 99%)</li>
+<li>Error Margin (or confidence interval): How much error are you willing to tolerate for each questions? i.e. + or – your estimated ratio for each questions on the top of the confidence interval (usually either 5%, 2% or 1%)</li>
+</ul>
+<p>There are <a href="https://www.surveymonkey.com/mp/sample-size-calculator/">online calculator</a> for this.</p>
+<table>
+<thead>
+<tr class="header">
+<th align="left">For 400,000 Syrians</th>
+<th align="left">5% error margin</th>
+<th align="left">2% error margin</th>
+<th align="left">1% error margin</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">90% Confidence level</td>
+<td align="left">272</td>
+<td align="left">1694</td>
+<td align="left">6692</td>
+</tr>
+<tr class="even">
+<td align="left">95% Confidence level</td>
+<td align="left">384</td>
+<td align="left">2387</td>
+<td align="left">9379</td>
+</tr>
+<tr class="odd">
+<td align="left">99% Confidence level</td>
+<td align="left">662</td>
+<td align="left">4105</td>
+<td align="left">15929</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr class="header">
+<th align="left">For 150,000 Afghans</th>
+<th align="left">5% error margin</th>
+<th align="left">2% error margin</th>
+<th align="left">1% error margin</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">90% Confidence level</td>
+<td align="left">272</td>
+<td align="left">1682</td>
+<td align="left">6511</td>
+</tr>
+<tr class="even">
+<td align="left">95% Confidence level</td>
+<td align="left">383</td>
+<td align="left">2363</td>
+<td align="left">9026</td>
+</tr>
+<tr class="odd">
+<td align="left">99% Confidence level</td>
+<td align="left">661</td>
+<td align="left">4036</td>
+<td align="left">14937</td>
+</tr>
+</tbody>
+</table>
+<p>Usually the decision on the right confidence level and error margin to be selected is also influenced by cost implication and the final usage of the figures that is looked for.</p>
+</div>
 <div id="Sample-Size-Weight-Calculation_sample-universe" class="section level2">
 <h2>Sample universe</h2>
 <div id="Sample-Size-Weight-Calculation_in-refugee-context" class="section level3">
@@ -2270,8 +2342,8 @@ The UNHCR and <kbd>Partner Name</kbd> will identify the staff to be part of the 
 </div>
 <div id="Microdata_anonymization-techniques-statistical-disclosure-control-sdc" class="section level2">
 <h2>Anonymization techniques &amp; Statistical disclosure control (SDC)</h2>
-<p>Once anonymised, a dataset does not fall anymore under the Policy on the Protection of Personal Data. Though there’s a <a href="https://epic.org/privacy/reidentification/ohm_article.pdf">few articles</a> about the failure of anonymization that shows how removing names &amp; ID is not always sufficient to prevent “data re-identification”. Which approach to use depending on the case: suppression, inference control, banardisation, rounding or sampling. (a good</p>
-<p>for instance “do not share figures for a spatial unit if it does not reach the 1000 refugees threshold”…</p>
+<p>Once anonymised, a dataset does not fall anymore under the Policy on the Protection of Personal Data. Though there’s a <a href="https://epic.org/privacy/reidentification/ohm_article.pdf">few articles</a> about the failure of anonymization that shows how removing names &amp; ID is not always sufficient to prevent “data re-identification”. Many techniques can be used for “statistical disclosure control”: suppression, inference control, banardisation, rounding or sampling. Other approaches includes rules like for instance “do not share figures for a spatial unit if it does not reach the 1000 refugees threshold”…</p>
+<p>A <a href="https://cran.r-project.org/web/packages/sdcMicro/vignettes/sdc_guidelines.pdf">dedicated R module</a> is availalble to perform anonymisation.</p>
 <div id="Microdata_sharing-via-a-safe-mechanism-file-encryption" class="section level3">
 <h3>Sharing via a safe mechanism: File encryption</h3>
 <p>What is a safe mechanism to share information: for instance which software to use for encryption, how to share password, etc. Potential requirements could include: - Use a well know encryption approach – The common standard si <a href="https://en.wikipedia.org/wiki/Advanced_Encryption_Standard">AES -Advanced Encryption Standard (AES)</a> - Rely on open source software – so both parties can easily encrypt &amp; decrypt without being tied to software procurement obstacle. - Combine encryption and file compression: so files are easier &amp; lighter to share - The password used for the encryption should be at least 10 character long with a mixture of lowercase and uppercase alphabetic character, numbers and symbols. This should allow to build what is commonly called a <a href="https://en.wikipedia.org/wiki/Password_strength">strong password</a> and should always be transmitted independently form the file (for instance on a separate paper sheet with no reference to the file it allows to open).</p>

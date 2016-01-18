@@ -21,10 +21,9 @@ The UNHCR and <kbd>Partner Name</kbd> will identify the staff to be part of the 
 
 Once anonymised, a dataset does not fall anymore under the Policy on the Protection of Personal Data. 
 Though there’s a [few articles](https://epic.org/privacy/reidentification/ohm_article.pdf) about the failure of anonymization that shows how removing names & ID is not always sufficient to prevent “data re-identification”. 
-Which approach to use depending on the case: suppression, inference control, banardisation, rounding or sampling.  (a good 
+Many techniques can be used for "statistical disclosure control": suppression, inference control, banardisation, rounding or sampling. Other approaches includes rules like for instance “do not share figures for a spatial unit if it does not reach  the 1000 refugees threshold”…
 
-
-for instance “do not share figures for a spatial unit if it does not reach  the 1000 refugees threshold”…
+A [dedicated R module](https://cran.r-project.org/web/packages/sdcMicro/vignettes/sdc_guidelines.pdf) is availalble to perform anonymisation.
 
 ### Sharing via a safe mechanism:  File encryption
 
