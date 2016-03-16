@@ -92,3 +92,4 @@ A DPIA would contain a general description of:
 * analysis of the risks to the rights of data subjects by virtue of the circumstances 
 * nature of the personal data processed, 
 * safeguards and security measures in place or proposed.
+
