@@ -6,6 +6,38 @@ title: "Sample size & Weight Calculation"
 source("options_communes.R")
 ```
 
+## Sampling strategy
+
+Sampling strategy can be either probabilistic or non-probabilistic
+
+### Convenience sampling (non-probabilistic)
+It is a frequently used method in emergency situations. It relies on sampling those respondents who are easiest to access. For example those who have settled along roadsides, or near the administrative center of the returnee settlement, etc. The danger with this type of monitoring is that it will often lead to biased results as the sample may not be representative of the majority, i.e. those with the most resources or power are often the ones who settle in the most easily accessible areas.
+
+
+### Snowball sampling (non-probabilistic)
+
+Snowball sampling (or [chain sampling, chain-referral sampling, referral sampling](https://en.wikipedia.org/wiki/Snowball_sampling)) is a non-probability sampling technique where existing study subjects recruit future subjects from among their acquaintances. This technique is subject to numerous biases. For example, people who have many friends are more likely to be recruited into the sample. Therefore this approach might underweight the most vulnerable individuals
+
+### Purposive sampling (non-probabilistic)
+It is based on previous knowledge about who might be able to provide valuable or specific information. It uses the judgement of community representatives, project staff or assessors to select typical locations and/or informants. The sampling of children or women, for example, is a type of purposive sampling. 
+
+ * Advantages: Moderately rigorous if well and clear criteria for sampling are followed. Useful when targeting specific groups of affected population or specific affected areas. Less time consuming and less expensive than representative sampling
+
+* Disadvantage: Generalisations are biased and not recommended. Samples are not representative of population due to subjectivity of respondents
+
+### Purposive sampling using strata (non-probabilistic)
+
+
+### Random sampling  (probabilistic)
+
+### Stratified sampling  (probabilistic)
+
+### Cluster sampling  (probabilistic)
+
+
+
+# Sample universe
+
 ## Defining sample size
 
 If you need a purely random sample, the size of the sample if a calculation that takes 3 variables:
@@ -35,32 +67,13 @@ For 150,000 Afghans	| 	5% error margin 	| 		2% error margin		| 	1% error margin
 Usually the decision on the right confidence level and error margin to be selected is also influenced by cost implication and the final usage of the figures that is looked for.
 
 
-## Sample universe
-
 ### In refugee Context
 
 Data is coming from proGres
 
-
 ### In IDP context
 
 Data is coming from a *Displacement Tracking Matrix*
-
-## Sampling strategy
-
-
-### Convenience sampling: 
-It is a frequently used method in emergency situations. It relies on sampling those respondents who are easiest to access. For example those who have settled along roadsides, or near the administrative center of the returnee settlement, etc. The danger with this type of monitoring is that it will often lead to biased results as the sample may not be representative of the majority, i.e. those with the most resources or power are often the ones who settle in the most easily accessible areas.
-
-### Purposive sampling
-It is based on previous knowledge about who might be able to provide valuable or specific information.  The sampling of children or women, for example, is a type of purposive sampling 
-
-
-### Random sampling
-
-### Sonowball sampling
-
-### Purposive sampling using strata
 
 
 ## Sample Weight

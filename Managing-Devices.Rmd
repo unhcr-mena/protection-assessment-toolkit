@@ -46,7 +46,6 @@ Software Required:
 * Rstudio
 * Github
 
- 
 
 ## STEADY POWER SUPPLY
 

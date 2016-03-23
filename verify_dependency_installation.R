@@ -25,11 +25,12 @@ if (!length(m)) {
 
 # 2. Install missing packages (CRAN ou GitHub) ----------------
 
-thru_github <- c("lubridate", "questionr", "JLutils", "labelled")
-repo_github <- c("hadley", "juba", "larmarange", "larmarange")
+thru_github <- c("lubridate", #"questionr", 
+                 "JLutils", "labelled")
+#repo_github <- c("hadley", "juba", "larmarange", "larmarange")
 
-for (i in m[m %in% thru_github])
-  install_github(i, username = repo_github[which(thru_github == i)])
+#for (i in m[m %in% thru_github])
+#  install_github(i, username = repo_github[which(thru_github == i)])
 
 for (i in m[!m %in% thru_github])
   install.packages(i, dependencies = TRUE)
@@ -43,9 +44,9 @@ library(lubridate)
 if (!exists("time_length"))
   install_github("hadley/lubridate")
 
-library(questionr)
-if (is.null(getS3method("odds.ratio", "numeric", TRUE)))
-  install_github("juba/questionr")
+#library(questionr)
+#if (is.null(getS3method("odds.ratio", "numeric", TRUE)))
+#  install_github("juba/questionr")
 
 # 4. identify mininal required version of R ---------------
 

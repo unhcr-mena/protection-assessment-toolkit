@@ -13,7 +13,7 @@ function(risk **occurrence**) +
 function(**exposure** to risk of basic right violation) +
 function(**coping capacity** before or after violation)
 
-wich helps to distinguish 
+which helps to distinguish 
 
 Protection activities for UNHCR = 
 Prevent occurrence of basic right violation event (**Environment Building actions**) && 

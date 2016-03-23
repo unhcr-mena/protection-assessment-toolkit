@@ -7,17 +7,18 @@
 <meta charset="utf-8">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="generator" content="pandoc" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
 
 
 <title>Sample size &amp; Weight Calculation</title>
 
-<script src="libs/jquery-1.11.0/jquery.min.js"></script>
+<script src="libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<link href="libs/bootstrap-3.3.1/css/flatly.min.css" rel="stylesheet" />
-<script src="libs/bootstrap-3.3.1/js/bootstrap.min.js"></script>
-<script src="libs/bootstrap-3.3.1/shim/html5shiv.min.js"></script>
-<script src="libs/bootstrap-3.3.1/shim/respond.min.js"></script>
+<link href="libs/bootstrap-3.3.5/css/flatly.min.css" rel="stylesheet" />
+<script src="libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="libs/bootstrap-3.3.5/shim/respond.min.js"></script>
 <meta name="robots" content="index, follow">
 <link rel="stylesheet" href="./include/protection-assessment-toolkit.css" />
 <script type="text/javascript" src="./libs/zeroclipboard-2.2.0/ZeroClipboard.js"></script>
@@ -45,6 +46,7 @@
 
 
 
+
 </head>
 
 <body>
@@ -59,12 +61,55 @@ code {
   color: inherit;
   background-color: rgba(0, 0, 0, 0.04);
 }
-img { 
-  max-width:100%; 
-  height: auto; 
+img {
+  max-width:100%;
+  height: auto;
+}
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+button.code-folding-btn:focus {
+  outline: none;
 }
 </style>
+
+
 <div class="container-fluid main-container">
+
+<!-- tabsets -->
+<script src="libs/navigation-1.0/tabsets.js"></script>
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+</script>
+
+<!-- code folding -->
+
+
+
+
 
 <nav>
 <div class="navbar navbar-default navbar-fixed-top" role="navigation">
@@ -195,31 +240,71 @@ img {
 <div class="col-sm-9" role="main">
 <article>
 
-<div id="header">
+<div class="fluid-row" id="header">
+
+
 <h1 class="title">Sample size &amp; Weight Calculation</h1>
+
 </div>
 
 <div id="TOC">
 <ul>
-<li><a href="#defining-sample-size">Defining sample size</a></li>
+<li><a href="#sampling-strategy">Sampling strategy</a><ul>
+<li><a href="#convenience-sampling-non-probabilistic">Convenience sampling (non-probabilistic)</a></li>
+<li><a href="#snowball-sampling-non-probabilistic">Snowball sampling (non-probabilistic)</a></li>
+<li><a href="#purposive-sampling-non-probabilistic">Purposive sampling (non-probabilistic)</a></li>
+<li><a href="#purposive-sampling-using-strata-non-probabilistic">Purposive sampling using strata (non-probabilistic)</a></li>
+<li><a href="#random-sampling-probabilistic">Random sampling (probabilistic)</a></li>
+<li><a href="#stratified-sampling-probabilistic">Stratified sampling (probabilistic)</a></li>
+<li><a href="#cluster-sampling-probabilistic">Cluster sampling (probabilistic)</a></li>
+</ul></li>
 <li><a href="#sample-universe">Sample universe</a><ul>
+<li><a href="#defining-sample-size">Defining sample size</a><ul>
 <li><a href="#in-refugee-context">In refugee Context</a></li>
 <li><a href="#in-idp-context">In IDP context</a></li>
-</ul></li>
-<li><a href="#sampling-strategy">Sampling strategy</a><ul>
-<li><a href="#convenience-sampling">Convenience sampling:</a></li>
-<li><a href="#purposive-sampling">Purposive sampling</a></li>
-<li><a href="#random-sampling">Random sampling</a></li>
-<li><a href="#sonowball-sampling">Sonowball sampling</a></li>
-<li><a href="#purposive-sampling-using-strata">Purposive sampling using strata</a></li>
 </ul></li>
 <li><a href="#sample-weight">Sample Weight</a><ul>
 <li><a href="#how-are-the-oversampledundersampled-areas-corrected-in-data-analysis">How are the oversampled/undersampled areas corrected in data analysis?</a></li>
 <li><a href="#what-does-it-mean-to-normalize-the-weights">What does it mean to normalize the weights?</a></li>
 </ul></li>
+</ul></li>
 </ul>
 </div>
 
+<div id="sampling-strategy" class="section level2">
+<h2>Sampling strategy</h2>
+<p>Sampling strategy can be either probabilistic or non-probabilistic</p>
+<div id="convenience-sampling-non-probabilistic" class="section level3">
+<h3>Convenience sampling (non-probabilistic)</h3>
+<p>It is a frequently used method in emergency situations. It relies on sampling those respondents who are easiest to access. For example those who have settled along roadsides, or near the administrative center of the returnee settlement, etc. The danger with this type of monitoring is that it will often lead to biased results as the sample may not be representative of the majority, i.e. those with the most resources or power are often the ones who settle in the most easily accessible areas.</p>
+</div>
+<div id="snowball-sampling-non-probabilistic" class="section level3">
+<h3>Snowball sampling (non-probabilistic)</h3>
+<p>Snowball sampling (or <a href="https://en.wikipedia.org/wiki/Snowball_sampling">chain sampling, chain-referral sampling, referral sampling</a>) is a non-probability sampling technique where existing study subjects recruit future subjects from among their acquaintances. This technique is subject to numerous biases. For example, people who have many friends are more likely to be recruited into the sample. Therefore this approach might underweight the most vulnerable individuals</p>
+</div>
+<div id="purposive-sampling-non-probabilistic" class="section level3">
+<h3>Purposive sampling (non-probabilistic)</h3>
+<p>It is based on previous knowledge about who might be able to provide valuable or specific information. It uses the judgement of community representatives, project staff or assessors to select typical locations and/or informants. The sampling of children or women, for example, is a type of purposive sampling.</p>
+<ul>
+<li><p>Advantages: Moderately rigorous if well and clear criteria for sampling are followed. Useful when targeting specific groups of affected population or specific affected areas. Less time consuming and less expensive than representative sampling</p></li>
+<li><p>Disadvantage: Generalisations are biased and not recommended. Samples are not representative of population due to subjectivity of respondents</p></li>
+</ul>
+</div>
+<div id="purposive-sampling-using-strata-non-probabilistic" class="section level3">
+<h3>Purposive sampling using strata (non-probabilistic)</h3>
+</div>
+<div id="random-sampling-probabilistic" class="section level3">
+<h3>Random sampling (probabilistic)</h3>
+</div>
+<div id="stratified-sampling-probabilistic" class="section level3">
+<h3>Stratified sampling (probabilistic)</h3>
+</div>
+<div id="cluster-sampling-probabilistic" class="section level3">
+<h3>Cluster sampling (probabilistic)</h3>
+</div>
+</div>
+<div id="sample-universe" class="section level1">
+<h1>Sample universe</h1>
 <div id="defining-sample-size" class="section level2">
 <h2>Defining sample size</h2>
 <p>If you need a purely random sample, the size of the sample if a calculation that takes 3 variables:</p>
@@ -290,9 +375,6 @@ img {
 </tbody>
 </table>
 <p>Usually the decision on the right confidence level and error margin to be selected is also influenced by cost implication and the final usage of the figures that is looked for.</p>
-</div>
-<div id="sample-universe" class="section level2">
-<h2>Sample universe</h2>
 <div id="in-refugee-context" class="section level3">
 <h3>In refugee Context</h3>
 <p>Data is coming from proGres</p>
@@ -300,26 +382,6 @@ img {
 <div id="in-idp-context" class="section level3">
 <h3>In IDP context</h3>
 <p>Data is coming from a <em>Displacement Tracking Matrix</em></p>
-</div>
-</div>
-<div id="sampling-strategy" class="section level2">
-<h2>Sampling strategy</h2>
-<div id="convenience-sampling" class="section level3">
-<h3>Convenience sampling:</h3>
-<p>It is a frequently used method in emergency situations. It relies on sampling those respondents who are easiest to access. For example those who have settled along roadsides, or near the administrative center of the returnee settlement, etc. The danger with this type of monitoring is that it will often lead to biased results as the sample may not be representative of the majority, i.e. those with the most resources or power are often the ones who settle in the most easily accessible areas.</p>
-</div>
-<div id="purposive-sampling" class="section level3">
-<h3>Purposive sampling</h3>
-<p>It is based on previous knowledge about who might be able to provide valuable or specific information. The sampling of children or women, for example, is a type of purposive sampling</p>
-</div>
-<div id="random-sampling" class="section level3">
-<h3>Random sampling</h3>
-</div>
-<div id="sonowball-sampling" class="section level3">
-<h3>Sonowball sampling</h3>
-</div>
-<div id="purposive-sampling-using-strata" class="section level3">
-<h3>Purposive sampling using strata</h3>
 </div>
 </div>
 <div id="sample-weight" class="section level2">
@@ -335,6 +397,7 @@ img {
 <p>After the weights are initially calculated, they are normalized, or standardized, by dividing each weight by the average of the initial weights (equal to the sum of the initial weight divided by the sum of the number of cases) so that the sum of the normalized/standardized weights equals the sum of the cases over the entire sample. The standardization is done separately for each weight for the entire sample.</p>
 <p>The entire set of household sample weights is multiplied by a constant, thus, the total weighted number of households equals the total unweighted number of households at the national level.</p>
 <p>Individual sample weights are normalized separately for women and men. Thus, the total weighted number of women equals the total unweighted number of women, and the total weighted number of men equals the total unweighted number of men. Women and men are normalized separately because all non-HIV calculations are performed on women and men separately. We do not provide survey estimates on the joint population of women and men combined for anything other than HIV prevalence.</p>
+</div>
 </div>
 </div>
 
@@ -493,6 +556,8 @@ $(document).ready(function () {
     </div>
   </div>
 </footer>
+
+
 
 </div>
 
