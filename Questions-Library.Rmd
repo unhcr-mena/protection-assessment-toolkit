@@ -66,7 +66,7 @@ The next step will be then to [customise the form](Guidelines-for-Customisation.
 
 **Rating questions** are often much easier to understand by individual than **ranking questions** where  people may be forced to make one item worse or better than another, when they actually find them equal. Psychological research has proven that it’s a very tough thing for people to rank more than three options. When people are given a cognitively difficult task like ranking question choices of for instance six things, often they will end up getting frustrated and will start to rank choices randomly. This will lead to higher dropout rates and even worse, messy data. 
 
-Liker questions allows for each individual parts to have the same value, if that is how people feel about them. Last the analysis of rating is more intuitve than the one of a rank that in addition might not have much statistical significance. Also from likert questions, it's possible  to compute an average score from each separate ratings in order to get an overall ranking. 
+Likert questions allows for each individual parts to have the same value, if that is how people feel about them. Last the analysis of rating is more intuitve than the one of a rank that in addition might not have much statistical significance. Also from likert questions, it's possible  to compute an average score from each separate ratings in order to get an overall ranking through a [Borda Count](https://en.wikipedia.org/wiki/Borda_count). 
 
 Agreement
 
