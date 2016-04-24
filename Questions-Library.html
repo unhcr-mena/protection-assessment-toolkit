@@ -7,11 +7,11 @@
 <meta charset="utf-8">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="generator" content="pandoc" />
-<meta name="viewport" content="width=device-width, initial-scale=1">
 
 
 
-<title>Survey Plan Template</title>
+
+<title>Question Library</title>
 
 <script src="libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -46,25 +46,7 @@
 
 
 
-
-</head>
-
-<body>
-
-<style type = "text/css">
-.main-container {
-  max-width: 940px;
-  margin-left: auto;
-  margin-right: auto;
-}
-code {
-  color: inherit;
-  background-color: rgba(0, 0, 0, 0.04);
-}
-img {
-  max-width:100%;
-  height: auto;
-}
+<style type="text/css">
 h1 {
   font-size: 34px;
 }
@@ -85,6 +67,27 @@ h5 {
 }
 h6 {
   font-size: 12px;
+}
+</style>
+
+
+</head>
+
+<body>
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+  height: auto;
 }
 .tabbed-pane {
   padding-top: 12px;
@@ -148,7 +151,6 @@ $(document).ready(function () {
                 <ul class="multi-column-dropdown">
                     <li class="dropdown-header">Form</li>
                   <li ><a href="protection-Topics.html">Protection Topics</a></li>
-                  <li ><a href="Flow-of-Questionnaires.html">Flow of Questionnaires</a></li>
                   <li ><a href="Questions-Library.html">Questions Library</a></li>
                   <li ><a href="Guidelines-for-Customisation.html">Guidelines for Customisation</a></li>
                 </ul>
@@ -242,17 +244,27 @@ $(document).ready(function () {
 <div class="fluid-row" id="header">
 
 
-<h1 class="title">Survey Plan Template</h1>
+
+<h1 class="title toc-ignore">Question Library</h1>
 
 </div>
 
 <div id="TOC">
 <ul>
 <li><a href="#intro-from-the-plan-to-the-form">Intro: from the plan to the form</a></li>
-<li><a href="#section"></a></li>
+<li><a href="#key-informant-level">key Informant level</a><ul>
+<li><a href="#questions-componnent">Questions componnent</a></li>
+<li><a href="#questionnaire-componnent-for-household-representative">Questionnaire Componnent for Household Representative</a></li>
+<li><a href="#questionnaire-componnent-for-individual-women">Questionnaire Componnent for Individual Women</a></li>
+<li><a href="#questionnaire-componnent-for-individual-men">Questionnaire Componnent for Individual Men</a></li>
+<li><a href="#questionnaire-componnent-for-children-youth">Questionnaire Componnent for Children &amp; Youth</a></li>
+</ul></li>
+<li><a href="#using-the-library">Using the library</a><ul>
 <li><a href="#the-xlsform-format">The XLSFORM format</a></li>
 <li><a href="#filtering-the-questions">Filtering the questions</a></li>
-<li><a href="#a-note-on-question-types">A note on question types</a><ul>
+</ul></li>
+<li><a href="#question-design">Question design</a><ul>
+<li><a href="#checklist">Checklist</a></li>
 <li><a href="#likert-questions">Likert questions</a></li>
 </ul></li>
 </ul>
@@ -274,8 +286,75 @@ This chapter is not written yet.
 <li>Specific Protection indicator</li>
 </ul>
 </div>
-<div id="section" class="section level2">
-<h2></h2>
+<div id="key-informant-level" class="section level2">
+<h2>key Informant level</h2>
+<p>The following modules will be included in the Protection Assessment at the key Informant level:</p>
+<div id="questions-componnent" class="section level3">
+<h3>Questions componnent</h3>
+<p>In the Protection Assessment at the Household level, some questions should be linked to specific members within the household:</p>
+</div>
+<div id="questionnaire-componnent-for-household-representative" class="section level3">
+<h3>Questionnaire Componnent for Household Representative</h3>
+<ul>
+<li>Profile of Household Members</li>
+<li>Education</li>
+<li>Child Labour</li>
+<li>Civil Documentation</li>
+<li>Property</li>
+<li>accomodation Conditions</li>
+</ul>
+</div>
+<div id="questionnaire-componnent-for-individual-women" class="section level3">
+<h3>Questionnaire Componnent for Individual Women</h3>
+<ul>
+<li>Access to Mass Media and Use of Information and Communication Technology</li>
+<li>Attitudes toward Domestic Violence</li>
+<li>Marriage/Union</li>
+<li>Intention</li>
+</ul>
+</div>
+<div id="questionnaire-componnent-for-individual-men" class="section level3">
+<h3>Questionnaire Componnent for Individual Men</h3>
+<ul>
+<li>Access to Mass Media and Use of Information and Communication Technology</li>
+<li>Attitudes toward Domestic Violence Marriage/Union</li>
+<li>Intention</li>
+</ul>
+</div>
+<div id="questionnaire-componnent-for-children-youth" class="section level3">
+<h3>Questionnaire Componnent for Children &amp; Youth</h3>
+<ul>
+<li>Birth Registration</li>
+<li>School attendance</li>
+<li>Early Marriage</li>
+</ul>
+</div>
+</div>
+<div id="using-the-library" class="section level2">
+<h2>Using the library</h2>
+<div id="the-xlsform-format" class="section level3">
+<h3>The XLSFORM format</h3>
+<p><a href="http://xlsform.org/">XLSFROM</a> is a standard way to describe a form. It includes information not only on the type of questions but also on:</p>
+<ul>
+<li>Hints in order to add comments on methodology</li>
+<li>Contraints to avoid entering uncorrect information</li>
+<li>Relevant to allow for skip logic</li>
+<li>Support for multiple language</li>
+<li>Possibility to perfom calculation for data quality checking</li>
+<li>Possibility to repeat the same questions in a loop.</li>
+</ul>
+</div>
+<div id="filtering-the-questions" class="section level3">
+<h3>Filtering the questions</h3>
+<p>The question library is an <a href="https://docs.google.com/spreadsheets/d/1zGnaLXouP9vTfjqVvUVOSfzeSkvpd63f8Z-zvqGJtNU">online google spreasheet</a> where a sries of questions are organised around multiple categories</p>
+<p>To use it, simply copy or donwload the library, filter out the question you are not interested in and delete them.</p>
+<p>The next step will be then to <a href="Guidelines-for-Customisation.html">customise the form</a></p>
+</div>
+</div>
+<div id="question-design" class="section level2">
+<h2>Question design</h2>
+<div id="checklist" class="section level3">
+<h3>Checklist</h3>
 <ul>
 <li>Closing questions</li>
 <li>Skip patterns</li>
@@ -288,31 +367,21 @@ This chapter is not written yet.
 <li>Parcimony</li>
 </ul>
 </div>
-<div id="the-xlsform-format" class="section level2">
-<h2>The XLSFORM format</h2>
-<p><a href="http://xlsform.org/">XLSFROM</a> is a standard way to describe a form. It includes information not only on the type of questions but also on:</p>
-<ul>
-<li>Hints in order to add comments on methodology</li>
-<li>Contraints to avoid entering uncorrect information</li>
-<li>Relevant to allow for skip logic</li>
-<li>Support for multiple language</li>
-<li>Possibility to perfom calculation for data quality checking</li>
-<li>Possibility to repeat the same questions in a loop.</li>
-</ul>
-</div>
-<div id="filtering-the-questions" class="section level2">
-<h2>Filtering the questions</h2>
-<p>The question library is an <a href="https://docs.google.com/spreadsheets/d/1zGnaLXouP9vTfjqVvUVOSfzeSkvpd63f8Z-zvqGJtNU">online google spreasheet</a> where a sries of questions are organised around multiple categories</p>
-<p>To use it, simply copy or donwload the library, filter out the question you are not interested in and delete them.</p>
-<p>The next step will be then to <a href="Guidelines-for-Customisation.html">customise the form</a></p>
-</div>
-<div id="a-note-on-question-types" class="section level2">
-<h2>A note on question types</h2>
 <div id="likert-questions" class="section level3">
 <h3>Likert questions</h3>
 <p><a href="https://en.wikipedia.org/wiki/Likert_scale">Likert scale</a> also called “opininion scale” desribe a way to formulate questions related to opinion. A Likert item is simply a statement that the respondent is asked to evaluate by giving it a quantitative value on any kind of subjective or objective dimension, with level of agreement/disagreement being the dimension most commonly used.</p>
 <p><strong>Rating questions</strong> are often much easier to understand by individual than <strong>ranking questions</strong> where people may be forced to make one item worse or better than another, when they actually find them equal. Psychological research has proven that it’s a very tough thing for people to rank more than three options. When people are given a cognitively difficult task like ranking question choices of for instance six things, often they will end up getting frustrated and will start to rank choices randomly. This will lead to higher dropout rates and even worse, messy data.</p>
 <p>Likert questions allows for each individual parts to have the same value, if that is how people feel about them. Last the analysis of rating is more intuitve than the one of a rank that in addition might not have much statistical significance. Also from likert questions, it’s possible to compute an average score from each separate ratings in order to get an overall ranking through a <a href="https://en.wikipedia.org/wiki/Borda_count">Borda Count</a>.</p>
+<p>When designing likert questions, attention need to be given to specific <a href="http://www.uwex.edu/ces/4h/evaluation/documents/Wordingforratingscales.pdf">design issues</a> specifically in terms of wording.</p>
+<ol style="list-style-type: decimal">
+<li>Length of the scale: limit the number of points along the scale.</li>
+<li>Odd or even point scale: There should not be preferred or better choice.</li>
+<li>Label the points in the scale: Avoid using just numbers to indicate the points on the scale.</li>
+<li>Balanced scale: Make sure that the scale is balanced with an equal number of positive and negative categories. Center point on bipolar scale: A common mistake when creating a rating scale is including “no opinion” or “uncertain” as a middle response on a bipolar scale. These options are not actually a part of the scale order. A middle category in a scale between “agree” and “disagree” would be “neither agree nor disagree”. Options such as: “no opinion”, “not sure”, “undecided”, “don’t know”, or “not applicable” are placed off the scale, in a separate space.</li>
+<li>Match response to question: Be as direct and specific as possible, focusing the response options on what you want to measure.</li>
+<li>Keep labels consistent: Finally, the labels used in the scale need to refer to the same thing.</li>
+</ol>
+<p>Some examples are given below:</p>
 <p>Agreement</p>
 <ul>
 <li>Strongly Agree</li>
@@ -344,6 +413,22 @@ This chapter is not written yet.
 <li>Occasionally True</li>
 <li>Usually Not True</li>
 <li>Almost Never True</li>
+</ul>
+<p>Quality</p>
+<ul>
+<li>Very poor</li>
+<li>Poor</li>
+<li>Fair</li>
+<li>Good</li>
+<li>Very Good</li>
+</ul>
+<p>Interest</p>
+<ul>
+<li>Not at all interesting<br /></li>
+<li>Slightly interesting</li>
+<li>Moderately interesting</li>
+<li>Very interesting</li>
+<li>Extremely interesting</li>
 </ul>
 </div>
 </div>
