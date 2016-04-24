@@ -9,10 +9,10 @@ source("options_communes.R")
 <div class="important">
 Objective of the question Library:
 
- * Avoid replicating bad practices
- * Ensure that all topics of interest are well covered
- * Check that all required questions to calculate the indicators and vulnerability profile (severity, magnitude, criticality) are included
- * Deliver quickly 
+ * Avoid replicating **bad practices**
+ * Ensure that all **topics of interest** are well covered in the analysis framework
+ * Check that for each selected topcis, all **required questions** to calculate the indicators and vulnerability profile (severity, magnitude, criticality) are included
+ * Deliver quickly **final reports** through reproducible analysis workflow
 
 </div>
 
@@ -195,8 +195,11 @@ To use it, simply copy or donwload the library,  filter out the question you are
 
 The next step will be then to [customise the form](Guidelines-for-Customisation.html)
 
+###  Questionnaire anaysis report
 
+The libary can generate a short report that sumerrise:
 
+ * What topcis are covered by the form
+ * Check that for each topics, questions are selected to allow for the estimation of magnitude, criticality  & severity
+ * Summarise questions that can be raised in key Informant Interview, samples household interview, on site household interview or Focus group Discussions.
 
-
- 

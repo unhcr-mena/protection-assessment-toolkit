@@ -5,7 +5,18 @@
   ```{r options_communes, include=FALSE}
 source("options_communes.R")
 ```
+<div class="important">
 
+Translate assessment results into programmatic response recommendations is challenging when it comes to protection activities. 
+
+The analysis of vulnerabilities allows to generate protection activities recommandation.
+
+The analysis of vulnerabilities is complex as it should allow to understand:
+
+ * How **multiple vulnerabilities** interact between each other (prioritisation through criticality)?
+ * What is, for **each vulnerability type**, the specific profile of a population group in terms of magnitude and severity?
+
+</div>
 Translate assessment results into programmatic response recommendations is challenging when it comes to protection activities. 
 
 ## The Right based approach 
