@@ -7,7 +7,13 @@ source("options_communes.R")
 ```
 
 <div class="important">
-This chapter is not written yet.
+Objective of the question Library:
+
+ * Avoid replicating bad practices
+ * Ensure that all topics of interest are well covered
+ * Check that all required questions to calculate the indicators and vulnerability profile (severity, magnitude, criticality) are included
+ * Deliver quickly 
+
 </div>
 
 ## Intro: from the plan to the form
@@ -25,11 +31,7 @@ Each data element collected should be linked to:
 * Specific Protection indicator
 
 
-## key Informant level
-The following modules will be included in the Protection Assessment at the key Informant level:
-
-
-### Questions componnent 
+## Questions componnent 
 
 In the Protection Assessment at the Household level, some questions should be linked to specific members within the household:
 
@@ -62,28 +64,6 @@ In the Protection Assessment at the Household level, some questions should be li
 
 
 
-## Using the library
-
-###  The XLSFORM format
-
-[XLSFROM](http://xlsform.org/) is a standard way to describe a form. It includes information not only on the type of questions but also on:
-
-* Hints in order to add comments on methodology
-* Contraints to avoid entering uncorrect information 
-* Relevant to allow for skip logic
-* Support for multiple language
-* Possibility to perfom calculation for data quality checking
-* Possibility to repeat the same questions in a loop.
-
-###  Filtering the questions
-
-The question library is an [online google spreasheet](https://docs.google.com/spreadsheets/d/1zGnaLXouP9vTfjqVvUVOSfzeSkvpd63f8Z-zvqGJtNU) where a sries of questions are organised around multiple categories
-
-To use it, simply copy or donwload the library,  filter out the question you are not interested in and delete them.
-
-The next step will be then to [customise the form](Guidelines-for-Customisation.html)
-
-
 ## Question design 
 
 
@@ -99,6 +79,29 @@ The next step will be then to [customise the form](Guidelines-for-Customisation.
 * Consultation
 * Parcimony
 
+
+### Context information
+
+
+* Metadata
+* Enumerator
+* Address
+* Consent
+* Household information
+* Self-expressed Needs
+* Subjective Evaluation
+* Referral
+* Notes
+
+
+
+### Locations & Geography
+
+Pcoding location within a form is an important taks
+
+it is possible to add pcode through a reference file, *itemsets.csv*, is available for each country. This reference file can be used when creating [Cascading selects](http://xlsform.org/#cascade) questions using the [select_one_external](http://xlsform.org/#external) function within XLSFORM questionnaires. The itemsets.csv file can be uploaded to UNHCR Kobo Server as a media file. It will be downloaded to any Kobo Collect like any other media file and saved to the [form-filename]-media folder. Clients like Kobo Collect load media files from the SD card and so a field data collection form with all locations within the country can load very quickly.
+
+*itemsets.csv* for the MENA region countries can be downloaded from [UNHCR MENA pcode](http://unhcr-mena.github.io/p-codes/)
 
 ### Likert questions
 
@@ -167,3 +170,33 @@ Interest
  *  Moderately interesting 
  *  Very interesting 
  *  Extremely interesting
+ 
+ 
+
+
+## Using the library
+
+###  The XLSFORM format
+
+[XLSFROM](http://xlsform.org/) is a standard way to describe a form. It includes information not only on the type of questions but also on:
+
+* Hints in order to add comments on methodology
+* Contraints to avoid entering uncorrect information 
+* Relevant to allow for skip logic
+* Support for multiple language
+* Possibility to perfom calculation for data quality checking
+* Possibility to repeat the same questions in a loop.
+
+###  Filtering the questions
+
+The question library is an [online google spreasheet](https://docs.google.com/spreadsheets/d/1zGnaLXouP9vTfjqVvUVOSfzeSkvpd63f8Z-zvqGJtNU) where a sries of questions are organised around multiple categories
+
+To use it, simply copy or donwload the library,  filter out the question you are not interested in and delete them.
+
+The next step will be then to [customise the form](Guidelines-for-Customisation.html)
+
+
+
+
+
+ 

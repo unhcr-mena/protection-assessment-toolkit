@@ -252,26 +252,33 @@ $(document).ready(function () {
 <div id="TOC">
 <ul>
 <li><a href="#intro-from-the-plan-to-the-form">Intro: from the plan to the form</a></li>
-<li><a href="#key-informant-level">key Informant level</a><ul>
-<li><a href="#questions-componnent">Questions componnent</a></li>
+<li><a href="#questions-componnent">Questions componnent</a><ul>
 <li><a href="#questionnaire-componnent-for-household-representative">Questionnaire Componnent for Household Representative</a></li>
 <li><a href="#questionnaire-componnent-for-individual-women">Questionnaire Componnent for Individual Women</a></li>
 <li><a href="#questionnaire-componnent-for-individual-men">Questionnaire Componnent for Individual Men</a></li>
 <li><a href="#questionnaire-componnent-for-children-youth">Questionnaire Componnent for Children &amp; Youth</a></li>
 </ul></li>
+<li><a href="#question-design">Question design</a><ul>
+<li><a href="#checklist">Checklist</a></li>
+<li><a href="#context-information">Context information</a></li>
+<li><a href="#locations-geography">Locations &amp; Geography</a></li>
+<li><a href="#likert-questions">Likert questions</a></li>
+</ul></li>
 <li><a href="#using-the-library">Using the library</a><ul>
 <li><a href="#the-xlsform-format">The XLSFORM format</a></li>
 <li><a href="#filtering-the-questions">Filtering the questions</a></li>
-</ul></li>
-<li><a href="#question-design">Question design</a><ul>
-<li><a href="#checklist">Checklist</a></li>
-<li><a href="#likert-questions">Likert questions</a></li>
 </ul></li>
 </ul>
 </div>
 
 <div class="important">
-This chapter is not written yet.
+<p>Objective of the question Library:</p>
+<ul>
+<li>Avoid replicating bad practices</li>
+<li>Ensure that all topics of interest are well covered</li>
+<li>Check that all required questions to calculate the indicators and vulnerability profile (severity, magnitude, criticality) are included</li>
+<li>Deliver quickly</li>
+</ul>
 </div>
 <div id="intro-from-the-plan-to-the-form" class="section level2">
 <h2>Intro: from the plan to the form</h2>
@@ -286,13 +293,9 @@ This chapter is not written yet.
 <li>Specific Protection indicator</li>
 </ul>
 </div>
-<div id="key-informant-level" class="section level2">
-<h2>key Informant level</h2>
-<p>The following modules will be included in the Protection Assessment at the key Informant level:</p>
-<div id="questions-componnent" class="section level3">
-<h3>Questions componnent</h3>
+<div id="questions-componnent" class="section level2">
+<h2>Questions componnent</h2>
 <p>In the Protection Assessment at the Household level, some questions should be linked to specific members within the household:</p>
-</div>
 <div id="questionnaire-componnent-for-household-representative" class="section level3">
 <h3>Questionnaire Componnent for Household Representative</h3>
 <ul>
@@ -330,27 +333,6 @@ This chapter is not written yet.
 </ul>
 </div>
 </div>
-<div id="using-the-library" class="section level2">
-<h2>Using the library</h2>
-<div id="the-xlsform-format" class="section level3">
-<h3>The XLSFORM format</h3>
-<p><a href="http://xlsform.org/">XLSFROM</a> is a standard way to describe a form. It includes information not only on the type of questions but also on:</p>
-<ul>
-<li>Hints in order to add comments on methodology</li>
-<li>Contraints to avoid entering uncorrect information</li>
-<li>Relevant to allow for skip logic</li>
-<li>Support for multiple language</li>
-<li>Possibility to perfom calculation for data quality checking</li>
-<li>Possibility to repeat the same questions in a loop.</li>
-</ul>
-</div>
-<div id="filtering-the-questions" class="section level3">
-<h3>Filtering the questions</h3>
-<p>The question library is an <a href="https://docs.google.com/spreadsheets/d/1zGnaLXouP9vTfjqVvUVOSfzeSkvpd63f8Z-zvqGJtNU">online google spreasheet</a> where a sries of questions are organised around multiple categories</p>
-<p>To use it, simply copy or donwload the library, filter out the question you are not interested in and delete them.</p>
-<p>The next step will be then to <a href="Guidelines-for-Customisation.html">customise the form</a></p>
-</div>
-</div>
 <div id="question-design" class="section level2">
 <h2>Question design</h2>
 <div id="checklist" class="section level3">
@@ -366,6 +348,26 @@ This chapter is not written yet.
 <li>Consultation</li>
 <li>Parcimony</li>
 </ul>
+</div>
+<div id="context-information" class="section level3">
+<h3>Context information</h3>
+<ul>
+<li>Metadata</li>
+<li>Enumerator</li>
+<li>Address</li>
+<li>Consent</li>
+<li>Household information</li>
+<li>Self-expressed Needs</li>
+<li>Subjective Evaluation</li>
+<li>Referral</li>
+<li>Notes</li>
+</ul>
+</div>
+<div id="locations-geography" class="section level3">
+<h3>Locations &amp; Geography</h3>
+<p>Pcoding location within a form is an important taks</p>
+<p>it is possible to add pcode through a reference file, <em>itemsets.csv</em>, is available for each country. This reference file can be used when creating <a href="http://xlsform.org/#cascade">Cascading selects</a> questions using the <a href="http://xlsform.org/#external">select_one_external</a> function within XLSFORM questionnaires. The itemsets.csv file can be uploaded to UNHCR Kobo Server as a media file. It will be downloaded to any Kobo Collect like any other media file and saved to the [form-filename]-media folder. Clients like Kobo Collect load media files from the SD card and so a field data collection form with all locations within the country can load very quickly.</p>
+<p><em>itemsets.csv</em> for the MENA region countries can be downloaded from <a href="http://unhcr-mena.github.io/p-codes/">UNHCR MENA pcode</a></p>
 </div>
 <div id="likert-questions" class="section level3">
 <h3>Likert questions</h3>
@@ -430,6 +432,27 @@ This chapter is not written yet.
 <li>Very interesting</li>
 <li>Extremely interesting</li>
 </ul>
+</div>
+</div>
+<div id="using-the-library" class="section level2">
+<h2>Using the library</h2>
+<div id="the-xlsform-format" class="section level3">
+<h3>The XLSFORM format</h3>
+<p><a href="http://xlsform.org/">XLSFROM</a> is a standard way to describe a form. It includes information not only on the type of questions but also on:</p>
+<ul>
+<li>Hints in order to add comments on methodology</li>
+<li>Contraints to avoid entering uncorrect information</li>
+<li>Relevant to allow for skip logic</li>
+<li>Support for multiple language</li>
+<li>Possibility to perfom calculation for data quality checking</li>
+<li>Possibility to repeat the same questions in a loop.</li>
+</ul>
+</div>
+<div id="filtering-the-questions" class="section level3">
+<h3>Filtering the questions</h3>
+<p>The question library is an <a href="https://docs.google.com/spreadsheets/d/1zGnaLXouP9vTfjqVvUVOSfzeSkvpd63f8Z-zvqGJtNU">online google spreasheet</a> where a sries of questions are organised around multiple categories</p>
+<p>To use it, simply copy or donwload the library, filter out the question you are not interested in and delete them.</p>
+<p>The next step will be then to <a href="Guidelines-for-Customisation.html">customise the form</a></p>
 </div>
 </div>
 
