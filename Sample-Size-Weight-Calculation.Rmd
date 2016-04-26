@@ -31,11 +31,18 @@ Purposive sampling can also be done through Key Informant.
 * Disadvantage: Generalisations are biased and not recommended. Samples are not representative of population due to subjectivity of respondents
 
 
-#### Snowball sampling ()
+#### Snowball & Respondent-driven sampling
 
 Snowball sampling (or [chain sampling, chain-referral sampling, referral sampling](https://en.wikipedia.org/wiki/Snowball_sampling)) is a non-probability sampling technique where existing study subjects recruit future subjects from among their acquaintances. This technique is subject to numerous biases. For example, people who have many friends are more likely to be recruited into the sample. 
 
 This approach might underweight the most vulnerable individuals.
+
+A declination of snowball sampling is the [Respondent-driven sampling -RDS](http://www.respondentdrivensampling.org/) approach. It combines "snowball sampling" with a mathematical model that weights the sample to compensate for the fact that the sample was collected in a non-random way. While data requirements for RDS analysis are minimal, there are three pieces of information which are essential for analysis (RDS analysis CANNOT BE PERFORMED without these fields for each respondent):
+
+* Personal Network Size (Degree) - Number of people the respondent knows within the target population. 
+* Respondent's Serial Number - Serial number of the coupon the respondent was recruited with. 
+* Respondent's Recruiting Serial Numbers - Serial numbers from the coupons the respondent is given to recruit others. 
+
 
 #### Purposive sampling using strata 
 
