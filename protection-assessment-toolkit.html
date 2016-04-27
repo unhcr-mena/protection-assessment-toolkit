@@ -207,7 +207,7 @@ Guidelines and Templates <br/>
 to facilitate assessment planning and design<br/> and to support the “technical” implementation of existing guidances
 </h2>
 <p>
-Last update : 26 April 2016
+Last update : 27 April 2016
 </p>
 </div>
 <div id="presentation" class="section level2">
@@ -308,10 +308,10 @@ The Toolkit is a <em>work in progress</em>: if you identify issues, please share
 <div class="row">
 <div class="col-md-4">
 <p>
-<strong>Analysis modules</strong>
+<strong>Analysis Steps</strong>
 </p>
 <div class="list-group">
-<a href="#Favourable-Protection-Environment" class="list-group-item">Favourable Protection Environment</a> <a href="#Fair-Protection-Processes-and-Documentation" class="list-group-item">Fair Protection Processes and Documentation</a> <a href="#Community-Empowerment-and-Self-Reliance" class="list-group-item">Community Empowerment and Self Reliance</a> <a href="#Basic-Needs-and-Essential-Services" class="list-group-item">Basic Needs and Essential Services</a> <a href="#Security-from-Violence-and-Exploitation" class="list-group-item">Security from Violence and Exploitation</a>
+<a href="#Discover" class="list-group-item">Discover</a> <a href="#Predict" class="list-group-item">Predict</a> <a href="#Advise" class="list-group-item">Advise</a>
 </div>
 </div>
 <div class="col-md-4">
@@ -2044,389 +2044,116 @@ This chapter is not written yet.
 </div>
 
 </article>
-<article id="Favourable-Protection-Environment">
+<article id="Discover">
 
-<div class="fluid-row" id="Favourable-Protection-Environment_header">
+<div class="fluid-row" id="Discover_header">
 
 
 
-<h1 class="title toc-ignore">Favourable Protection Environment</h1>
+<h1 class="title toc-ignore">Discover</h1>
 
 </div>
 
 <div class="TOC">
 <ul>
-<li><a href="#Favourable-Protection-Environment_protection-sensitive-border-mechanism">Protection-sensitive border mechanism</a></li>
-<li><a href="#Favourable-Protection-Environment_counselling-legal-aid-needs">Counselling &amp; Legal aid needs</a></li>
-<li><a href="#Favourable-Protection-Environment_freedom-of-movement-detention">Freedom of movement &amp; Detention</a></li>
-<li><a href="#Favourable-Protection-Environment_multiple-displacement-movement">Multiple Displacement &amp; Movement</a></li>
+<li><a href="#Discover_graphical-review">Graphical review</a><ul>
+<li><a href="#Discover_barchart">Barchart</a></li>
+<li><a href="#Discover_histogramm">Histogramm</a></li>
+<li><a href="#Discover_maps">Maps</a></li>
+</ul></li>
+<li><a href="#Discover_statistical-test">Statistical Test</a></li>
+<li><a href="#Discover_multivariate-analysis">Multivariate Analysis</a><ul>
+<li><a href="#Discover_dimensionnality-reduction">Dimensionnality reduction</a></li>
+<li><a href="#Discover_clustering">Clustering</a></li>
+<li><a href="#Discover_hierarchical-classification-on-principle-components">Hierarchical Classification on Principle Components</a></li>
+<li><a href="#Discover_description-of-statistical-clusters">Description of statistical clusters</a></li>
+</ul></li>
 </ul>
 </div>
 
 <div class="important">
-<p>On each topic, the protection assessment should allow to identify the affected population’s vulnerability profile:</p>
-<ul>
-<li>Capacities and capabilities in order to define <strong>criticality</strong></li>
-<li>Threat in terms of occurence in order to define <strong>magnitude</strong></li>
-<li>Threat in terms of exposure in order to define <strong>severity</strong></li>
-</ul>
+This chapter is not written yet.
 </div>
-<div id="Favourable-Protection-Environment_protection-sensitive-border-mechanism" class="section level2">
-<h2>Protection-sensitive border mechanism</h2>
-<ul>
-<li><p>Criticality</p></li>
-<li><p>Magnitude</p></li>
-<li><p>Severity</p></li>
-</ul>
+<div class="figure">
+<img src="images/Maturity.png"/>
 </div>
-<div id="Favourable-Protection-Environment_counselling-legal-aid-needs" class="section level2">
-<h2>Counselling &amp; Legal aid needs</h2>
-<ul>
-<li><p>Criticality</p></li>
-<li><p>Magnitude</p></li>
-<li><p>Severity</p></li>
-</ul>
+<p>The first phase of the analysis consist at discovering the variable links.</p>
+<div id="Discover_graphical-review" class="section level2">
+<h2>Graphical review</h2>
+<div id="Discover_barchart" class="section level3">
+<h3>Barchart</h3>
 </div>
-<div id="Favourable-Protection-Environment_freedom-of-movement-detention" class="section level2">
-<h2>Freedom of movement &amp; Detention</h2>
-<ul>
-<li><p>Criticality</p></li>
-<li><p>Magnitude</p></li>
-<li><p>Severity</p></li>
-</ul>
+<div id="Discover_histogramm" class="section level3">
+<h3>Histogramm</h3>
 </div>
-<div id="Favourable-Protection-Environment_multiple-displacement-movement" class="section level2">
-<h2>Multiple Displacement &amp; Movement</h2>
-<ul>
-<li><p>Criticality</p></li>
-<li><p>Magnitude</p></li>
-<li><p>Severity</p></li>
-</ul>
+<div id="Discover_maps" class="section level3">
+<h3>Maps</h3>
+</div>
+</div>
+<div id="Discover_statistical-test" class="section level2">
+<h2>Statistical Test</h2>
+<p>Two random variables are called independent if the probability distribution of one variable is not affected by the presence of another. This is tested through the <em>Chi-squared Test of Independence</em> that allows to know if the independance hypothesis has a higher value than the .05 significance level.</p>
+<p>The Chi-squared Test provide a <em>p-value</em>: if the p-value is greater than the .05, then the two tested variable are independent</p>
+</div>
+<div id="Discover_multivariate-analysis" class="section level2">
+<h2>Multivariate Analysis</h2>
+<p>Refugees profile are defined by multiple categories. However it is very difficult for the human brain to process more than 7 categories toggether. An important challenge to understand the profile of the population is to discover how categories interact together. Fortunately, since the 70’s, Social scientist have developed technique that allow to discover statistical clusters among a specific population.</p>
+<p>Multiple Correspondence Analysis (<a href="https://en.wikipedia.org/wiki/Multiple_correspondence_analysis">MCA</a>) is a data analysis technique for nominal categorical data, used to detect and represent underlying structures in a data set.</p>
+<div id="Discover_dimensionnality-reduction" class="section level3">
+<h3>Dimensionnality reduction</h3>
+<p>The first step of the analysis is to reduce the numbers of dimansion in order to represent each observation in a 2D space.</p>
+</div>
+<div id="Discover_clustering" class="section level3">
+<h3>Clustering</h3>
+<p>Clustering is the task of grouping a set of objects in such a way that objects in the same group (called a cluster) are more similar (in some sense or another) to each other than to those in other groups (clusters). Refugee data are mostly categorical so clustering is done on the result of the Multiple Correspondence Analysis.</p>
+</div>
+<div id="Discover_hierarchical-classification-on-principle-components" class="section level3">
+<h3>Hierarchical Classification on Principle Components</h3>
+</div>
+<div id="Discover_description-of-statistical-clusters" class="section level3">
+<h3>Description of statistical clusters</h3>
+</div>
 </div>
 
 </article>
-<article id="Fair-Protection-Processes-and-Documentation">
+<article id="Predict">
 
-<div class="fluid-row" id="Fair-Protection-Processes-and-Documentation_header">
+<div class="fluid-row" id="Predict_header">
 
 
 
-<h1 class="title toc-ignore">Fair Protection Processes and Documentation</h1>
+<h1 class="title toc-ignore">Predict</h1>
 
 </div>
 
 <div class="TOC">
 <ul>
-<li><a href="#Fair-Protection-Processes-and-Documentation_birth-registration">Birth Registration</a></li>
-<li><a href="#Fair-Protection-Processes-and-Documentation_civil-status-documentation">Civil status documentation</a></li>
-<li><a href="#Fair-Protection-Processes-and-Documentation_family-re-unification">Family re-unification</a></li>
-<li><a href="#Fair-Protection-Processes-and-Documentation_refugee-registration">Refugee registration</a></li>
-<li><a href="#Fair-Protection-Processes-and-Documentation_risk-of-eviction">Risk of eviction</a></li>
+<li><a href="#Predict_regression-analysis">Regression Analysis</a></li>
 </ul>
 </div>
 
 <div class="important">
-<p>On each topic, the protection assessment should allow to identify the affected population’s vulnerability profile:</p>
-<ul>
-<li>Capacities and capabilities in order to define <strong>criticality</strong></li>
-<li>Threat in terms of occurence in order to define <strong>magnitude</strong></li>
-<li>Threat in terms of exposure in order to define <strong>severity</strong></li>
-</ul>
+This chapter is not written yet.
 </div>
-<div id="Fair-Protection-Processes-and-Documentation_birth-registration" class="section level2">
-<h2>Birth Registration</h2>
-<ul>
-<li><p>Criticality</p></li>
-<li><p>Magnitude</p></li>
-<li><p>Severity</p></li>
-</ul>
-</div>
-<div id="Fair-Protection-Processes-and-Documentation_civil-status-documentation" class="section level2">
-<h2>Civil status documentation</h2>
-<ul>
-<li><p>Criticality</p></li>
-<li><p>Magnitude</p></li>
-<li><p>Severity</p></li>
-</ul>
-</div>
-<div id="Fair-Protection-Processes-and-Documentation_family-re-unification" class="section level2">
-<h2>Family re-unification</h2>
-<ul>
-<li><p>Criticality</p></li>
-<li><p>Magnitude</p></li>
-<li><p>Severity</p></li>
-</ul>
-</div>
-<div id="Fair-Protection-Processes-and-Documentation_refugee-registration" class="section level2">
-<h2>Refugee registration</h2>
-<ul>
-<li><p>Criticality</p></li>
-<li><p>Magnitude</p></li>
-<li><p>Severity</p></li>
-</ul>
-</div>
-<div id="Fair-Protection-Processes-and-Documentation_risk-of-eviction" class="section level2">
-<h2>Risk of eviction</h2>
-<ul>
-<li><p>Criticality</p></li>
-<li><p>Magnitude</p></li>
-<li><p>Severity</p></li>
-</ul>
+<div id="Predict_regression-analysis" class="section level2">
+<h2>Regression Analysis</h2>
+<p>Regression analysis is a statistical process for estimating the relationships among variables. Regression (and more specifically in the case of categorical data: <a href="https://en.wikipedia.org/wiki/Logistic_regression">logistic regression</a>) can be used to predict certain characteristics or events linked to one household.</p>
 </div>
 
 </article>
-<article id="Community-Empowerment-and-Self-Reliance">
+<article id="Advise">
 
-<div class="fluid-row" id="Community-Empowerment-and-Self-Reliance_header">
+<div class="fluid-row" id="Advise_header">
 
 
 
-<h1 class="title toc-ignore">Community Empowerment and Self Reliance</h1>
+<h1 class="title toc-ignore">Advise</h1>
 
 </div>
 
-<div class="TOC">
-<ul>
-<li><a href="#Community-Empowerment-and-Self-Reliance_social-cohesion">Social cohesion</a></li>
-<li><a href="#Community-Empowerment-and-Self-Reliance_housing-shelter-wash-conditions">Housing, shelter &amp; wash conditions</a></li>
-<li><a href="#Community-Empowerment-and-Self-Reliance_employment-livelihood">Employment &amp; livelihood</a></li>
-<li><a href="#Community-Empowerment-and-Self-Reliance_child-labour">Child Labour</a></li>
-<li><a href="#Community-Empowerment-and-Self-Reliance_assets-budget">Assets &amp; Budget</a></li>
-</ul>
-</div>
 
 <div class="important">
-<p>On each topic, the protection assessment should allow to identify the affected population’s vulnerability profile:</p>
-<ul>
-<li>Capacities and capabilities in order to define <strong>criticality</strong></li>
-<li>Threat in terms of occurence in order to define <strong>magnitude</strong></li>
-<li>Threat in terms of exposure in order to define <strong>severity</strong></li>
-</ul>
-</div>
-<div id="Community-Empowerment-and-Self-Reliance_social-cohesion" class="section level2">
-<h2>Social cohesion</h2>
-<ul>
-<li><p>Criticality</p></li>
-<li><p>Magnitude</p></li>
-<li><p>Severity</p></li>
-</ul>
-</div>
-<div id="Community-Empowerment-and-Self-Reliance_housing-shelter-wash-conditions" class="section level2">
-<h2>Housing, shelter &amp; wash conditions</h2>
-<ul>
-<li><p>Criticality</p></li>
-<li><p>Magnitude</p></li>
-<li><p>Severity</p></li>
-</ul>
-</div>
-<div id="Community-Empowerment-and-Self-Reliance_employment-livelihood" class="section level2">
-<h2>Employment &amp; livelihood</h2>
-<ul>
-<li><p>Criticality</p></li>
-<li><p>Magnitude</p></li>
-<li><p>Severity</p></li>
-</ul>
-</div>
-<div id="Community-Empowerment-and-Self-Reliance_child-labour" class="section level2">
-<h2>Child Labour</h2>
-<ul>
-<li><p>Criticality</p></li>
-<li><p>Magnitude</p></li>
-<li><p>Severity</p></li>
-</ul>
-</div>
-<div id="Community-Empowerment-and-Self-Reliance_assets-budget" class="section level2">
-<h2>Assets &amp; Budget</h2>
-<ul>
-<li><p>Criticality</p></li>
-<li><p>Magnitude</p></li>
-<li><p>Severity</p></li>
-</ul>
-</div>
-
-</article>
-<article id="Basic-Needs-and-Essential-Services">
-
-<div class="fluid-row" id="Basic-Needs-and-Essential-Services_header">
-
-
-
-<h1 class="title toc-ignore">Basic Needs and Essential Services</h1>
-
-</div>
-
-<div class="TOC">
-<ul>
-<li><a href="#Basic-Needs-and-Essential-Services_refugees-with-specific-needs">Refugees with specific needs</a></li>
-<li><a href="#Basic-Needs-and-Essential-Services_assistance-received">Assistance received</a></li>
-<li><a href="#Basic-Needs-and-Essential-Services_negative-coping-mechanism">Negative coping mechanism</a></li>
-<li><a href="#Basic-Needs-and-Essential-Services_food-security">Food security</a></li>
-<li><a href="#Basic-Needs-and-Essential-Services_access-to-health-services">Access to health services</a></li>
-<li><a href="#Basic-Needs-and-Essential-Services_education-out-of-school-children">Education / Out of School Children</a></li>
-</ul>
-</div>
-
-<div class="important">
-<p>On each topic, the protection assessment should allow to identify the affected population’s vulnerability profile:</p>
-<ul>
-<li>Capacities and capabilities in order to define <strong>criticality</strong></li>
-<li>Threat in terms of occurence in order to define <strong>magnitude</strong></li>
-<li>Threat in terms of exposure in order to define <strong>severity</strong></li>
-</ul>
-</div>
-<div id="Basic-Needs-and-Essential-Services_refugees-with-specific-needs" class="section level2">
-<h2>Refugees with specific needs</h2>
-<ul>
-<li><p>Criticality</p></li>
-<li><p>Magnitude</p></li>
-<li><p>Severity</p></li>
-</ul>
-</div>
-<div id="Basic-Needs-and-Essential-Services_assistance-received" class="section level2">
-<h2>Assistance received</h2>
-<ul>
-<li><p>Criticality</p></li>
-<li><p>Magnitude</p></li>
-<li><p>Severity</p></li>
-</ul>
-</div>
-<div id="Basic-Needs-and-Essential-Services_negative-coping-mechanism" class="section level2">
-<h2>Negative coping mechanism</h2>
-<ul>
-<li><p>Criticality</p></li>
-<li><p>Magnitude</p></li>
-<li><p>Severity</p></li>
-</ul>
-</div>
-<div id="Basic-Needs-and-Essential-Services_food-security" class="section level2">
-<h2>Food security</h2>
-<ul>
-<li><p>Criticality</p></li>
-<li><p>Magnitude</p></li>
-<li><p>Severity</p></li>
-</ul>
-</div>
-<div id="Basic-Needs-and-Essential-Services_access-to-health-services" class="section level2">
-<h2>Access to health services</h2>
-<ul>
-<li><p>Criticality</p></li>
-<li><p>Magnitude</p></li>
-<li><p>Severity</p></li>
-</ul>
-</div>
-<div id="Basic-Needs-and-Essential-Services_education-out-of-school-children" class="section level2">
-<h2>Education / Out of School Children</h2>
-<ul>
-<li><p>Criticality</p></li>
-<li><p>Magnitude</p></li>
-<li><p>Severity</p></li>
-</ul>
-</div>
-
-</article>
-<article id="Security-from-Violence-and-Exploitation">
-
-<div class="fluid-row" id="Security-from-Violence-and-Exploitation_header">
-
-
-
-<h1 class="title toc-ignore">Security from Violence and Exploitation</h1>
-
-</div>
-
-<div class="TOC">
-<ul>
-<li><a href="#Security-from-Violence-and-Exploitation_sexual-harassment-violence-rape">Sexual Harassment &amp; Violence (Rape)</a></li>
-<li><a href="#Security-from-Violence-and-Exploitation_harassment-between-youth">Harassment between youth</a></li>
-<li><a href="#Security-from-Violence-and-Exploitation_gender-inequality">Gender inequality</a></li>
-<li><a href="#Security-from-Violence-and-Exploitation_domestic-violence-parental-stress-isolation-at-home">Domestic Violence (Parental stress, Isolation at home)</a></li>
-<li><a href="#Security-from-Violence-and-Exploitation_forced-and-early-marriage">Forced and early marriage</a></li>
-<li><a href="#Security-from-Violence-and-Exploitation_violence-among-children">Violence among children</a></li>
-<li><a href="#Security-from-Violence-and-Exploitation_armed-recruitment">Armed recruitment</a></li>
-<li><a href="#Security-from-Violence-and-Exploitation_harassment-violence-towards-lgbti">Harassment &amp; Violence towards LGBTI</a></li>
-<li><a href="#Security-from-Violence-and-Exploitation_security-civil-violence">Security &amp; Civil violence</a></li>
-</ul>
-</div>
-
-<div class="important">
-<p>On each topic, the protection assessment should allow to identify the affected population’s vulnerability profile:</p>
-<ul>
-<li>Capacities and capabilities in order to define <strong>criticality</strong></li>
-<li>Threat in terms of occurence in order to define <strong>magnitude</strong></li>
-<li>Threat in terms of exposure in order to define <strong>severity</strong></li>
-</ul>
-</div>
-<div id="Security-from-Violence-and-Exploitation_sexual-harassment-violence-rape" class="section level2">
-<h2>Sexual Harassment &amp; Violence (Rape)</h2>
-<ul>
-<li><p>Criticality</p></li>
-<li><p>Magnitude</p></li>
-<li><p>Severity</p></li>
-</ul>
-</div>
-<div id="Security-from-Violence-and-Exploitation_harassment-between-youth" class="section level2">
-<h2>Harassment between youth</h2>
-<ul>
-<li><p>Criticality</p></li>
-<li><p>Magnitude</p></li>
-<li><p>Severity</p></li>
-</ul>
-</div>
-<div id="Security-from-Violence-and-Exploitation_gender-inequality" class="section level2">
-<h2>Gender inequality</h2>
-<ul>
-<li><p>Criticality</p></li>
-<li><p>Magnitude</p></li>
-<li><p>Severity</p></li>
-</ul>
-</div>
-<div id="Security-from-Violence-and-Exploitation_domestic-violence-parental-stress-isolation-at-home" class="section level2">
-<h2>Domestic Violence (Parental stress, Isolation at home)</h2>
-<ul>
-<li><p>Criticality</p></li>
-<li><p>Magnitude</p></li>
-<li><p>Severity</p></li>
-</ul>
-</div>
-<div id="Security-from-Violence-and-Exploitation_forced-and-early-marriage" class="section level2">
-<h2>Forced and early marriage</h2>
-<ul>
-<li><p>Criticality</p></li>
-<li><p>Magnitude</p></li>
-<li><p>Severity</p></li>
-</ul>
-</div>
-<div id="Security-from-Violence-and-Exploitation_violence-among-children" class="section level2">
-<h2>Violence among children</h2>
-<ul>
-<li><p>Criticality</p></li>
-<li><p>Magnitude</p></li>
-<li><p>Severity</p></li>
-</ul>
-</div>
-<div id="Security-from-Violence-and-Exploitation_armed-recruitment" class="section level2">
-<h2>Armed recruitment</h2>
-<ul>
-<li><p>Criticality</p></li>
-<li><p>Magnitude</p></li>
-<li><p>Severity</p></li>
-</ul>
-</div>
-<div id="Security-from-Violence-and-Exploitation_harassment-violence-towards-lgbti" class="section level2">
-<h2>Harassment &amp; Violence towards LGBTI</h2>
-<ul>
-<li><p>Criticality</p></li>
-<li><p>Magnitude</p></li>
-<li><p>Severity</p></li>
-</ul>
-</div>
-<div id="Security-from-Violence-and-Exploitation_security-civil-violence" class="section level2">
-<h2>Security &amp; Civil violence</h2>
-<ul>
-<li><p>Criticality</p></li>
-<li><p>Magnitude</p></li>
-<li><p>Severity</p></li>
-</ul>
+This chapter is not written yet.
 </div>
 
 </article>

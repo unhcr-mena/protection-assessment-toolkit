@@ -11,7 +11,7 @@
 
 
 
-<title>Fair Protection Processes and Documentation</title>
+<title>Discover</title>
 
 <script src="libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -195,12 +195,10 @@ $(document).ready(function () {
             <div class="row">
               <div class="col-sm-4">
                 <ul class="multi-column-dropdown">
-                    <li class="dropdown-header">Analysis modules</li>
-                  <li ><a href="Favourable-Protection-Environment.html">Favourable Protection Environment</a></li>
-                  <li ><a href="Fair-Protection-Processes-and-Documentation.html">Fair Protection Processes and Documentation</a></li>
-                  <li ><a href="Community-Empowerment-and-Self-Reliance.html">Community Empowerment and Self Reliance</a></li>
-                  <li ><a href="Basic-Needs-and-Essential-Services.html">Basic Needs and Essential Services</a></li>
-                  <li ><a href="Security-from-Violence-and-Exploitation.html">Security from Violence and Exploitation</a></li>
+                    <li class="dropdown-header">Analysis Steps</li>
+                  <li ><a href="Discover.html">Discover</a></li>
+                  <li ><a href="Predict.html">Predict</a></li>
+                  <li ><a href="Advise.html">Advise</a></li>
                 </ul>
               </div>
               <div class="col-sm-4">
@@ -245,67 +243,69 @@ $(document).ready(function () {
 
 
 
-<h1 class="title toc-ignore">Fair Protection Processes and Documentation</h1>
+<h1 class="title toc-ignore">Discover</h1>
 
 </div>
 
 <div id="TOC">
 <ul>
-<li><a href="#birth-registration">Birth Registration</a></li>
-<li><a href="#civil-status-documentation">Civil status documentation</a></li>
-<li><a href="#family-re-unification">Family re-unification</a></li>
-<li><a href="#refugee-registration">Refugee registration</a></li>
-<li><a href="#risk-of-eviction">Risk of eviction</a></li>
+<li><a href="#graphical-review">Graphical review</a><ul>
+<li><a href="#barchart">Barchart</a></li>
+<li><a href="#histogramm">Histogramm</a></li>
+<li><a href="#maps">Maps</a></li>
+</ul></li>
+<li><a href="#statistical-test">Statistical Test</a></li>
+<li><a href="#multivariate-analysis">Multivariate Analysis</a><ul>
+<li><a href="#dimensionnality-reduction">Dimensionnality reduction</a></li>
+<li><a href="#clustering">Clustering</a></li>
+<li><a href="#hierarchical-classification-on-principle-components">Hierarchical Classification on Principle Components</a></li>
+<li><a href="#description-of-statistical-clusters">Description of statistical clusters</a></li>
+</ul></li>
 </ul>
 </div>
 
 <div class="important">
-<p>On each topic, the protection assessment should allow to identify the affected population’s vulnerability profile:</p>
-<ul>
-<li>Capacities and capabilities in order to define <strong>criticality</strong></li>
-<li>Threat in terms of occurence in order to define <strong>magnitude</strong></li>
-<li>Threat in terms of exposure in order to define <strong>severity</strong></li>
-</ul>
+This chapter is not written yet.
 </div>
-<div id="birth-registration" class="section level2">
-<h2>Birth Registration</h2>
-<ul>
-<li><p>Criticality</p></li>
-<li><p>Magnitude</p></li>
-<li><p>Severity</p></li>
-</ul>
+<div class="figure">
+<img src="images/Maturity.png" />
 </div>
-<div id="civil-status-documentation" class="section level2">
-<h2>Civil status documentation</h2>
-<ul>
-<li><p>Criticality</p></li>
-<li><p>Magnitude</p></li>
-<li><p>Severity</p></li>
-</ul>
+<p>The first phase of the analysis consist at discovering the variable links.</p>
+<div id="graphical-review" class="section level2">
+<h2>Graphical review</h2>
+<div id="barchart" class="section level3">
+<h3>Barchart</h3>
 </div>
-<div id="family-re-unification" class="section level2">
-<h2>Family re-unification</h2>
-<ul>
-<li><p>Criticality</p></li>
-<li><p>Magnitude</p></li>
-<li><p>Severity</p></li>
-</ul>
+<div id="histogramm" class="section level3">
+<h3>Histogramm</h3>
 </div>
-<div id="refugee-registration" class="section level2">
-<h2>Refugee registration</h2>
-<ul>
-<li><p>Criticality</p></li>
-<li><p>Magnitude</p></li>
-<li><p>Severity</p></li>
-</ul>
+<div id="maps" class="section level3">
+<h3>Maps</h3>
 </div>
-<div id="risk-of-eviction" class="section level2">
-<h2>Risk of eviction</h2>
-<ul>
-<li><p>Criticality</p></li>
-<li><p>Magnitude</p></li>
-<li><p>Severity</p></li>
-</ul>
+</div>
+<div id="statistical-test" class="section level2">
+<h2>Statistical Test</h2>
+<p>Two random variables are called independent if the probability distribution of one variable is not affected by the presence of another. This is tested through the <em>Chi-squared Test of Independence</em> that allows to know if the independance hypothesis has a higher value than the .05 significance level.</p>
+<p>The Chi-squared Test provide a <em>p-value</em>: if the p-value is greater than the .05, then the two tested variable are independent</p>
+</div>
+<div id="multivariate-analysis" class="section level2">
+<h2>Multivariate Analysis</h2>
+<p>Refugees profile are defined by multiple categories. However it is very difficult for the human brain to process more than 7 categories toggether. An important challenge to understand the profile of the population is to discover how categories interact together. Fortunately, since the 70’s, Social scientist have developed technique that allow to discover statistical clusters among a specific population.</p>
+<p>Multiple Correspondence Analysis (<a href="https://en.wikipedia.org/wiki/Multiple_correspondence_analysis">MCA</a>) is a data analysis technique for nominal categorical data, used to detect and represent underlying structures in a data set.</p>
+<div id="dimensionnality-reduction" class="section level3">
+<h3>Dimensionnality reduction</h3>
+<p>The first step of the analysis is to reduce the numbers of dimansion in order to represent each observation in a 2D space.</p>
+</div>
+<div id="clustering" class="section level3">
+<h3>Clustering</h3>
+<p>Clustering is the task of grouping a set of objects in such a way that objects in the same group (called a cluster) are more similar (in some sense or another) to each other than to those in other groups (clusters). Refugee data are mostly categorical so clustering is done on the result of the Multiple Correspondence Analysis.</p>
+</div>
+<div id="hierarchical-classification-on-principle-components" class="section level3">
+<h3>Hierarchical Classification on Principle Components</h3>
+</div>
+<div id="description-of-statistical-clusters" class="section level3">
+<h3>Description of statistical clusters</h3>
+</div>
 </div>
 
 </article>
