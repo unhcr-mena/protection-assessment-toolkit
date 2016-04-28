@@ -48,6 +48,14 @@ A declination of snowball sampling is the [Respondent-driven sampling -RDS](http
 
 In this case, the risk of loosing certain componnent of the population is addressed by defining strata.
 
+#### Time-Location Sampling
+
+This Time-Location Samplin (TLS) approach can be used when the goal is to have a representation of population in movement. The idea is to sample persons at locations and at time at which they may be found. Time-location sampling is used to sample a population for which a sampling frame cannot be constructed but locations are known at which the population of interest can be found, or for which it is more efficient to sample at these locations. This approach is be appropriate for **border monitoring** for instance.
+
+You can find a [here practical guidelines for TLS](http://globalhealthsciences.ucsf.edu/sites/default/files/content/pphg/surveillance/modules/global-trainings/tls-res-guide-2nd-edition.pdf).
+
+
+
 ### Probalistics
 
 #### Random sampling 
