@@ -21,6 +21,13 @@ Practically speaking those coudl be either:
 
 The danger with this type of monitoring is that it will often lead to biased results as the sample may not be representative of the majority, i.e. those with the most resources or power are often the ones who settle in the most easily accessible areas.
 
+
+#### Snowball sampling
+
+Snowball sampling (or [chain sampling, chain-referral sampling, referral sampling](https://en.wikipedia.org/wiki/Snowball_sampling)) is a non-probability sampling technique where existing study subjects recruit future subjects from among their acquaintances. This technique is subject to numerous biases. For example, people who have many friends are more likely to be recruited into the sample. 
+
+This approach might underweight the most vulnerable individuals.
+
 #### Purposive sampling
 It is based on previous knowledge about who might be able to provide valuable or specific information. It uses the judgement of community representatives, project staff or assessors to select typical locations and/or informants. The sampling of children or women, for example, is a type of purposive sampling.
 
@@ -31,30 +38,33 @@ Purposive sampling can also be done through Key Informant.
 * Disadvantage: Generalisations are biased and not recommended. Samples are not representative of population due to subjectivity of respondents
 
 
-#### Snowball & Respondent-driven sampling
+#### Purposive sampling using strata 
 
-Snowball sampling (or [chain sampling, chain-referral sampling, referral sampling](https://en.wikipedia.org/wiki/Snowball_sampling)) is a non-probability sampling technique where existing study subjects recruit future subjects from among their acquaintances. This technique is subject to numerous biases. For example, people who have many friends are more likely to be recruited into the sample. 
+In this case, the risk of loosing certain componnent of the population is addressed by defining strata.
 
-This approach might underweight the most vulnerable individuals.
 
-A declination of snowball sampling is the [Respondent-driven sampling -RDS](http://www.respondentdrivensampling.org/) approach. It combines "snowball sampling" with a mathematical model that weights the sample to compensate for the fact that the sample was collected in a non-random way. While data requirements for RDS analysis are minimal, there are three pieces of information which are essential for analysis (RDS analysis CANNOT BE PERFORMED without these fields for each respondent):
+### Probalistics
+
+#### Respondent-driven sampling -RDS
+
+A declination of snowball sampling is the [Respondent-driven sampling -RDS](http://www.respondentdrivensampling.org/) approach. It combines "snowball sampling" with a mathematical model that weights the sample to compensate for the fact that the sample was collected in a non-random way. As such it can be classified as probabilistic approach. The advantage is that seeds selection is specific and does not require sample frame.
+
+While data requirements for RDS analysis are minimal, there are three pieces of information which are essential for analysis (RDS analysis CANNOT BE PERFORMED without these fields for each respondent):
 
 * Personal Network Size (Degree) - Number of people the respondent knows within the target population. 
 * Respondent's Serial Number - Serial number of the coupon the respondent was recruited with. 
 * Respondent's Recruiting Serial Numbers - Serial numbers from the coupons the respondent is given to recruit others. 
 
 
-#### Purposive sampling using strata 
-
-In this case, the risk of loosing certain componnent of the population is addressed by defining strata.
 
 #### Time-Location Sampling
 
-The Time-Location Sampling (TLS) approach can be used when the goal is to have a representation of population in movement. The idea is to sample persons at locations and at time at which they may be found. Time-location sampling is used to sample a population for which a sampling frame cannot be constructed but locations are known at which the population of interest can be found, or for which it is more efficient to sample at these locations. As such the approach is likely appropriate when the survey is taking place at a  **border**. More practical guidelines for TLS are available in a dedicated [Resource Guide TLS](http://globalhealthsciences.ucsf.edu/sites/default/files/content/pphg/surveillance/modules/global-trainings/tls-res-guide-2nd-edition.pdf) and some application on Border Monitoring for [tourism](http://meetings.sis-statistica.org/index.php/sm/sm2012/paper/viewFile/2180/149) or [illegal migrants](https://books.google.jo/books?id=Gz9eAgAAQBAJ&pg=PA53&lpg=PA53&dq=Border+surveys+and+Time+Location+Sampling&source=bl&ots=6i5IgC-2Mb&sig=P3CdG8-LvC0Y_LCK-MZ047gAJNQ&hl=en&sa=X&redir_esc=y#v=onepage&q=Border%20surveys%20and%20Time%20Location%20Sampling&f=false). 
+The Time-Location Sampling (TLS) approach can be used when the goal is to have a representation of population in movement. The idea and the assumption is to sample persons at locations and at time at which they may be found. 
 
+Time-location sampling is used to sample a population for which a sampling frame cannot be constructed but locations are known at which the population of interest can be found, or for which it is more efficient to sample at these locations. As such the approach is likely appropriate when the survey is taking place at a  **border**. 
 
+More practical guidelines for TLS are available in a dedicated [Resource Guide TLS](http://globalhealthsciences.ucsf.edu/sites/default/files/content/pphg/surveillance/modules/global-trainings/tls-res-guide-2nd-edition.pdf) and some application on Border Monitoring for [tourism](http://meetings.sis-statistica.org/index.php/sm/sm2012/paper/viewFile/2180/149) or [illegal migrants](https://books.google.jo/books?id=Gz9eAgAAQBAJ&pg=PA53&lpg=PA53&dq=Border+surveys+and+Time+Location+Sampling&source=bl&ots=6i5IgC-2Mb&sig=P3CdG8-LvC0Y_LCK-MZ047gAJNQ&hl=en&sa=X&redir_esc=y#v=onepage&q=Border%20surveys%20and%20Time%20Location%20Sampling&f=false). 
 
-### Probalistics
 
 #### Random sampling 
 
