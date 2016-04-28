@@ -50,9 +50,7 @@ In this case, the risk of loosing certain componnent of the population is addres
 
 #### Time-Location Sampling
 
-This Time-Location Samplin (TLS) approach can be used when the goal is to have a representation of population in movement. The idea is to sample persons at locations and at time at which they may be found. Time-location sampling is used to sample a population for which a sampling frame cannot be constructed but locations are known at which the population of interest can be found, or for which it is more efficient to sample at these locations. This approach is be appropriate for **border monitoring** for instance.
-
-You can find a [here practical guidelines for TLS](http://globalhealthsciences.ucsf.edu/sites/default/files/content/pphg/surveillance/modules/global-trainings/tls-res-guide-2nd-edition.pdf).
+The Time-Location Sampling (TLS) approach can be used when the goal is to have a representation of population in movement. The idea is to sample persons at locations and at time at which they may be found. Time-location sampling is used to sample a population for which a sampling frame cannot be constructed but locations are known at which the population of interest can be found, or for which it is more efficient to sample at these locations. As such the approach is likely appropriate when the survey is taking place at a  **border**. More practical guidelines for TLS are available in a dedicated [Resource Guide TLS](http://globalhealthsciences.ucsf.edu/sites/default/files/content/pphg/surveillance/modules/global-trainings/tls-res-guide-2nd-edition.pdf) and some application on Border Monitoring for [tourism](http://meetings.sis-statistica.org/index.php/sm/sm2012/paper/viewFile/2180/149) or [illegal migrants](https://books.google.jo/books?id=Gz9eAgAAQBAJ&pg=PA53&lpg=PA53&dq=Border+surveys+and+Time+Location+Sampling&source=bl&ots=6i5IgC-2Mb&sig=P3CdG8-LvC0Y_LCK-MZ047gAJNQ&hl=en&sa=X&redir_esc=y#v=onepage&q=Border%20surveys%20and%20Time%20Location%20Sampling&f=false). 
 
 
 
