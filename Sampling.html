@@ -11,7 +11,7 @@
 
 
 
-<title>Sample size &amp; Weight Calculation</title>
+<title>Sampling</title>
 
 <script src="libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -142,9 +142,9 @@ $(document).ready(function () {
               <div class="col-sm-4">
                 <ul class="multi-column-dropdown">
                     <li class="dropdown-header">Methodology</li>
-                  <li><a href="Sample-Size-Weight-Calculation.html">Sample Size & Weight Calculation</a></li>
-                  <li><a href="Household-Selection.html">Household, Individuals & Key Informant Selection</a></li>
-                  <li><a href="Mapping-Household-Listing.html">Mapping and Household/keyInformant/Community Listing</a></li>
+                  <li><a href="Sampling.html">Sampling</a></li>
+                  <li><a href="Interview.html">Interview approach</a></li>
+                  <li><a href="Pre-Assessment.html">Pre-Assessment</a></li>
                 </ul>
               </div>
               <div class="col-sm-4">
@@ -243,7 +243,7 @@ $(document).ready(function () {
 
 
 
-<h1 class="title toc-ignore">Sample size &amp; Weight Calculation</h1>
+<h1 class="title toc-ignore">Sampling</h1>
 
 </div>
 
@@ -253,8 +253,11 @@ $(document).ready(function () {
 <li><a href="#non-probabilistic">Non-probabilistic</a></li>
 <li><a href="#probalistics">Probalistics</a></li>
 </ul></li>
-<li><a href="#sample-universe-for-non-proabilistic-approach">Sample universe for non-proabilistic approach</a></li>
-<li><a href="#defining-sample-universe-and-size-for-probabilistic-approach">Defining sample universe and size for probabilistic approach</a><ul>
+<li><a href="#statistical-biais">Statistical Biais</a><ul>
+<li><a href="#selection-bias">Selection Bias</a></li>
+<li><a href="#declaration-bias">Declaration Bias</a></li>
+</ul></li>
+<li><a href="#sample-size">Sample size</a><ul>
 <li><a href="#in-refugee-context">In refugee Context</a></li>
 <li><a href="#in-idp-context">In IDP context</a></li>
 </ul></li>
@@ -315,22 +318,6 @@ $(document).ready(function () {
 </div>
 <div id="random-sampling" class="section level4">
 <h4>Random sampling</h4>
-</div>
-<div id="stratified-sampling" class="section level4">
-<h4>Stratified sampling</h4>
-</div>
-<div id="cluster-sampling" class="section level4">
-<h4>Cluster sampling</h4>
-</div>
-</div>
-</div>
-<div id="sample-universe-for-non-proabilistic-approach" class="section level2">
-<h2>Sample universe for non-proabilistic approach</h2>
-<p>In this case (Desk interview or key Informant), the more observation the better.</p>
-<p>Some kind of <a href="http://iomiraqdtm.info/Downloads/00-%20DTM%20Methodology%20Documents/DTM_LA_Credibility_Scoring_Methodology.pdf">credibility scoring</a> can be obtained for each locations based on a review of the key informant.</p>
-</div>
-<div id="defining-sample-universe-and-size-for-probabilistic-approach" class="section level2">
-<h2>Defining sample universe and size for probabilistic approach</h2>
 <p>If you need a purely random sample, the size of the sample is a calculation that takes 3 variables:</p>
 <ul>
 <li>Size of the full population</li>
@@ -399,6 +386,30 @@ $(document).ready(function () {
 </tbody>
 </table>
 <p>Usually the decision on the right confidence level and error margin to be selected is also influenced by cost implication and the final usage of the figures that is looked for.</p>
+</div>
+<div id="stratified-sampling" class="section level4">
+<h4>Stratified sampling</h4>
+</div>
+<div id="cluster-sampling" class="section level4">
+<h4>Cluster sampling</h4>
+</div>
+</div>
+</div>
+<div id="statistical-biais" class="section level2">
+<h2>Statistical Biais</h2>
+<div id="selection-bias" class="section level3">
+<h3>Selection Bias</h3>
+<p>Some groups are more or less likely to be selected in the sample Who might we miss when contacting people on the phone: Just people who are not here anymore? Random people who lost/changed their phone Vulnerable people who had to move, didn’t report their change of phone number because of lack of access to services…</p>
+</div>
+<div id="declaration-bias" class="section level3">
+<h3>Declaration Bias</h3>
+<p>Incentives/Fear make people declare information inaccurately For instance: Fear associated with Legal obligations Reporting Financial Issues in hope to get support</p>
+</div>
+</div>
+<div id="sample-size" class="section level2">
+<h2>Sample size</h2>
+<p>In the case of Desk interview or key Informant, the more observation the better.</p>
+<p>Some kind of <a href="http://iomiraqdtm.info/Downloads/00-%20DTM%20Methodology%20Documents/DTM_LA_Credibility_Scoring_Methodology.pdf">credibility scoring</a> can be obtained for each locations based on a review of the key informant.</p>
 <div id="in-refugee-context" class="section level3">
 <h3>In refugee Context</h3>
 <p>Data is coming from proGres</p>

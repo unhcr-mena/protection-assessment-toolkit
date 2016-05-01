@@ -1,0 +1,43 @@
+---
+title: "Interview"
+---
+
+```{r options_communes, include=FALSE}
+source("options_communes.R")
+```
+
+<div class="important">
+This chapter is not written yet.
+</div>
+
+It is crucial to think about the information sought, and the analysis that will be possible when designing the questionnaire
+
+Limited number of questions – balance between detail and cost/quality
+
+Prefer close-ended questions – associate with focus groups and community consultation if needed
+
+If possible, ask questions about individual children, not numbers
+
+
+Survey Protocol: modality; time to call, whom to interview…
+
+Definitions: Formal/non formal, Out-of-School…
+
+Importance of training of enumerators
+
+
+## Comparison of interview approaches
+
+### Face to Face
+
+### Self administered
+
+### Call Center
+
+
+### Interactive Voice Response
+
+### Short text Message (SMS)
+
+
+
