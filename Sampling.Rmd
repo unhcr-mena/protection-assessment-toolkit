@@ -6,44 +6,60 @@ title: "Sampling"
 source("options_communes.R")
 ```
 
+
+<div class="important">
+
+The sampling strategy is constrainted by both available budget, field accessibility and time. The sampling approach reflects a trade off between representativity of the results, rapid delivery and  
+
+
+ 
+</div>
+
+
 ## Sampling strategy
 
-Sampling strategy can be either probabilistic or non-probabilistic
+Sampling strategy can be either probabilistic or non-probabilistic.
 
-### Non-probabilistic
+### Non-probabilistic approaches
+
+Non-probabilistic approaches are usually **favored during the emergency phase** where both time and field access represent the main challenge. 
 
 #### Convenience sampling 
 It is a frequently used method in emergency situations. It relies on sampling those respondents who are easiest to access.
 
-Practically speaking those coudl be either:
+Practically speaking those couldd be either:
   * key Informant that are ready to report by themself
   * Individuals or household among those who have settled along roadsides, or who present themselves to administrative center of the returnee settlement or the assistance desk etc. 
 
-The danger with this type of monitoring is that it will often lead to biased results as the sample may not be representative of the majority, i.e. those with the most resources or power are often the ones who settle in the most easily accessible areas.
+
+ * Advantages: Easy and quick to implement, especially when time and access are the main constraints.
+
+ * Disadvantage: The danger with this type of data collection approach is that it will often lead to biased results as the sample may not be representative of the majority, i.e. those with the most resources or power are often the ones who settle in the most easily accessible areas.
 
 
 #### Snowball sampling
 
 Snowball sampling (or [chain sampling, chain-referral sampling, referral sampling](https://en.wikipedia.org/wiki/Snowball_sampling)) is a non-probability sampling technique where existing study subjects recruit future subjects from among their acquaintances. This technique is subject to numerous biases. For example, people who have many friends are more likely to be recruited into the sample. 
 
-This approach might underweight the most vulnerable individuals.
+ * Advantages: Useful when targeting specific groups that might be difficult to reach (hidden population).
+
+ * Disadvantage: This approach might underweight the most vulnerable individuals.
 
 #### Purposive sampling
 It is based on previous knowledge about who might be able to provide valuable or specific information. It uses the judgement of community representatives, project staff or assessors to select typical locations and/or informants. The sampling of children or women, for example, is a type of purposive sampling.
 
 Purposive sampling can also be done through Key Informant.
 
- * Advantages: Moderately rigorous if well and clear criteria for sampling are followed. Useful when targeting specific groups of affected population or specific affected areas. Less time consuming and less expensive than representative sampling
+ * Advantages: Moderately rigorous if well and clear criteria for sampling are followed. Useful when targeting specific groups of affected population or specific affected areas. Less time consuming and less expensive than representative sampling.
 
-* Disadvantage: Generalisations are biased and not recommended. Samples are not representative of population due to subjectivity of respondents
+ * Disadvantage: Generalisations are biased and not recommended. Samples are not representative of population due to subjectivity of respondents.
 
-
-#### Purposive sampling using strata 
-
-In this case, the risk of loosing certain componnent of the population is addressed by defining strata.
+The risk of loosing certain componnent of the population can be addressed by defining strata within the purposive sample.
 
 
-### Probalistics
+### Probalistics approaches
+
+Whenever the situation is becoming more **protracted**, probabilistic approaches should be favored. They will allow to generate more reliable results.
 
 #### Respondent-driven sampling -RDS
 

@@ -8,14 +8,14 @@ source("options_communes.R")
 
 
 <div class="important">
-This chapter is not written yet.
+A few task needs to be completed before the proper initiation of the assessment. It includes: 
+ * Informing key community stakeholders about the assessment, 
+ * Gathering critical site information required for effective primary data collection, 
+ * Confirming (or refuting) assumptions made in the planning stage, including logistics issues, travel time, limits of accessibility, and time available for fieldwork as well as highlighting implications of security issues (curfews, movements of armed actors, and risks of mines or  explosive remnants of war). 
+ 
 </div>
 
-It is recommended that, before actual data collection in the field, a preparatory visit is done to each site of the assessment. This site preparation visit is the first contact between the assessment team and affected communities, and responds to the objectives of:
-
-* Informing key community stakeholders about the assessment,
-* Gathering critical site information required for effective primary data collection,
-* Confirming (or refuting) assumptions made in the planning stage, including logistics issues, travel time, limits of accessibility, and time available for fieldwork as well as highlighting implications of security issues (curfews, movements of armed actors, and risks of mines or  explosive remnants of war).
+It is recommended that, before actual data collection in the field, a preparatory visit is done to each site of the assessment. This site preparation visit is the first contact between the assessment team and affected communities.
 
 During site preparation (which can be undertaken by the field team leader, together with a second team member), meetings are held with key stakeholders in which team members will:
 

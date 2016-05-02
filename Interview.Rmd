@@ -7,37 +7,67 @@ source("options_communes.R")
 ```
 
 <div class="important">
-This chapter is not written yet.
+
+Several aspects come into play in the data collection process. The three most crucial aspects include: the cost of the selected data collection method; the accuracy of data collected; and the efficiency of data collection.
+
+In regard to behavioural characteristics, it is generally recongised that face-to-face data deliver the best results, followed by telephone interviews and finally online quota survey. Interactive Voice Response & Short text Message (SMS) Pools are adequate only in very specific cases.
+
+interview incentive can be very effective to ensure a good response ratio.
 </div>
 
-It is crucial to think about the information sought, and the analysis that will be possible when designing the questionnaire
 
-Limited number of questions – balance between detail and cost/quality
-
-Prefer close-ended questions – associate with focus groups and community consultation if needed
-
-If possible, ask questions about individual children, not numbers
-
-
-Survey Protocol: modality; time to call, whom to interview…
-
-Definitions: Formal/non formal, Out-of-School…
-
-Importance of training of enumerators
+Literature review is [1](http://www.electionstudies.org/resources/papers/documents/nes010871.pdf), [2](http://academyofwinebusiness.com/wp-content/uploads/2013/04/Szolnoki-Hoffmann.pdf), 
 
 
 ## Comparison of interview approaches
 
-### Face to Face
+### Face to Face interview
 
-### Self administered
+Advantages: 
+*  Accurate screening. Face-to-face interviews help with more accurate screening. The individual being interviewed is unable to provide false information during screening questions such as gender, age, or race. 
+ * Keep focus. The interviewer is the one that has control over the interview and can keep the interviewee focused and on track to completion.  
+ *  Capture emotions and behaviors. Face-to-face interviews can no doubt capture an interviewee’s emotions and behaviors. Interviewer opinion can be a very good predictor of vulneraility for instance 
 
-### Call Center
+Disadvantages: 
+ *  Cost. Cost is a major disadvantage for face-to-face interviews. They require a staff of people to conduct the interviews, which means there will be personnel costs. 
+ *  Quality of data by interviewer.  The likelihood of the entire interviewing staff having those skills is low. Some interviewers may also have their own biases that could impact the way they input responses.  
+ *  Reluctance:  Women and the elderly may feel more physically vulnerable than men and younger people.  So the first of these groups may be more reluctant to allow a stranger into their homes for an interview, whereas they may be willing to talk with an interviewer over the telephone.  
+ *   Limit sample size. The size of the sample is limited to the size of your interviewing staff, the area in which the interviews are conducted, and the number of qualified respondents within that area.  
 
 
-### Interactive Voice Response
+### Telephone interview through Call Center
 
-### Short text Message (SMS)
+Telephone surveys may provide a good alternative, but we would advise use of a larger sample.
+
+From the 1940s to the 1970s, mail and face-to-face surveys were the main modes of data collection (Lyberg and Kasprzyk, 1991). Advantages: 
+ * Increasing rates of telephone coverage, 
+ * Low cost of telephone surveys relative to face-to-face interviews,
+ * speed with which telephone surveys can be conducted.
+
+Disadvantages: 
+* people without  telephones can only participate in face-to-face surveys.  The systematic exclusion of this latter group from telephone surveys may introduce bias if this group is both sufficiently sizable and also sufficiently different from telephone owners.  A
+ * Young adults are more transient and less settled than middle or older age adults, the former individuals may be less likely to 
+own telephones and therefore may be under-represented in telephone samples.  
+ *  Telephone  survey responses manifest more social desirability response bias than the Internet survey. 
+
+### Self administered with online quota survey
+
+The emergence of Internet surveys in the 1990s threatened the dominance of telephone surveys due to their advantages in terms of cost and speed. Indeed, Internet surveys soon appeared as a promising alternative to prior methods; nevertheless, there are still problems with the coverage and, as a result, with the representativeness of online surveys.
+
+Advantages:
+ * Lower cost and higher speed; 
+ * Visual, interactive, and flexible; 
+ * Do not require interviewers to be present and busy people – often educated and well-off – who systematically ignore taking part in a telephone survey are willing to answer questions posted on their computer screens;
+  * Sutdies found that Internet-based  surveys increased  the  reporting on  sensitive  information, compared  to computer-assisted telephone interview
+  
+Disadvantages:
+ * under representation of uneducated population group: panel:  one  can  reach only  those  who  are online; one can reach only those who agree to become part of a panel; not all those who are invited respond; and, those who sign up for online panels are rather young and male.
 
 
+### Interactive Voice Response & Short text Message (SMS) Pools
+
+
+## Interview incentive
+
+A series of article about surveys on SGBV in US universities , [here](https:/www.washingtonpost.com/news/fact-checker/wp/2014/12/17/one-in-five-women-in-college-sexually-assaulted-an-update/), and [here](https://www.themarshallproject.org/2014/12/11/the-dueling-data-on-campus-rape), and [here](https://www.washingtonpost.com/news/grade-point/wp/2015/10/15/a-better-way-to-gauge-how-common-sexual-assault-is-on-college-campuses/) raised the point of the methodological approach to get SGBV statistics.
 

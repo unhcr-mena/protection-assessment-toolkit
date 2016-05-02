@@ -9,7 +9,7 @@ source("options_communes.R")
 
 Translate assessment results into programmatic response recommendations is challenging when it comes to protection activities. 
 
-The analysis of vulnerabilities allows to generate protection activities recommandation.
+The analysis of vulnerabilities allows to generate protection activities recommendations.
 
 The analysis of vulnerabilities is complex as it should allow to understand:
 
