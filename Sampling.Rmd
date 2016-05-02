@@ -16,6 +16,9 @@ The sampling strategy is constrainted by both available budget, field accessibil
 </div>
 
 
+### Declaration Bias
+
+
 ## Sampling strategy
 
 Sampling strategy can be either probabilistic or non-probabilistic.
@@ -57,6 +60,9 @@ Purposive sampling can also be done through Key Informant.
 The risk of loosing certain componnent of the population can be addressed by defining strata within the purposive sample.
 
 
+In the case of Desk interview or key Informant, the more observation the better. Some kind of [credibility scoring](http://iomiraqdtm.info/Downloads/00-%20DTM%20Methodology%20Documents/DTM_LA_Credibility_Scoring_Methodology.pdf) can be obtained for each locations based on a review of the key informant. 
+
+
 ### Probalistics approaches
 
 Whenever the situation is becoming more **protracted**, probabilistic approaches should be favored. They will allow to generate more reliable results.
@@ -86,7 +92,7 @@ More practical guidelines for TLS are available in a dedicated [Resource Guide T
 
 If you need a purely random sample, the size of the sample is a calculation that takes 3 variables:
 
-*	Size of the full population
+*	Size of the full population. In refugee Context, Data is coming from proGres while in IDP context, data is coming from a Displacement Tracking System.
 *	Confidence level: for what proportion of the population you want to get the right estimation (usually either 90%, 95% or 99%) 
 *	Error Margin (or confidence interval): How much error are you willing to tolerate for each questions? i.e. + or – your estimated ratio for each questions on the top of the confidence interval (usually either 5%, 2% or 1%)
 
@@ -118,38 +124,6 @@ Usually the decision on the right confidence level and error margin to be select
 
 
 
-## Statistical Biais
-
-### Selection Bias
-Some groups are more or less likely to be selected in the sample
-Who might we miss when contacting people on the phone:
-Just people who are not here anymore?
-Random people who lost/changed their phone
-Vulnerable people who had to move, didn’t report their change of phone number because of lack of access to services…
-
-### Declaration Bias
-Incentives/Fear make people declare information inaccurately
-For instance:
-Fear associated with Legal obligations
-Reporting Financial Issues in hope to get support
-
-
-## Sample size
-
-
-In the case of Desk interview or key Informant, the more observation the better. 
-
-Some kind of [credibility scoring](http://iomiraqdtm.info/Downloads/00-%20DTM%20Methodology%20Documents/DTM_LA_Credibility_Scoring_Methodology.pdf) can be obtained for each locations based on a review of the key informant. 
-
-
-
-### In refugee Context
-
-Data is coming from proGres
-
-### In IDP context
-
-Data is coming from a *Displacement Tracking Matrix*
 
 
 ## Sample Weight

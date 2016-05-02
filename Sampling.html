@@ -249,17 +249,10 @@ $(document).ready(function () {
 
 <div id="TOC">
 <ul>
+<li><a href="#declaration-bias">Declaration Bias</a></li>
 <li><a href="#sampling-strategy">Sampling strategy</a><ul>
 <li><a href="#non-probabilistic-approaches">Non-probabilistic approaches</a></li>
 <li><a href="#probalistics-approaches">Probalistics approaches</a></li>
-</ul></li>
-<li><a href="#statistical-biais">Statistical Biais</a><ul>
-<li><a href="#selection-bias">Selection Bias</a></li>
-<li><a href="#declaration-bias">Declaration Bias</a></li>
-</ul></li>
-<li><a href="#sample-size">Sample size</a><ul>
-<li><a href="#in-refugee-context">In refugee Context</a></li>
-<li><a href="#in-idp-context">In IDP context</a></li>
 </ul></li>
 <li><a href="#sample-weight">Sample Weight</a><ul>
 <li><a href="#how-are-the-oversampledundersampled-areas-corrected-in-data-analysis">How are the oversampled/undersampled areas corrected in data analysis?</a></li>
@@ -270,6 +263,9 @@ $(document).ready(function () {
 
 <div class="important">
 <p>The sampling strategy is constrainted by both available budget, field accessibility and time. The sampling approach reflects a trade off between representativity of the results, rapid delivery and</p>
+</div>
+<div id="declaration-bias" class="section level3">
+<h3>Declaration Bias</h3>
 </div>
 <div id="sampling-strategy" class="section level2">
 <h2>Sampling strategy</h2>
@@ -303,6 +299,7 @@ $(document).ready(function () {
 <li><p>Disadvantage: Generalisations are biased and not recommended. Samples are not representative of population due to subjectivity of respondents.</p></li>
 </ul>
 <p>The risk of loosing certain componnent of the population can be addressed by defining strata within the purposive sample.</p>
+<p>In the case of Desk interview or key Informant, the more observation the better. Some kind of <a href="http://iomiraqdtm.info/Downloads/00-%20DTM%20Methodology%20Documents/DTM_LA_Credibility_Scoring_Methodology.pdf">credibility scoring</a> can be obtained for each locations based on a review of the key informant.</p>
 </div>
 </div>
 <div id="probalistics-approaches" class="section level3">
@@ -328,7 +325,7 @@ $(document).ready(function () {
 <h4>Random sampling</h4>
 <p>If you need a purely random sample, the size of the sample is a calculation that takes 3 variables:</p>
 <ul>
-<li>Size of the full population</li>
+<li>Size of the full population. In refugee Context, Data is coming from proGres while in IDP context, data is coming from a Displacement Tracking System.</li>
 <li>Confidence level: for what proportion of the population you want to get the right estimation (usually either 90%, 95% or 99%)</li>
 <li>Error Margin (or confidence interval): How much error are you willing to tolerate for each questions? i.e. + or – your estimated ratio for each questions on the top of the confidence interval (usually either 5%, 2% or 1%)</li>
 </ul>
@@ -401,30 +398,6 @@ $(document).ready(function () {
 <div id="cluster-sampling" class="section level4">
 <h4>Cluster sampling</h4>
 </div>
-</div>
-</div>
-<div id="statistical-biais" class="section level2">
-<h2>Statistical Biais</h2>
-<div id="selection-bias" class="section level3">
-<h3>Selection Bias</h3>
-<p>Some groups are more or less likely to be selected in the sample Who might we miss when contacting people on the phone: Just people who are not here anymore? Random people who lost/changed their phone Vulnerable people who had to move, didn’t report their change of phone number because of lack of access to services…</p>
-</div>
-<div id="declaration-bias" class="section level3">
-<h3>Declaration Bias</h3>
-<p>Incentives/Fear make people declare information inaccurately For instance: Fear associated with Legal obligations Reporting Financial Issues in hope to get support</p>
-</div>
-</div>
-<div id="sample-size" class="section level2">
-<h2>Sample size</h2>
-<p>In the case of Desk interview or key Informant, the more observation the better.</p>
-<p>Some kind of <a href="http://iomiraqdtm.info/Downloads/00-%20DTM%20Methodology%20Documents/DTM_LA_Credibility_Scoring_Methodology.pdf">credibility scoring</a> can be obtained for each locations based on a review of the key informant.</p>
-<div id="in-refugee-context" class="section level3">
-<h3>In refugee Context</h3>
-<p>Data is coming from proGres</p>
-</div>
-<div id="in-idp-context" class="section level3">
-<h3>In IDP context</h3>
-<p>Data is coming from a <em>Displacement Tracking Matrix</em></p>
 </div>
 </div>
 <div id="sample-weight" class="section level2">

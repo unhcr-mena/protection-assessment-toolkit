@@ -591,17 +591,10 @@ Whether it is for the data collection or the analysis, protection assessment are
 
 <div class="TOC">
 <ul>
+<li><a href="#Sampling_declaration-bias">Declaration Bias</a></li>
 <li><a href="#Sampling_sampling-strategy">Sampling strategy</a><ul>
 <li><a href="#Sampling_non-probabilistic-approaches">Non-probabilistic approaches</a></li>
 <li><a href="#Sampling_probalistics-approaches">Probalistics approaches</a></li>
-</ul></li>
-<li><a href="#Sampling_statistical-biais">Statistical Biais</a><ul>
-<li><a href="#Sampling_selection-bias">Selection Bias</a></li>
-<li><a href="#Sampling_declaration-bias">Declaration Bias</a></li>
-</ul></li>
-<li><a href="#Sampling_sample-size">Sample size</a><ul>
-<li><a href="#Sampling_in-refugee-context">In refugee Context</a></li>
-<li><a href="#Sampling_in-idp-context">In IDP context</a></li>
 </ul></li>
 <li><a href="#Sampling_sample-weight">Sample Weight</a><ul>
 <li><a href="#Sampling_how-are-the-oversampledundersampled-areas-corrected-in-data-analysis">How are the oversampled/undersampled areas corrected in data analysis?</a></li>
@@ -612,6 +605,9 @@ Whether it is for the data collection or the analysis, protection assessment are
 
 <div class="important">
 <p>The sampling strategy is constrainted by both available budget, field accessibility and time. The sampling approach reflects a trade off between representativity of the results, rapid delivery and</p>
+</div>
+<div id="Sampling_declaration-bias" class="section level3">
+<h3>Declaration Bias</h3>
 </div>
 <div id="Sampling_sampling-strategy" class="section level2">
 <h2>Sampling strategy</h2>
@@ -645,6 +641,7 @@ Whether it is for the data collection or the analysis, protection assessment are
 <li><p>Disadvantage: Generalisations are biased and not recommended. Samples are not representative of population due to subjectivity of respondents.</p></li>
 </ul>
 <p>The risk of loosing certain componnent of the population can be addressed by defining strata within the purposive sample.</p>
+<p>In the case of Desk interview or key Informant, the more observation the better. Some kind of <a href="http://iomiraqdtm.info/Downloads/00-%20DTM%20Methodology%20Documents/DTM_LA_Credibility_Scoring_Methodology.pdf">credibility scoring</a> can be obtained for each locations based on a review of the key informant.</p>
 </div>
 </div>
 <div id="Sampling_probalistics-approaches" class="section level3">
@@ -670,7 +667,7 @@ Whether it is for the data collection or the analysis, protection assessment are
 <h4>Random sampling</h4>
 <p>If you need a purely random sample, the size of the sample is a calculation that takes 3 variables:</p>
 <ul>
-<li>Size of the full population</li>
+<li>Size of the full population. In refugee Context, Data is coming from proGres while in IDP context, data is coming from a Displacement Tracking System.</li>
 <li>Confidence level: for what proportion of the population you want to get the right estimation (usually either 90%, 95% or 99%)</li>
 <li>Error Margin (or confidence interval): How much error are you willing to tolerate for each questions? i.e. + or – your estimated ratio for each questions on the top of the confidence interval (usually either 5%, 2% or 1%)</li>
 </ul>
@@ -745,30 +742,6 @@ Whether it is for the data collection or the analysis, protection assessment are
 </div>
 </div>
 </div>
-<div id="Sampling_statistical-biais" class="section level2">
-<h2>Statistical Biais</h2>
-<div id="Sampling_selection-bias" class="section level3">
-<h3>Selection Bias</h3>
-<p>Some groups are more or less likely to be selected in the sample Who might we miss when contacting people on the phone: Just people who are not here anymore? Random people who lost/changed their phone Vulnerable people who had to move, didn’t report their change of phone number because of lack of access to services…</p>
-</div>
-<div id="Sampling_declaration-bias" class="section level3">
-<h3>Declaration Bias</h3>
-<p>Incentives/Fear make people declare information inaccurately For instance: Fear associated with Legal obligations Reporting Financial Issues in hope to get support</p>
-</div>
-</div>
-<div id="Sampling_sample-size" class="section level2">
-<h2>Sample size</h2>
-<p>In the case of Desk interview or key Informant, the more observation the better.</p>
-<p>Some kind of <a href="http://iomiraqdtm.info/Downloads/00-%20DTM%20Methodology%20Documents/DTM_LA_Credibility_Scoring_Methodology.pdf">credibility scoring</a> can be obtained for each locations based on a review of the key informant.</p>
-<div id="Sampling_in-refugee-context" class="section level3">
-<h3>In refugee Context</h3>
-<p>Data is coming from proGres</p>
-</div>
-<div id="Sampling_in-idp-context" class="section level3">
-<h3>In IDP context</h3>
-<p>Data is coming from a <em>Displacement Tracking Matrix</em></p>
-</div>
-</div>
 <div id="Sampling_sample-weight" class="section level2">
 <h2>Sample Weight</h2>
 <p>Over-sampling in regions with small populations ensures that they have a large enough sample to be representative. Under-sampling is done in regions with large populations to save costs. Sample weights are mathematical adjustments applied to the data to correct for over-sampling, under-sampling, and different response rates to the survey in different regions.</p>
@@ -804,7 +777,7 @@ Whether it is for the data collection or the analysis, protection assessment are
 <li><a href="#Interview_self-administered-with-online-quota-survey">Self administered with online quota survey</a></li>
 <li><a href="#Interview_interactive-voice-response-short-text-message-sms-pools">Interactive Voice Response &amp; Short text Message (SMS) Pools</a></li>
 </ul></li>
-<li><a href="#Interview_interview-incentive">Interview incentive</a></li>
+<li><a href="#Interview_interview-incentives">Interview incentives</a></li>
 </ul>
 </div>
 
@@ -813,33 +786,83 @@ Whether it is for the data collection or the analysis, protection assessment are
 <p>In regard to behavioural characteristics, it is generally recongised that face-to-face data deliver the best results, followed by telephone interviews and finally online quota survey. Interactive Voice Response &amp; Short text Message (SMS) Pools are adequate only in very specific cases.</p>
 interview incentive can be very effective to ensure a good response ratio.
 </div>
-<p>Literature review is <a href="http://www.electionstudies.org/resources/papers/documents/nes010871.pdf">1</a>, <a href="http://academyofwinebusiness.com/wp-content/uploads/2013/04/Szolnoki-Hoffmann.pdf">2</a>,</p>
+<p>The follwing is based on Literature review from <a href="http://www.electionstudies.org/resources/papers/documents/nes010871.pdf">here</a> and <a href="http://academyofwinebusiness.com/wp-content/uploads/2013/04/Szolnoki-Hoffmann.pdf">here</a>.</p>
 <div id="Interview_comparison-of-interview-approaches" class="section level2">
 <h2>Comparison of interview approaches</h2>
 <div id="Interview_face-to-face-interview" class="section level3">
 <h3>Face to Face interview</h3>
-<p>Advantages: * Accurate screening. Face-to-face interviews help with more accurate screening. The individual being interviewed is unable to provide false information during screening questions such as gender, age, or race. * Keep focus. The interviewer is the one that has control over the interview and can keep the interviewee focused and on track to completion.<br/> * Capture emotions and behaviors. Face-to-face interviews can no doubt capture an interviewee’s emotions and behaviors. Interviewer opinion can be a very good predictor of vulneraility for instance</p>
-<p>Disadvantages: * Cost. Cost is a major disadvantage for face-to-face interviews. They require a staff of people to conduct the interviews, which means there will be personnel costs. * Quality of data by interviewer. The likelihood of the entire interviewing staff having those skills is low. Some interviewers may also have their own biases that could impact the way they input responses.<br/> * Reluctance: Women and the elderly may feel more physically vulnerable than men and younger people. So the first of these groups may be more reluctant to allow a stranger into their homes for an interview, whereas they may be willing to talk with an interviewer over the telephone.<br/> * Limit sample size. The size of the sample is limited to the size of your interviewing staff, the area in which the interviews are conducted, and the number of qualified respondents within that area.</p>
+<p>Advantages:</p>
+<ul>
+<li>Accurate screening. Face-to-face interviews help with more accurate screening. The individual being interviewed is unable to provide false information during screening questions such as gender, age, or race.</li>
+<li>Keep focus. The interviewer is the one that has control over the interview and can keep the interviewee focused and on track to completion.<br/></li>
+<li>Capture emotions and behaviors. Face-to-face interviews can no doubt capture an interviewee’s emotions and behaviors. Interviewer opinion can be a very good predictor of vulneraility for instance</li>
+</ul>
+<p>Disadvantages:</p>
+<ul>
+<li>Cost. Cost is a major disadvantage for face-to-face interviews. They require a staff of people to conduct the interviews, which means there will be personnel costs.</li>
+<li>Quality of data by interviewer. The likelihood of the entire interviewing staff having those skills is low. Some interviewers may also have their own biases that could impact the way they input responses.<br/></li>
+<li>Reluctance: Women and the elderly may feel more physically vulnerable than men and younger people. So the first of these groups may be more reluctant to allow a stranger into their homes for an interview, whereas they may be willing to talk with an interviewer over the telephone.<br/></li>
+<li>Limit sample size. The size of the sample is limited to the size of your interviewing staff, the area in which the interviews are conducted, and the number of qualified respondents within that area.</li>
+</ul>
 </div>
 <div id="Interview_telephone-interview-through-call-center" class="section level3">
 <h3>Telephone interview through Call Center</h3>
 <p>Telephone surveys may provide a good alternative, but we would advise use of a larger sample.</p>
-<p>From the 1940s to the 1970s, mail and face-to-face surveys were the main modes of data collection (Lyberg and Kasprzyk, 1991). Advantages: * Increasing rates of telephone coverage, * Low cost of telephone surveys relative to face-to-face interviews, * speed with which telephone surveys can be conducted.</p>
-<p>Disadvantages: * people without telephones can only participate in face-to-face surveys. The systematic exclusion of this latter group from telephone surveys may introduce bias if this group is both sufficiently sizable and also sufficiently different from telephone owners. A * Young adults are more transient and less settled than middle or older age adults, the former individuals may be less likely to own telephones and therefore may be under-represented in telephone samples.<br/> * Telephone survey responses manifest more social desirability response bias than the Internet survey.</p>
+<p>From the 1940s to the 1970s, mail and face-to-face surveys were the main modes of data collection (Lyberg and Kasprzyk, 1991).</p>
+<p>Advantages:</p>
+<ul>
+<li>Increasing rates of telephone coverage,</li>
+<li>Low cost of telephone surveys relative to face-to-face interviews,</li>
+<li>speed with which telephone surveys can be conducted.</li>
+</ul>
+<p>Disadvantages:</p>
+<ul>
+<li>people without telephones can only participate in face-to-face surveys. The systematic exclusion of this latter group from telephone surveys may introduce bias if this group is both sufficiently sizable and also sufficiently different from telephone owners. A</li>
+<li>Young adults are more transient and less settled than middle or older age adults, the former individuals may be less likely to own telephones and therefore may be under-represented in telephone samples.<br/></li>
+<li>Telephone survey responses manifest more social desirability response bias than the Internet survey;</li>
+<li>Risk of selecting random people who lost/changed their phone.</li>
+</ul>
 </div>
 <div id="Interview_self-administered-with-online-quota-survey" class="section level3">
 <h3>Self administered with online quota survey</h3>
 <p>The emergence of Internet surveys in the 1990s threatened the dominance of telephone surveys due to their advantages in terms of cost and speed. Indeed, Internet surveys soon appeared as a promising alternative to prior methods; nevertheless, there are still problems with the coverage and, as a result, with the representativeness of online surveys.</p>
-<p>Advantages: * Lower cost and higher speed; * Visual, interactive, and flexible; * Do not require interviewers to be present and busy people – often educated and well-off – who systematically ignore taking part in a telephone survey are willing to answer questions posted on their computer screens; * Sutdies found that Internet-based surveys increased the reporting on sensitive information, compared to computer-assisted telephone interview</p>
-<p>Disadvantages: * under representation of uneducated population group: panel: one can reach only those who are online; one can reach only those who agree to become part of a panel; not all those who are invited respond; and, those who sign up for online panels are rather young and male.</p>
+<p>Advantages:</p>
+<ul>
+<li>Lower cost and higher speed;</li>
+<li>Visual, interactive, and flexible;</li>
+<li>Do not require interviewers to be present and busy people – often educated and well-off – who systematically ignore taking part in a telephone survey are willing to answer questions posted on their computer screens;</li>
+<li>Sutdies found that Internet-based surveys increased the reporting on sensitive information, compared to computer-assisted telephone interview.</li>
+</ul>
+<p>Disadvantages:</p>
+<ul>
+<li>under representation of uneducated population group: panel: one can reach only those who are online; one can reach only those who agree to become part of a panel; not all those who are invited respond; and, those who sign up for online panels are rather young and male.</li>
+</ul>
 </div>
 <div id="Interview_interactive-voice-response-short-text-message-sms-pools" class="section level3">
 <h3>Interactive Voice Response &amp; Short text Message (SMS) Pools</h3>
+<p>Specific constraints:</p>
+<ul>
+<li>4 options max per questions</li>
+<li>concise questions, simple words</li>
+<li>describe action then press key</li>
+<li>caller should be informed on how much to go to complete the survey</li>
+</ul>
+<p>Advantages:</p>
+<ul>
+<li>Lower cost and higher speed.</li>
+</ul>
+<p>Disadvantages:</p>
+<ul>
+<li>only fit for short questions &amp; short survey (less than five questions)</li>
+<li>Risk of selecting random people who lost/changed their phone</li>
+</ul>
 </div>
 </div>
-<div id="Interview_interview-incentive" class="section level2">
-<h2>Interview incentive</h2>
+<div id="Interview_interview-incentives" class="section level2">
+<h2>Interview incentives</h2>
 <p>A series of article about surveys on SGBV in US universities , <a href="https:/www.washingtonpost.com/news/fact-checker/wp/2014/12/17/one-in-five-women-in-college-sexually-assaulted-an-update/">here</a>, and <a href="https://www.themarshallproject.org/2014/12/11/the-dueling-data-on-campus-rape">here</a>, and <a href="https://www.washingtonpost.com/news/grade-point/wp/2015/10/15/a-better-way-to-gauge-how-common-sexual-assault-is-on-college-campuses/">here</a> raised the point of the methodological approach to get SGBV statistics.</p>
+<p>low response rate may virtually guaranteed exaggeration of certain participants.</p>
+<p>Incentives/Fear make people declare information inaccurately and generate declaration bias. For instancem Fear associated with Legal obligations or Reporting Financial Issues in hope to get support</p>
 </div>
 
 </article>
