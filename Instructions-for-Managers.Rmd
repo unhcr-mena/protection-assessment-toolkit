@@ -8,3 +8,4 @@ source("options_communes.R")
 
 
 
+[Notes from the Field: How to incentivize your survey team](http://blogs.worldbank.org/impactevaluations/notes-from-the-field-how-to-incentivize-your-survey-team)
