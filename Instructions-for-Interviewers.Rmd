@@ -6,6 +6,7 @@ title: "Instructions for Interviewer"
 source("options_communes.R")
 ```
 
+
 ## Eligible Respondents for the Household Questionnaire
 
 In each sampled household you visit, you should begin by interviewing a knowledgeable adult member of the household to fill in the Household Questionnaire. All modules of the Household Questionnaire will be administered to this person, referred to as the Household Respondent, including the modules in the questionnaire where the information collected is about other household members. The Education module is one such example.
@@ -137,4 +138,5 @@ In general, the responsibilities of interviewers will include:
  * Ensuring that the information given is correct by keeping the respondent focused to the questions
  * Including their specific observations or notes on the last page of each questionnaire
  * Preparing additional notes for the field editor and supervisor on other problems or observations
+
 
