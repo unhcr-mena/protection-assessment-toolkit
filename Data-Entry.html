@@ -104,7 +104,7 @@ button.code-folding-btn:focus {
 <div class="container-fluid main-container">
 
 <!-- tabsets -->
-<script src="libs/navigation-1.0/tabsets.js"></script>
+<script src="libs/navigation-1.1/tabsets.js"></script>
 <script>
 $(document).ready(function () {
   window.buildTabsets("TOC");
@@ -265,7 +265,7 @@ $(document).ready(function () {
 </div>
 
 <div class="important">
-This chapter is not written yet.
+<p>This chapter is not written yet.</p>
 </div>
 <p>KoBoToolbox allows data collection in multiple ways. Because KoBoToolbox is built on the Xform/ODK technology, our forms are compatible with a number of different tools that can be used for data collection. We recommend using KoBoCollect as the tool of choice for Android devices, and Web Forms (Enketo) for collecting data on all other devices (including iPhones, iPads, or any laptop or computer).</p>
 <div id="using-the-client-on-mobile-devices-kobocollect" class="section level2">
@@ -278,25 +278,29 @@ This chapter is not written yet.
 <li>In KoBoToolbox, click on Projects within the menu sidebar on the left. Note the URL that is inside your browser at the top of your screen (for example, <a href="http://kobo.unhcr.org/username/" class="uri">http://kobo.unhcr.org/username/</a>)</li>
 </ul>
 <div class="figure">
-<img src="images/dash_url.png" alt="Offline" /><p class="caption">Offline</p>
+<img src="images/dash_url.png" alt="Offline" />
+<p class="caption">Offline</p>
 </div>
 <ul>
 <li>On your Android device, open KoBoCollect and open the General Settings (click on the settings button of your device to access the settings).</li>
 </ul>
 <div class="figure">
-<img src="images/collect_settings_button_EX.png" alt="Offline" /><p class="caption">Offline</p>
+<img src="images/collect_settings_button_EX.png" alt="Offline" />
+<p class="caption">Offline</p>
 </div>
 <ul>
 <li>In General Settings, under URL, enter the exact URL from step (2). Make sure you include the correct ‘<a href="https://" class="uri">https://</a>’</li>
 </ul>
 <div class="figure">
-<img src="images/collect_settings_url_EX.png" alt="Offline" /><p class="caption">Offline</p>
+<img src="images/collect_settings_url_EX.png" alt="Offline" />
+<p class="caption">Offline</p>
 </div>
 <ul>
 <li>Download forms from your account. Make sure you are connected to the Internet on your device. Also, you need to have deployed at least one project in KoBoToolbox. On the home menu of KoBoCollect, click Get Blank Form. A list of all your forms from your different projects will be shown. Click Toggle All (or select the ones you wish to download), then click Get Selected.</li>
 </ul>
 <div class="figure">
-<img src="images/collect_home_getformsEX.png" alt="Offline" /><p class="caption">Offline</p>
+<img src="images/collect_home_getformsEX.png" alt="Offline" />
+<p class="caption">Offline</p>
 </div>
 </div>
 <div id="collect-data" class="section level3">
@@ -305,7 +309,8 @@ This chapter is not written yet.
 <li>Click on Fill blank form</li>
 </ul>
 <div class="figure">
-<img src="images/collect_home_add_data_EX.png" alt="Offline" /><p class="caption">Offline</p>
+<img src="images/collect_home_add_data_EX.png" alt="Offline" />
+<p class="caption">Offline</p>
 </div>
 <ul>
 <li><p>Select the form to which you would like to enter data</p></li>
@@ -319,7 +324,8 @@ This chapter is not written yet.
 <li>From the home screen, click on Send Finalized Form</li>
 </ul>
 <div class="figure">
-<img src="images/collect_home_upload_data_EX.png" alt="Offline" /><p class="caption">Offline</p>
+<img src="images/collect_home_upload_data_EX.png" alt="Offline" />
+<p class="caption">Offline</p>
 </div>
 <ul>
 <li><p>A list of your most recently collected forms appears.</p></li>
@@ -327,7 +333,8 @@ This chapter is not written yet.
 </ul>
 <p>It is possible to hide buttons and options within KoBoCollect. On the home screen click the Android menu button, then Choose Admin Settings and select the buttons you would like to hide from the different screens. If you set an admin password, interviewers won’t be able to access the Admin settings to ever get access to these buttons.</p>
 <div class="figure">
-<img src="images/collect_settings_Adminbutton_EX.png" alt="Offline" /><p class="caption">Offline</p>
+<img src="images/collect_settings_Adminbutton_EX.png" alt="Offline" />
+<p class="caption">Offline</p>
 </div>
 </div>
 </div>
@@ -336,18 +343,21 @@ This chapter is not written yet.
 <p>Web Forms, also known as Enketo, are used by KoBoToolbox to preview forms and to enter data directly on a computer. Web forms also for collecting data on any mobile devices - even when offline at the time of data collection. It works on virtually any device, including iPhones, iPads, or any other smartphone, tablet, or computer. Some features are still being actively developed for Enketo, so some special questions may not be fully supported yet on every device. ### Start Collection</p>
 <p>To start collecting data using web forms in your computer, simply click on the button ‘Enter data in browser’ in your project view. This is especially useful for testing purposes, but also when transcribing data from using paper forms.</p>
 <div class="figure">
-<img src="images/kbt_kc_enketo2_PC.png" alt="Offline" /><p class="caption">Offline</p>
+<img src="images/kbt_kc_enketo2_PC.png" alt="Offline" />
+<p class="caption">Offline</p>
 </div>
 <p>To collect data using a mobile device, you need to copy the URL of your webform to your mobile device. You can simply send it by email or text message to any device. To obtain the URL of the webform, click either the ‘Enter data in browser’ or ‘How to collect data on mobile device’ buttons.</p>
 <div class="figure">
-<img src="images/kbt_kc_enketo1.png" alt="Offline" /><p class="caption">Offline</p>
+<img src="images/kbt_kc_enketo1.png" alt="Offline" />
+<p class="caption">Offline</p>
 </div>
 <div id="collecting-data-offline" class="section level3">
 <h3>Collecting data offline</h3>
 <p>Enketo is also able to collect data while offline. However, it is essential to visit the URL once before going offline, and then saving it on the device (for example with a bookmark on the mobile browser).</p>
 <p>Once your form has been fully loaded and cached, an offline availability icon (empty “signal bars” and a check mark) in the top-left corner will appear and indicate that the form can be accessed offline unless <em>browser’s data are cleared</em>.</p>
 <div class="figure">
-<img src="images/enketooffline.png" alt="Offline" /><p class="caption">Offline</p>
+<img src="images/enketooffline.png" alt="Offline" />
+<p class="caption">Offline</p>
 </div>
 <p>Enketo will display the form within that URL even without any Internet connectivity, and data will be store and queued until the next internet connection.</p>
 </div>

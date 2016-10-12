@@ -31,35 +31,77 @@ Each data element collected should be linked to:
 * Specific Protection indicator
 
 
-## Questions componnent 
+## Questions modules
 
-In the Protection Assessment at the Household level, some questions should be linked to specific members within the household:
+The Household level Assessment includes different parts that includes a series of modules. The selection of required modules will be done through a particpatory assesment. Each module allow to define a series of indicators. Questions to be used in each module are extracted whenever possible from the [IHSN Question Bank](http://qbank.ihsn.org/web/app.php/questionnaires).
 
-### Questionnaire Componnent for Household Representative
-* Profile of Household Members
-* Education
-* Child Labour
-* Civil Documentation
-* Property 
-* accomodation Conditions
+### introduction
+Consent
+Enumerator
 
-### Questionnaire Componnent for Individual Women
-* Access to Mass Media and Use of Information and Communication Technology
-* Attitudes toward Domestic Violence
-* Marriage/Union
-* Intention
+### Part 1: Background Information 
 
-### Questionnaire Componnent for Individual Men
-* Access to Mass Media and Use of Information and Communication Technology
-* Attitudes toward Domestic Violence	Marriage/Union
-* Intention
+**Eligibility**: To be administered to every household in the main sample.
 
-### Questionnaire Componnent for Children & Youth
-* Birth Registration
-* School attendance
-* Early Marriage
+This questionnaire serves three purposes: (i) to identify the members of the household; (ii) within households, to identify nuclear units, i.e. couples and their own children; (iii) to collect basic demographic information on each of the household members; 
 
+ * PA status
+ * Household information
+ * Address
+ * Refugee registration
+ * Reason for displacement
+ * Multiple Displacement & Movement
 
+### Part 2: Household condition  
+**Eligibility**: To be administered to every household in the main sample.
+
+ * Housing, shelter & wash conditions
+ * Assets & Budget
+ * Food security & Negative coping mechanism
+
+### Part 3: Household composition 
+**Eligibility**: To be administered to every member of the household. 
+
+ * Employment & livelihood
+ * Education & Out of School Children & Child Labour
+
+### Part 4: Basic Needs and Essential Services   
+**Eligibility**: To be administered to every household in the main sample.
+
+ * Access to health services
+ * Assistance received - Post Distribution Monitoring
+ * Self-expressed Needs (Hesper scale)
+
+### Part 5: Protection & Right  
+**Eligibility**: To be administered to every household in the main sample.
+
+ * Civil status documentation
+ * Birth Registration
+ * Counselling & Legal aid
+ * Freedom of movement & Detention
+ * Risk of eviction
+ * Refugees with specific needs 
+
+### Part 6: Attitude & perception 
+**Eligibility**: To be administered to one male member and one female member of the household. 
+
+ * Return Intentions
+ * Onward movement
+ * Armed recruitment
+ * Domestic Violence (Parental stress, Isolation at home)
+ * Forced and early marriage
+ * Gender inequality
+ * Harassment & Violence towards LGBTI
+ * Harassment between youth
+ * Security & Civil violence
+ * Sexual Harassment & Violence (Rape) 
+ * Violence among children
+
+### conclusion  
+Additional elements to be filled by the enumerator at the end of the interview.
+
+ * Subjective Enumerator Evaluation
+ * Referral (if needed) 
 
 
 

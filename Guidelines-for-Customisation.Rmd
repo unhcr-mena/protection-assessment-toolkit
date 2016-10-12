@@ -9,6 +9,11 @@ source("options_communes.R")
 <div class="note">
 
 </div>
+## Introduction
+
+A great deal of effort has been devoted to ensure that the questions can be used by interviewers to obtain answers from respondents that are both reliable and valid. Thus the questions are drafted in a clear simple language and follow clearly and logically from one to the other, while the layout is designed to make it easy for interviewers to administer the questionnaires. The wording and question sequence are designed to motivate respondents and help them recall information on past events. Using the model questionnaires verbatim is most likely to ensure that the results of the surveys are comparable across participating countries. 
+
+It is therefore important that even if adaption and contextualisation are made, the wording of the model questionnaires is not drastically changed.
 
 
 ## What is "customisation"?

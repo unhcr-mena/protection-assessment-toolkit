@@ -20,7 +20,67 @@ May guidelines are available such as:
 * [Designing Household Survey Samples: Practical Guidelines](http://unstats.un.org/unsd/demographic/sources/surveys/Series_F98en.pdf) 
 * [The Power of Survey Design](https://openknowledge.worldbank.org/bitstream/handle/10986/6975/350340The0Powe1n0REV01OFFICIAL0USE1.pdf?sequence=1) 
 
+## Definition of household and relations with UNHR Registration case
 
+
+### Definition of households
+
+This concept is explained in details in the [Principles and Recommendations for Population and Housing Censuses] (http://unstats.un.org/unsd/publication/seriesM/Series_M67rev3en.pdf).
+
+The concept of household include those persons who live together and have communal arrangements concerning subsistence and other necessities of life, such as eating together. This implies therefore 2 important arrangement;
+
+ * The **household dwelling** concept regards all persons living in a housing unit as belonging to the same household. According to this concept, there is one household per occupied housing unit. Therefore, the number of occupied housing units and the number of households occupying them are equal and the locations of the housing units and households are identical.
+ 
+ * The **housekeeping concept**, that is to say, a person or a group of two or more persons living together who make common provision for food or other essentials for living, with or without combining with any other person to form part of a multi-person household. The persons in the group may pool their resources and have a common budget; they may be related or unrelated persons or a combination of persons both related and unrelated. 
+
+#### household types
+
+3 types of households can be distinguished:
+
+**Nuclear household**: 
+It is defined as a household consisting entirely of a single family nucleus. It may be classified into: 
+
+ *  Married-couple family: With child(ren) or Without child(ren);
+ *  Partner in consensual union (cohabiting partner): With child(ren) or Without child(ren);
+ *  Father with child(ren);
+ *  Mother with child(ren);
+
+**Extended household**: 
+It is defined as a household consisting of any one of the following: 
+
+ *  A single family nucleus and other persons related to the nucleus, for example, a father with child(ren) and other relative(s) or a married couple with other relative(s) only;
+ *  Two or more family nuclei related to each other without any other persons, for example, two or more married couples with child(ren) only;
+ *  Two or more family nuclei related to each other plus other persons related to at least one of the nuclei, for example, two or more married couples with other relative(s) only;
+ *  Two or more persons related to each other, none of whom constitute a family nucleus;
+
+**Composite household** 
+It is like an extended household with the difference of : 
+
+ *  A single family nucleus plus other persons, some of whom are related to the nucleus and some of whom are not, for example, mother with child(ren) and other relatives and non-relatives;
+ *  A single family nucleus plus other persons, none of whom is related to the nucleus, for example, father with child(ren) and non-relatives);
+ *   Two or more family nuclei related to each other plus other persons, some of whom are related to at least one of the nuclei and some of whom are not related to any of the nuclei, for example, two or more couples with other relatives and non-relatives only;
+ *  Two or more family nuclei related to each other plus other persons, none of whom is related to any of the nuclei, for example, two or more married couples one or more of which with child(ren) and non-relatives;
+ *  Two or more family nuclei not related to each other, with or without any other persons;
+ *  Two or more persons related to each other but none of whom constitute a family nucleus, plus other unrelated persons;
+ *   Non-related persons only;
+
+
+### Relations with UNHCR cases as per Registration
+
+The UNHCR case is the equivalent of Nuclear household. NHCR case are used a basis for large part of the assistance delivery.
+
+When surveying Households, it is important to make connection between the households and the cases:
+
+ * Case 1: One single family nucleus which then equals a UNHCR case. In this case both dwelling & housekeeping are de facto shared.
+ * Case 2: An extended household with two or more than two UNHCR cases. In this case, the surveyor will record if  dwelling & housekeeping are effectively shared between cases.
+ * Case 3: A composite household with two or more than two UNHCR cases, as well as additional members, such as host communities individuals. In this case, the surveyor will record if  dwelling & housekeeping are effectively shared between cases, as well as with the members that are not part of the cases.
+
+The main point is to allow for understanding the allocation of expenses (housekeeping & dwelling) between cases that would be grouped together in the same extended or composite household.  The allocation coudl be based for instance on:
+ * One case covering for all other cases;
+ * One case covering for non-UNHCR case members;
+ * Allocation based on number of individuals in each case;
+ * Allocation based on number of adults individuals in each case;
+ * Allocation based on number of individuals that get an income in each case, etc.
 
 ## Comparison of interview approaches
 

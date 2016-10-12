@@ -24,9 +24,14 @@ require(lubridate)
 
 ## Why a "Protection Assessment Toolkit"?{#presentation}
 
-The kit is a comprehensive set of tools to guide survey teams through every step of a protection assessment based on **Household survey** – from overall planning, design and data collection in the field to data processing, analysis, interpretation, documentation and dissemination. Becausse it addresses the specific challenges related to household surveys, it fits more for protracted situations and it **complements** other approaches such as the [UNHCR Tool for Participatory Assessment in Operations](http://www.unhcr.org/450e963f2.html), the [Needs Assessment for Refugee Emergencies (NARE) Checklist](https://emergency.unhcr.org/entry/50209) for Refugees operations and the [Rapid Protection Assessment Tools (RPAT)](http://www.globalprotectioncluster.org/en/tools-and-guidance/information-and-data-management.html) for IDPs operations. The kit is also organised to ensure that all findings and recommandation will allow to inform prioritisation between all potential protection activities  and subsequent ressources allocation in terms of programme.
+The kit is a comprehensive set of tools to guide survey teams through every step of a protection assessment based on **Household survey** – from overall planning, design and data collection in the field to data processing, analysis, interpretation, documentation and dissemination. Becausse it addresses the specific challenges related to household surveys, it fits more for protracted situations and it **complements** other approaches such as the [UNHCR Tool for Participatory Assessment in Operations](http://www.unhcr.org/450e963f2.html), the [Needs Assessment for Refugee Emergencies (NARE) Checklist](https://emergency.unhcr.org/entry/50209) for Refugees operations and the [Rapid Protection Assessment Tools (RPAT)](http://www.globalprotectioncluster.org/en/tools-and-guidance/information-and-data-management.html) for IDPs operations. The kit is also organised to ensure that all findings and recommandation will allow to inform prioritisation between all potential protection activities  and subsequent ressources allocation in terms of programme, through the following elements :
 
-![Assessment](images/process.png)
+ * Produce **impact indicators** that are used to assess the conditions of beneficiaries over time; 
+ * Support the **analysis of vulnerabilites** and the discovery of clusters of individuals with similar profile; 
+ * Allow for the development of **targetting models** for both response (for instance cash) and prevention activities (for instance protection);
+ * Provide basis for **public advocacy** on issues faced by the population group. 
+
+![](images/process.png)
 
 This toolkit supports the technical implementation of already existing guidelines and guidances, namely the [Guidelines for Integrating Gender-Based Violence Interventions in Humanitarian Action](http://gbvguidelines.org/), the [Child Protection Rapid Assessment Toolkit](http://www.globalprotectioncluster.org/_assets/files/tools_and_guidance/info_data_management/CPRA_English-EN.pdf), the [Joint IDP Profiling Service Essential Toolkit- JET](http://jet.jips.org/), the [Heightened Risk Identification Tool](http://unhcr.org/4aa76c279.pdf), The [Operational Guidance and Toolkit for Multipurpose Cash Grants](http://www.cashlearning.org/downloads/operational-guidance-and-toolkit-for-multipurpose-cash-grants---web.pdf) etc. The proposed technical implementation approach was inspired by the [UNHCR Standardised Expanded Nutrition Survey](http://sens.unhcr.org) and the [UNICEF Multiple Indicator Cluster Surveys](http://mics.unicef.org/tools).
 
@@ -56,7 +61,7 @@ The targeted audience of the toolkit are *technical staff tasked to work on a pr
 ## Table of Content{#tdm}
 
 
-```{r tdm semi-programmatique, results='hide', message=FALSE, echo=FALSE,  warning=FALSE, include=FALSE, cache=FALSE}
+```{r tdm semi-programmatique, results='hide', message=FALSE, echo=FALSE,  warning=FALSE, include=FALSE, cache=FALSE }
 base_url <- ""
 urls <- paste0(base_url, "index.html")
 
@@ -65,12 +70,12 @@ tdm <- function(section) {
   res <- "<div class=\"row\">\n"
   
   menu <- read_html("include/before_body.html", encoding = "UTF-8")
-  section <- xml_find_one(menu, paste0(".//ul[@id='menu_", section, "']"))
+  section <- xml_find_first(menu, paste0(".//ul[@id='menu_", section, "']"))
   sous_sections <- xml_find_all(section, ".//ul")
   
   for (ss in sous_sections) {
     res <- paste0(res, "<div class=\"col-md-4\">\n")
-    titre <- as.character(xml_contents(xml_find_one(ss, ".//li[@class='dropdown-header']")))
+    titre <- as.character(xml_contents(xml_find_first(ss, ".//li[@class='dropdown-header']")))
     Encoding(titre) <- "UTF-8"
     res <- paste0(res, "<p><strong>", titre, "</strong></p>\n")
     res <- paste0(res, "<div class=\"list-group\">\n")

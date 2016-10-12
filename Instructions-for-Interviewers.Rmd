@@ -6,6 +6,26 @@ title: "Instructions for Interviewer"
 source("options_communes.R")
 ```
 
+## Approaching households
+
+### Appointment for interview
+
+At the start of each survey cycle, either phone calls or notification letters are used to explain the purpose of the survey to the sampled  households, to seek their co-operation, request the presence of all household members, collect their precise address and set up the appointment. The enumerator will then visit the households concerned in person to collect the required information. When they are not able to contact the households concerned during their visit to their quarters, a pre-printed non-contact (NC) slip will be left to these households so that another appoitnement can be set up.
+
+### Defining members of household
+
+On order to make a comprehensive list of individuals connected to the household, the following probe approach is used: 
+
+1. First, get the nameand details of the head of household, including his refugee registration number. 
+
+2. Second, get the names of all the members of your immediate family who normally live and eat their meals together here. Names, sex, and relationship to household head are first listed. For each member, in addition of getting Individual ID, the enumerator should ask if they are registered under the same UNHCR case ID than the head of household (if not get the other number and the reason why they are living together).
+
+3. Third, get the names of any other persons related to you or other household members - "Extend Household"- who normally live and eat their meals together here. "Are there any other persons not here now who normally live and eat their meals here?  for example, household members studying elsewhere or traveling". get their details and their refugee ID.
+
+4. Then, get the names of any other persons not related to you or other household members- "Composite Household"-, but who normally live and eat their meals together here, such as servants, lodgers, or other who are not relatives. Do not list servants who have a household elsewhere, and guests who are visiting temporarily and have a household elsewhere.
+
+ 
+
 
 ## Eligible Respondents for the Household Questionnaire
 
