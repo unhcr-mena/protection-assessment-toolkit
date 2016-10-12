@@ -25,7 +25,7 @@ May guidelines are available such as:
 
 ### Definition of households
 
-This concept is explained in details in the [Principles and Recommendations for Population and Housing Censuses] (http://unstats.un.org/unsd/publication/seriesM/Series_M67rev3en.pdf).
+This concept is explained in details in the (Principles and Recommendations for [Population and Housing Censuses](http://unstats.un.org/unsd/publication/seriesM/Series_M67rev3en.pdf).
 
 The concept of household include those persons who live together and have communal arrangements concerning subsistence and other necessities of life, such as eating together. This implies therefore 2 important arrangement;
 
@@ -33,7 +33,7 @@ The concept of household include those persons who live together and have commun
  
  * The **housekeeping concept**, that is to say, a person or a group of two or more persons living together who make common provision for food or other essentials for living, with or without combining with any other person to form part of a multi-person household. The persons in the group may pool their resources and have a common budget; they may be related or unrelated persons or a combination of persons both related and unrelated. 
 
-#### household types
+#### Household types
 
 3 types of households can be distinguished:
 
@@ -75,7 +75,8 @@ When surveying Households, it is important to make connection between the househ
  * Case 2: An extended household with two or more than two UNHCR cases. In this case, the surveyor will record if  dwelling & housekeeping are effectively shared between cases.
  * Case 3: A composite household with two or more than two UNHCR cases, as well as additional members, such as host communities individuals. In this case, the surveyor will record if  dwelling & housekeeping are effectively shared between cases, as well as with the members that are not part of the cases.
 
-The main point is to allow for understanding the allocation of expenses (housekeeping & dwelling) between cases that would be grouped together in the same extended or composite household.  The allocation coudl be based for instance on:
+The main point is to allow for understanding the allocation of expenses (housekeeping & dwelling) between cases that would be grouped together in the same extended or composite household.  The allocation coudl be based for instance on: 
+
  * One case covering for all other cases;
  * One case covering for non-UNHCR case members;
  * Allocation based on number of individuals in each case;
