@@ -1,5 +1,5 @@
 ---
-title: "Question Library"
+title: "Module and questions"
 ---
 
 ```{r options_communes, include=FALSE}
@@ -7,7 +7,7 @@ source("options_communes.R")
 ```
 
 <div class="important">
-Objective of the question Library:
+Objective of the standardised question modules:
 
  * Avoid replicating **bad practices**
  * Ensure that all **topics of interest** are well covered in the analysis framework
@@ -33,7 +33,7 @@ Each data element collected should be linked to:
 
 ## Questions modules
 
-The Household level Assessment includes different parts that includes a series of modules. The selection of required modules will be done through a particpatory assesment. Each module allow to define a series of indicators. Questions to be used in each module are extracted whenever possible from the [IHSN Question Bank](http://qbank.ihsn.org/web/app.php/questionnaires).
+The Household level Assessment includes different parts that includes a series of modules. The selection of required modules will be done through a participatory assessment. Each module allow to define a series of indicators. Questions to be used in each module are extracted whenever possible from the [IHSN Question Bank](http://qbank.ihsn.org/web/app.php/questionnaires).
 
 ### introduction
 Consent
@@ -109,7 +109,7 @@ Additional elements to be filled by the enumerator at the end of the interview.
 ## Question design 
 
 
-### Checklist 
+### Checklist used to review questions
 
 * Closing questions
 * Skip patterns
@@ -216,7 +216,7 @@ Interest
  
 
 
-## Using the library
+## Using the modules
 
 ###  The XLSFORM format
 
@@ -231,13 +231,13 @@ Interest
 
 ###  Filtering the questions
 
-The question library is an [online google spreasheet](https://docs.google.com/spreadsheets/d/1zGnaLXouP9vTfjqVvUVOSfzeSkvpd63f8Z-zvqGJtNU) where a sries of questions are organised around multiple categories
+The question library is an [online google spreasheet]() where a sries of questions are organised around multiple categories
 
 To use it, simply copy or donwload the library,  filter out the question you are not interested in and delete them.
 
 The next step will be then to [customise the form](Guidelines-for-Customisation.html)
 
-###  Questionnaire anaysis report
+###  Questionnaire analysis report
 
 The libary can generate a short report that sumerrise:
 
