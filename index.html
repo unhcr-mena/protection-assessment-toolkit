@@ -19,6 +19,7 @@
 <script src="libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
 <script src="libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="libs/navigation-1.1/tabsets.js"></script>
 <meta name="robots" content="index, follow">
 <link rel="stylesheet" href="./include/protection-assessment-toolkit.css" />
 <script type="text/javascript" src="./libs/zeroclipboard-2.2.0/ZeroClipboard.js"></script>
@@ -101,10 +102,10 @@ button.code-folding-btn:focus {
 </style>
 
 
+
 <div class="container-fluid main-container">
 
 <!-- tabsets -->
-<script src="libs/navigation-1.1/tabsets.js"></script>
 <script>
 $(document).ready(function () {
   window.buildTabsets("TOC");
@@ -258,7 +259,7 @@ Guidelines and Templates <br />
 to facilitate assessment planning and design<br /> and to support the “technical” implementation of existing guidances
 </h2>
 <p>
-Last update : 13 October 2016
+Last update : 8 February 2017
 </p>
 </div>
 <div id="presentation" class="section level2">
@@ -271,7 +272,7 @@ Last update : 13 October 2016
 <li>Provide basis for <strong>public advocacy</strong> on issues faced by the population group.</li>
 </ul>
 <div class="figure">
-<img src="images/process.png" alt="" />
+<img src="images/process.png" />
 
 </div>
 <p>This toolkit supports the technical implementation of already existing guidelines and guidances, namely the <a href="http://gbvguidelines.org/">Guidelines for Integrating Gender-Based Violence Interventions in Humanitarian Action</a>, the <a href="http://www.globalprotectioncluster.org/_assets/files/tools_and_guidance/info_data_management/CPRA_English-EN.pdf">Child Protection Rapid Assessment Toolkit</a>, the <a href="http://jet.jips.org/">Joint IDP Profiling Service Essential Toolkit- JET</a>, the <a href="http://unhcr.org/4aa76c279.pdf">Heightened Risk Identification Tool</a>, The <a href="http://www.cashlearning.org/downloads/operational-guidance-and-toolkit-for-multipurpose-cash-grants---web.pdf">Operational Guidance and Toolkit for Multipurpose Cash Grants</a> etc. The proposed technical implementation approach was inspired by the <a href="http://sens.unhcr.org">UNHCR Standardised Expanded Nutrition Survey</a> and the <a href="http://mics.unicef.org/tools">UNICEF Multiple Indicator Cluster Surveys</a>.</p>
@@ -559,9 +560,13 @@ $(document).ready(function () {
 <script>
 
 // add bootstrap table styles to pandoc tables
-$(document).ready(function () {
+function bootstrapStylePandocTables() {
   $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
 });
+
 
 </script>
 
