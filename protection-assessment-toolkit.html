@@ -758,7 +758,6 @@ The Toolkit is a <em>work in progress</em>: if you identify issues, please share
 <li><p>Allocation based on the <strong>relative cost of each survey record</strong> (called Neyman Allocation).Neyman allocation is a special case of optimal allocation where the costs per unit are the same for all strata. In this case, the ideal sample allocation allow to maximize precision, given a Stratified Sample With a fixed Sample Size. The ideal sample allocation plan would provide the most precision for the least cost. This implies to sample more heavily from a stratum when the cost to sample an element from the stratum is low, the population size of the stratum is large or the variability within the stratum is large.This approach also implies to use “weighted analysis” (disproportionate selection).</p></li>
 </ul>
 <p>Typically, when developping the stata definition, in case of optimal or neyman allocation, i.e. when stratea variance are already known through a previous survey, the following objectives can be looked at: * Find minimum sample size, given a fixed error * Find minimum error, given a fixed sample size * Find minimum error, given a fixed budget * Find minimum cost to achieve a fixed error</p>
-<p>Stratified sampling can be performed with <a href="https://cran.r-project.org/web/packages/SamplingStrata/vignettes/SamplingStrataVignette.pdf">R specific package</a></p>
 <p>Typical workflow to define sample size in case of stratified sampling:</p>
 <ol style="list-style-type: decimal">
 <li>Choose the stratification (e.g.regions, district,….)</li>
@@ -770,6 +769,7 @@ The Toolkit is a <em>work in progress</em>: if you identify issues, please share
 <li>Use simple random sample per strata to select your representative sample</li>
 </ol>
 <p>To estimate sample size, you need to know: * Estimate of the prevalence or mean &amp; STDev of the key indicator (e.g. 30% retunr intention). Prevalence is the total number of cases for a variable of interest that is <strong>typically binary</strong> within a population divided by its total population. Mean is the expected value of a variable of interest that is <strong>typically continuous</strong> within a prescribed range for a given population (e.g. expenditure per case) * Precision desired (for example: ± 5%). Precision is the variability of the estimate. * Level of confidence (for example: 95%). It represents the probability of the same result if you re-sampled, all other things equal. * Population (only if below 10,000, otherwise it will not influence the required sample size) * Expected response rate (for example: 90%) * Number of eligible individuals per household (if applicable)</p>
+<p>Stratified sampling can be performed with R. <a href="https://github.com/unhcr-mena/stratified-sampling">Tutorial scripts are avaialble here</a>.</p>
 </div>
 <div id="Sampling_cluster-sampling" class="section level4">
 <h4>Cluster sampling</h4>
