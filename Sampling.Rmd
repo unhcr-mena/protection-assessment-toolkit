@@ -164,6 +164,24 @@ Typically, when developping the stata definition, in case of optimal or neyman a
  
 Stratified sampling can be performed with [R specific package](https://cran.r-project.org/web/packages/SamplingStrata/vignettes/SamplingStrataVignette.pdf)
 
+Typical workflow to define sample size in case of stratified sampling: 
+
+  1. Choose the stratification (e.g.regions, district,….)
+  2. Define the population (N) of each strata
+  3. Decide on key indicator(s)
+  4. Estimate mean & variance or prevalence of key indicator
+  5. Decide on precision and confidence level
+  6. Calculate the initial total sample size (n) according to the budget/time
+  7. Use simple random sample per strata to select your representative sample
+  
+To estimate sample size, you need to know:
+ * Estimate of the prevalence or mean & STDev of the key indicator (e.g. 30% retunr intention). Prevalence is the total number of cases for a variable of interest that is **typically binary** within a population divided by its total population. Mean is the expected value of  a variable of interest that is **typically continuous** within a prescribed range for a given population (e.g. expenditure per case) 
+ * Precision desired (for example: ± 5%). Precision is the variability of the estimate.
+ * Level of confidence (for example: 95%). It represents the probability of the same result if you re-sampled, all other things equal.
+ * Population (only if below 10,000, otherwise it will not influence the required sample size)
+ * Expected response rate (for example: 90%)
+ * Number of eligible individuals per household (if applicable)
+
 #### Cluster sampling 
 
 Cluster sampling is a technique that allows to reduce the surveying budget when **travel cost are important**. Instead of covering a whole territory, the cluster sampling implies to divide the population into separate groups, called clusters. Then, a simple random sample of clusters is selected from the population.
