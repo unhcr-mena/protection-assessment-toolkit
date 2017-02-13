@@ -768,8 +768,16 @@ The Toolkit is a <em>work in progress</em>: if you identify issues, please share
 <li>Calculate the initial total sample size (n) according to the budget/time</li>
 <li>Use simple random sample per strata to select your representative sample</li>
 </ol>
-<p>To estimate sample size, you need to know: * Estimate of the prevalence or mean &amp; STDev of the key indicator (e.g. 30% retunr intention). Prevalence is the total number of cases for a variable of interest that is <strong>typically binary</strong> within a population divided by its total population. Mean is the expected value of a variable of interest that is <strong>typically continuous</strong> within a prescribed range for a given population (e.g. expenditure per case) * Precision desired (for example: ± 5%). Precision is the variability of the estimate. * Level of confidence (for example: 95%). It represents the probability of the same result if you re-sampled, all other things equal. * Population (only if below 10,000, otherwise it will not influence the required sample size) * Expected response rate (for example: 90%) * Number of eligible individuals per household (if applicable)</p>
-<p>Stratified sampling can be performed with R. <a href="https://github.com/unhcr-mena/stratified-sampling">Tutorial scripts are avaialble here</a>.</p>
+<p>To estimate sample size, you need to know:</p>
+<ul>
+<li>Estimate of the prevalence or mean &amp; STDev of the key indicator (e.g. 30% return intention). Prevalence is the total number of cases for a variable of interest that is <strong>typically binary</strong> within a population divided by its total population. Mean is the expected value of a variable of interest that is <strong>typically continuous</strong> within a prescribed range for a given population (e.g. expenditure per case)</li>
+<li>Precision desired (for example: ± 5%). Precision is the variability of the estimate.</li>
+<li>Level of confidence (for example: 95%). It represents the probability of the same result if you re-sampled, all other things equal.</li>
+<li>Population (only if below 10,000, otherwise it will not influence the required sample size)</li>
+<li>Expected response rate (for example: 90%)</li>
+<li>Number of eligible individuals per household (if applicable)</li>
+</ul>
+<p>Stratified sampling can be performed with R. <a href="https://github.com/unhcr-mena/stratified-sampling">Tutorial scripts are available here</a>.</p>
 </div>
 <div id="Sampling_cluster-sampling" class="section level4">
 <h4>Cluster sampling</h4>
@@ -786,6 +794,7 @@ The Toolkit is a <em>work in progress</em>: if you identify issues, please share
 <h4>Sampling With Replacement and Sampling Without Replacement</h4>
 <p>When a population element can be selected more than one time, we are sampling with replacement. When a population element can be selected only one time, we are sampling without replacement. When we sample with replacement, the two sample values are independent. Practically, this means that what we get on the first one doesn’t affect what we get on the second. Mathematically, this means that the covariance between the two is zero.In sampling without replacement, the two sample values aren’t independent. Practically, this means that what we got on the for the first one affects what we can get for the second one. Mathematically, this means that the covariance between the two isn’t zero.</p>
 <p>In small populations and often in large ones, sampling is typically done “without replacement”, i.e., one deliberately avoids choosing any member of the population more than once. Although sampling can be conducted with replacement instead, this is less common and for a small sample from a large population, sampling without replacement is approximately the same as sampling with replacement, since the odds of choosing the same individual twice is low.You can tell how dramatic the results are by calculating the covariance. That’s a measure of how much two items’s probabilities are linked together; the higher the covariance, the more dramatic the results. A covariance of zero would mean there’s no difference between sampling with replacement or sampling without.</p>
+<p>As explained in this <a href="http://www.statcan.gc.ca/pub/12-001-x/2001002/article/6089-eng.pdf">paper</a>, bias may be introduced into population estimates through Telephone surveys, however, by the exclusion of nontelephone households from these surveys.The bias introduced can be significant since “non-telephone households” may differ from telephone households in ways that are not adequately handled by poststratification. Many households, called “transients”, move in and out of the telephone population during the year, sometimes due to economic reasons or relocation. The transient telephone population may be representative of the non-telephone population in general since its members have recently been in the non-telephone population.</p>
 </div>
 </div>
 </div>
