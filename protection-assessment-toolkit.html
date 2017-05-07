@@ -205,7 +205,7 @@ Guidelines and Templates <br>
 to facilitate assessment planning and design<br> and to support the “technical” implementation of existing guidances
 </h2>
 <p>
-Last update : 13 February 2017
+Last update : 7 May 2017
 </p>
 </div>
 <div id="presentation" class="section level2">
@@ -647,6 +647,10 @@ The Toolkit is a <em>work in progress</em>: if you identify issues, please share
 <p>The risk of loosing certain componnent of the population can be addressed by defining strata within the purposive sample.</p>
 <p>In the case of Desk interview or key Informant, the more observation the better. Some kind of <a href="http://iomiraqdtm.info/Downloads/00-%20DTM%20Methodology%20Documents/DTM_LA_Credibility_Scoring_Methodology.pdf">credibility scoring</a> can be obtained for each locations based on a review of the key informant.</p>
 </div>
+<div id="Sampling_quota-sample" class="section level4">
+<h4>Quota sample</h4>
+<p>A quota sample might be representative of the population (if quotas actually do work, which they not always do). But a quota sample will never satisfy the strict randomness requirements that statistics require. Only if we are working with a random sample can we make inferences from the sample to the population. In quota samples, there is not sufficient randomness, as the interviewer selects the interviewees actively. Therefore, quota samples cannot be used to reason about the general population.</p>
+</div>
 </div>
 <div id="Sampling_probalistics-approaches" class="section level3">
 <h3>Probalistics approaches</h3>
@@ -778,6 +782,11 @@ The Toolkit is a <em>work in progress</em>: if you identify issues, please share
 <li>Number of eligible individuals per household (if applicable)</li>
 </ul>
 <p>Stratified sampling can be performed with R. <a href="https://github.com/unhcr-mena/stratified-sampling">Tutorial scripts are available here</a>.</p>
+</div>
+<div id="Sampling_post-stratification" class="section level4">
+<h4>Post stratification</h4>
+<p>One can also use weights, computed through a <a href="https://www.r-bloggers.com/survey-computing-your-own-post-stratification-weights-in-r/">post-stratification process</a>, to get potentially biased surveys, like online surveys, to better fit the underlying population. The only thing that weights can do, is ensure that your sample composition better mimics the general population’s characteristics. Weights will never help you if the process governing non-response is part of the puzzle you want to solve.</p>
+<p>In a random sample, we define a population, draw from that population at random and then compute and apply weights to align the sample with the population. This weighting is necessary because some people originally sampled might be e.g. harder to reach than others, thereby biasing the sample. Once the post-stratification weights have been applied, the random sample is representative of the population it was drawn from. Statistics gives us a method to tell just how accurately the findings from the sample can be generalized.</p>
 </div>
 <div id="Sampling_cluster-sampling" class="section level4">
 <h4>Cluster sampling</h4>

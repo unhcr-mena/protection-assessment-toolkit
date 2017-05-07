@@ -63,6 +63,13 @@ The risk of loosing certain componnent of the population can be addressed by def
 In the case of Desk interview or key Informant, the more observation the better. Some kind of [credibility scoring](http://iomiraqdtm.info/Downloads/00-%20DTM%20Methodology%20Documents/DTM_LA_Credibility_Scoring_Methodology.pdf) can be obtained for each locations based on a review of the key informant. 
 
 
+#### Quota sample
+
+A quota sample might be representative of the population (if quotas actually do work, which they not always do). But a quota sample will never satisfy the strict randomness requirements that statistics require. 
+Only if we are working with a random sample can we make inferences from the sample to the population. In quota samples, there is not sufficient randomness, as the interviewer selects the interviewees actively. 
+Therefore, quota samples cannot be used to reason about the general population.
+
+
 ### Probalistics approaches
 
 Whenever the situation is becoming more **protracted**, probabilistic approaches should be favored. They will allow to generate more reliable results.
@@ -184,6 +191,12 @@ To estimate sample size, you need to know:
  * Number of eligible individuals per household (if applicable) 
  
 Stratified sampling can be performed with R. [Tutorial scripts are available here](https://github.com/unhcr-mena/stratified-sampling).
+
+#### Post stratification
+One can also use weights, computed through a [post-stratification process](https://www.r-bloggers.com/survey-computing-your-own-post-stratification-weights-in-r/), to get potentially biased surveys, like online surveys, to better fit the underlying population. The only thing that weights can do, is ensure that your sample composition better mimics the general population’s characteristics. Weights will never help you if the process governing non-response is part of the puzzle you want to solve.
+
+In a random sample, we define a population, draw from that population at random and then compute and apply weights to align the sample with the population. This weighting is necessary because some people originally sampled might be e.g. harder to reach than others, thereby biasing the sample. Once the post-stratification weights have been applied, the random sample is representative of the population it was drawn from. Statistics gives us a method to tell just how accurately the findings from the sample can be generalized.
+
 
 #### Cluster sampling 
 
